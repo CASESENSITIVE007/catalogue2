@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alif Global | IT &amp; AI Services Catalogue</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .backdrop-blur-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .bottom-sheet {
+            transform: translateY(100%);
+            transition: transform 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+        }
+        .bottom-sheet.active {
+            transform: translateY(0);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "background": "#f8f9fa",
+                      "on-secondary-container": "#636467",
+                      "tertiary": "#5a5f64",
+                      "on-tertiary-fixed": "#171c21",
+                      "outline": "#7f7667",
+                      "secondary-container": "#e2e2e5",
+                      "surface-variant": "#e1e3e4",
+                      "on-error": "#ffffff",
+                      "inverse-on-surface": "#f0f1f2",
+                      "on-secondary": "#ffffff",
+                      "secondary-fixed": "#e2e2e5",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-highest": "#e1e3e4",
+                      "on-primary": "#ffffff",
+                      "on-background": "#191c1d",
+                      "surface-bright": "#f8f9fa",
+                      "surface-tint": "#775a19",
+                      "on-secondary-fixed": "#1a1c1e",
+                      "error-container": "#ffdad6",
+                      "on-surface-variant": "#4e4639",
+                      "primary-container": "#c5a059",
+                      "on-primary-fixed": "#261900",
+                      "on-secondary-fixed-variant": "#454749",
+                      "primary": "#775a19",
+                      "surface": "#f8f9fa",
+                      "tertiary-container": "#a1a6ac",
+                      "secondary-fixed-dim": "#c6c6c9",
+                      "primary-fixed": "#ffdea5",
+                      "on-tertiary-container": "#363c41",
+                      "surface-container": "#edeeef",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-high": "#e7e8e9",
+                      "on-primary-container": "#4e3700",
+                      "outline-variant": "#d1c5b4",
+                      "tertiary-fixed-dim": "#c2c7cd",
+                      "on-error-container": "#93000a",
+                      "on-surface": "#191c1d",
+                      "on-primary-fixed-variant": "#5d4201",
+                      "secondary": "#5d5e61",
+                      "inverse-surface": "#2e3132",
+                      "primary-fixed-dim": "#e9c176",
+                      "error": "#ba1a1a",
+                      "surface-container-low": "#f3f4f5",
+                      "tertiary-fixed": "#dee3e9",
+                      "on-tertiary-fixed-variant": "#42474c",
+                      "inverse-primary": "#e9c176",
+                      "surface-dim": "#d9dadb"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "sm": "16px",
+                      "margin-desktop": "64px",
+                      "gutter": "24px",
+                      "lg": "48px",
+                      "md": "24px",
+                      "xs": "8px",
+                      "xl": "80px",
+                      "margin-mobile": "16px",
+                      "base": "4px"
+              },
+              "fontFamily": {
+                      "label-md": ["Manrope"],
+                      "caption": ["Manrope"],
+                      "headline-lg": ["Manrope"],
+                      "headline-lg-mobile": ["Manrope"],
+                      "headline-md": ["Manrope"],
+                      "body-lg": ["Manrope"],
+                      "body-md": ["Manrope"],
+                      "display-lg": ["Manrope"]
+              },
+              "fontSize": {
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                      "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 flex justify-between items-center px-margin-mobile py-4 lg:px-margin-desktop">
+<h1 class="font-display-lg text-headline-md font-bold text-primary">Alif Global</h1>
+<div class="flex items-center gap-4">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors" onclick="toggleBottomSheet()">
+<span class="material-symbols-outlined">filter_list</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-32 px-margin-mobile lg:px-margin-desktop max-w-screen-xl mx-auto">
+<!-- Category Chips -->
+<section class="mb-lg overflow-x-auto hide-scrollbar -mx-margin-mobile px-margin-mobile">
+<div class="flex gap-xs whitespace-nowrap">
+<button class="px-md py-xs bg-primary text-on-primary font-label-md text-label-md rounded-full shadow-sm">All Services</button>
+<button class="px-md py-xs bg-surface-container-high text-on-surface-variant font-label-md text-label-md rounded-full border border-outline-variant/30 hover:border-primary/50 transition-colors">Web Dev</button>
+<button class="px-md py-xs bg-surface-container-high text-on-surface-variant font-label-md text-label-md rounded-full border border-outline-variant/30 hover:border-primary/50 transition-colors">AI</button>
+<button class="px-md py-xs bg-surface-container-high text-on-surface-variant font-label-md text-label-md rounded-full border border-outline-variant/30 hover:border-primary/50 transition-colors">Cloud</button>
+<button class="px-md py-xs bg-surface-container-high text-on-surface-variant font-label-md text-label-md rounded-full border border-outline-variant/30 hover:border-primary/50 transition-colors">Data</button>
+</div>
+</section>
+<!-- Catalogue Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<!-- Service Card 1 -->
+<article class="group relative bg-surface-container-lowest border border-outline-variant/30 overflow-hidden transition-all duration-300 hover:shadow-lg">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-dim">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" data-alt="A futuristic, minimalist interface of a bespoke web application on a high-end laptop. The screen shows clean data visualizations and golden-accented UI elements. The background is a sleek, dark executive office. Soft glow from the screen highlights the precision of the design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHXbZ00pG8zO6PjNl8nL3Q9LpI7R9T1U2V3W4X5Y6Z7A8B9C0D1E2F3G4H5I6J7K8L9M0N1O2P3Q4R5S6T7U8V9W0X"/>
+<span class="absolute top-sm left-sm px-xs py-[2px] bg-primary-fixed text-on-primary-fixed-variant font-label-md text-caption rounded-xs uppercase tracking-tighter">Enterprise</span>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-headline-md-mobile text-on-surface mb-base group-hover:text-primary transition-colors">Bespoke Web Apps</h3>
+<p class="font-body-md text-on-surface-variant mb-sm line-clamp-2">Tailor-made, scalable web ecosystems designed for high-performance enterprise operations.</p>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-primary text-label-md uppercase tracking-widest">Web Solutions</span>
+<button class="text-primary hover:underline font-label-md text-label-md">View Details</button>
+</div>
+</div>
+</article>
+<!-- Service Card 2 -->
+<article class="group relative bg-surface-container-lowest border border-outline-variant/30 overflow-hidden transition-all duration-300 hover:shadow-lg">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-dim">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" data-alt="A conceptual representation of AI API Integration. Glowing neural pathways in soft gold connect various abstract digital nodes. The atmosphere is clean, bright, and professional, suggesting seamless connectivity and intelligent automation for global business." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARArdcR7xBziVPwDhxt1seeZ3cFl2hxRAU5dGl830sMwxBsOgK3tfqmD9qGvMQQk31LMBzotA8AJsuIsu57hm_dd0-mdVRSMujRVAciGCbu_BAx87TEAe1rOPsddX3VgI7I5QoU4kqlQS1eVdiLC9ezOmtkyHFc3FW6Plir23HwAFPQmD4uachPfgqk4HKNWDQacpYZmF-uMrIKtwKdZW6sYxF8rO9J1pY3lofF3wVuCqTWcZ28glpuZdeS2OQwZsKwufV32bqZw"/>
+<span class="absolute top-sm left-sm px-xs py-[2px] bg-secondary-fixed text-on-secondary-fixed font-label-md text-caption rounded-xs uppercase tracking-tighter">Scalable</span>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-headline-md-mobile text-on-surface mb-base group-hover:text-primary transition-colors">AI API Integration</h3>
+<p class="font-body-md text-on-surface-variant mb-sm line-clamp-2">Seamless embedding of advanced machine learning models into your existing software stack.</p>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-primary text-label-md uppercase tracking-widest">AI &amp; Automation</span>
+<button class="text-primary hover:underline font-label-md text-label-md">View Details</button>
+</div>
+</div>
+</article>
+<!-- Service Card 3 -->
+<article class="group relative bg-surface-container-lowest border border-outline-variant/30 overflow-hidden transition-all duration-300 hover:shadow-lg">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-dim">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" data-alt="Intricate visualization of a custom neural network. Golden light particles form complex mesh patterns against a deep charcoal background. The image evokes a sense of deep intelligence, elite craftsmanship in coding, and the premium nature of bespoke algorithms." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB92bFP2l3zFYhM0JElgLdQgKn4SP6sYWC_URVYWuF2_YGg7a3tM53xcJ_Ylb1z628EIQXVw-B6iQ--vXr2D5qRSgb32ahdOMwbJS137eMLMWK01edO1XLLgAOWn0Yonk3t8HYhWchjg0SwfPqW24VbEZyzp55mjIfTx4VQYb1IfHg0ZfylL5XtP-6z5KxKjY7bYboNYzkYOxtdrO3LLG0jft8a0v1zzg0CvrdV0w20Vxt1bBqg8u0-pCIUVx8vsJVr_0OKoXAO9g"/>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-headline-md-mobile text-on-surface mb-base group-hover:text-primary transition-colors">Custom Neural Networks</h3>
+<p class="font-body-md text-on-surface-variant mb-sm line-clamp-2">Proprietary deep learning architectures developed to solve unique industry-specific challenges.</p>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-primary text-label-md uppercase tracking-widest">Deep Intelligence</span>
+<button class="text-primary hover:underline font-label-md text-label-md">View Details</button>
+</div>
+</div>
+</article>
+<!-- Service Card 4 -->
+<article class="group relative bg-surface-container-lowest border border-outline-variant/30 overflow-hidden transition-all duration-300 hover:shadow-lg">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-dim">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" data-alt="A clean, high-tech server room environment with subtle gold ambient lighting. The perspective is low-angle, looking up at the blinking arrays of modern cloud infrastructure. Communicates reliability, security, and global scale of Alif's cloud services." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKEZ2_aC86REp3AwgxUKe75598R8nKL_rDDt-1zB8cd7tizsveS0r6a4-1m1SSraL6imFpwnNAr_9mpRIt_DYD--wGD-0MbZq9WjlHFUPH8RXAMYfvJVC_W8lTqHpc-yEVrPHiMZ2bKQiiiAr9yT8-jA1k5LQc6u9WJtu1p42GvaUSZb32m6k1IdaOdu0uwy9xJUW_ed3NR7TO8trQxNcOIq-YVzBmXVysGml87tWUKCKjDiw0tgFNRWM3LBGue-FArCv2kbuBFw"/>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-headline-md-mobile text-on-surface mb-base group-hover:text-primary transition-colors">Cloud Infrastructure</h3>
+<p class="font-body-md text-on-surface-variant mb-sm line-clamp-2">Highly secure and redundant cloud deployment strategies for global scalability and uptime.</p>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-primary text-label-md uppercase tracking-widest">Cloud Excellence</span>
+<button class="text-primary hover:underline font-label-md text-label-md">View Details</button>
+</div>
+</div>
+</article>
+</section>
+</main>
+<!-- Floating Action Button -->
+<button class="fixed bottom-24 right-sm z-40 bg-primary text-on-primary flex items-center gap-xs px-md py-md rounded-full shadow-lg shadow-primary/20 transition-transform active:scale-95 group">
+<span class="material-symbols-outlined">description</span>
+<span class="font-label-md text-label-md">Get Proposal</span>
+</button>
+<!-- Filter Bottom Sheet Overlay -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-[2px] z-[60] hidden opacity-0 transition-opacity duration-300" id="sheet-overlay" onclick="toggleBottomSheet()"></div>
+<!-- Filter Bottom Sheet Content -->
+<div class="bottom-sheet fixed bottom-0 left-0 right-0 bg-surface z-[70] rounded-t-xl px-margin-mobile pt-sm pb-xl shadow-2xl max-h-[751px] overflow-y-auto" id="bottom-sheet">
+<div class="w-12 h-1 bg-outline-variant/50 rounded-full mx-auto mb-md"></div>
+<div class="flex justify-between items-center mb-lg">
+<h2 class="font-headline-md text-headline-md-mobile text-on-surface">Filter Services</h2>
+<button class="text-on-surface-variant" onclick="toggleBottomSheet()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="space-y-lg">
+<!-- Region Filter -->
+<div>
+<p class="font-label-md text-label-md uppercase tracking-widest text-primary mb-md">Service Region</p>
+<div class="grid grid-cols-2 gap-xs">
+<label class="flex items-center gap-sm p-sm bg-surface-container rounded-lg border border-transparent has-[:checked]:border-primary transition-all">
+<input class="rounded text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-body-md">Global</span>
+</label>
+<label class="flex items-center gap-sm p-sm bg-surface-container rounded-lg border border-transparent has-[:checked]:border-primary transition-all">
+<input class="rounded text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-body-md">Middle East</span>
+</label>
+<label class="flex items-center gap-sm p-sm bg-surface-container rounded-lg border border-transparent has-[:checked]:border-primary transition-all">
+<input class="rounded text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-body-md">Europe</span>
+</label>
+<label class="flex items-center gap-sm p-sm bg-surface-container rounded-lg border border-transparent has-[:checked]:border-primary transition-all">
+<input class="rounded text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-body-md">North America</span>
+</label>
+</div>
+</div>
+<!-- Digital Domain Preference -->
+<div>
+<p class="font-label-md text-label-md uppercase tracking-widest text-primary mb-md">Core Competency</p>
+<div class="space-y-xs">
+<label class="flex items-center justify-between p-sm bg-surface-container-low rounded-lg">
+<span class="text-body-md">Software Engineering</span>
+<input class="text-primary focus:ring-primary" name="core" type="radio"/>
+</label>
+<label class="flex items-center justify-between p-sm bg-surface-container-low rounded-lg">
+<span class="text-body-md">Artificial Intelligence</span>
+<input class="text-primary focus:ring-primary" name="core" type="radio"/>
+</label>
+<label class="flex items-center justify-between p-sm bg-surface-container-low rounded-lg">
+<span class="text-body-md">Data Analytics</span>
+<input class="text-primary focus:ring-primary" name="core" type="radio"/>
+</label>
+</div>
+</div>
+<div class="flex gap-md pt-md">
+<button class="flex-1 py-md border border-outline font-label-md text-label-md text-on-surface-variant hover:bg-surface-variant transition-colors rounded-lg">Reset</button>
+<button class="flex-1 py-md bg-primary text-on-primary font-label-md text-label-md rounded-lg shadow-md" onclick="toggleBottomSheet()">Apply Filters</button>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 w-full z-50 bg-surface border-t border-outline-variant/30 px-margin-mobile py-2 flex justify-around items-center lg:hidden">
+<a class="flex flex-col items-center gap-1 text-on-surface-variant group" href="#">
+<span class="material-symbols-outlined text-[24px]">home</span>
+<span class="font-label-md text-[10px] uppercase">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary group" href="#">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="font-label-md text-[10px] uppercase font-bold">Services</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant group" href="#">
+<span class="material-symbols-outlined text-[24px]">terminal</span>
+<span class="font-label-md text-[10px] uppercase">Consult</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant group" href="#">
+<span class="material-symbols-outlined text-[24px]">mail</span>
+<span class="font-label-md text-[10px] uppercase">Contact</span>
+</a>
+</nav>
+<script>
+    function toggleBottomSheet() {
+        const sheet = document.getElementById('bottom-sheet');
+        const overlay = document.getElementById('sheet-overlay');
+        
+        if (sheet.classList.contains('active')) {
+            sheet.classList.remove('active');
+            overlay.classList.add('hidden');
+            overlay.classList.remove('opacity-100');
+            document.body.style.overflow = 'auto';
+        } else {
+            sheet.classList.add('active');
+            overlay.classList.remove('hidden');
+            setTimeout(() => overlay.classList.add('opacity-100'), 10);
+            document.body.style.overflow = 'hidden';
+        }
+    }
+</script>
+</body></html>

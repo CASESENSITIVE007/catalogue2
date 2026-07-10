@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alif Global | Premium Product Catalogue</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        /* Custom scrollbar for premium feel */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f8f9fa;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d1c5b4;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #775a19;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#f8f9fa",
+                        "on-secondary-container": "#636467",
+                        "tertiary": "#5a5f64",
+                        "on-tertiary-fixed": "#171c21",
+                        "outline": "#7f7667",
+                        "secondary-container": "#e2e2e5",
+                        "surface-variant": "#e1e3e4",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#e2e2e5",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-primary": "#ffffff",
+                        "on-background": "#191c1d",
+                        "surface-bright": "#f8f9fa",
+                        "surface-tint": "#775a19",
+                        "on-secondary-fixed": "#1a1c1e",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#4e4639",
+                        "primary-container": "#c5a059",
+                        "on-primary-fixed": "#261900",
+                        "on-secondary-fixed-variant": "#454749",
+                        "primary": "#775a19",
+                        "surface": "#f8f9fa",
+                        "tertiary-container": "#a1a6ac",
+                        "secondary-fixed-dim": "#c6c6c9",
+                        "primary-fixed": "#ffdea5",
+                        "on-tertiary-container": "#363c41",
+                        "surface-container": "#edeeef",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#e7e8e9",
+                        "on-primary-container": "#4e3700",
+                        "outline-variant": "#d1c5b4",
+                        "tertiary-fixed-dim": "#c2c7cd",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#191c1d",
+                        "on-primary-fixed-variant": "#5d4201",
+                        "secondary": "#5d5e61",
+                        "inverse-surface": "#2e3132",
+                        "primary-fixed-dim": "#e9c176",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f3f4f5",
+                        "tertiary-fixed": "#dee3e9",
+                        "on-tertiary-fixed-variant": "#42474c",
+                        "inverse-primary": "#e9c176",
+                        "surface-dim": "#d9dadb"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "sm": "16px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "lg": "48px",
+                        "md": "24px",
+                        "xs": "8px",
+                        "xl": "80px",
+                        "margin-mobile": "16px",
+                        "base": "4px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Manrope"],
+                        "caption": ["Manrope"],
+                        "headline-lg": ["Manrope"],
+                        "headline-lg-mobile": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "display-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md border-b border-outline-variant/30 flex justify-between items-center px-margin-desktop py-4 max-w-full mx-auto">
+<div class="flex items-center gap-md">
+<span class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed">Alif Global</span>
+</div>
+<div class="hidden md:flex items-center gap-lg">
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Solutions</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary dark:text-primary-fixed border-b-2 border-primary transition-colors duration-300" href="#">Catalog</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Projects</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">About</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-md">
+<div class="relative hidden lg:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container-low border border-outline-variant/30 rounded-lg text-label-md focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all w-64" placeholder="Search premium range..." type="text"/>
+</div>
+<button class="bg-primary text-on-primary px-lg py-2 rounded-lg font-label-md uppercase tracking-widest hover:bg-surface-tint transition-all duration-300 active:scale-95 shadow-sm">
+                Enquire
+            </button>
+</div>
+</nav>
+<!-- Main Content Wrapper -->
+<main class="pt-32 pb-xl px-margin-desktop">
+<!-- Header Section -->
+<header class="mb-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-md border-b border-outline-variant/20 pb-md">
+<div>
+<span class="text-primary font-label-md uppercase tracking-[0.2em] mb-xs block">Premium Selections</span>
+<h1 class="font-display-lg text-display-lg text-on-surface">Product Catalogue</h1>
+</div>
+<p class="max-w-md text-on-surface-variant font-body-md">
+                    Explore our curated collection of architectural solutions and engineering masterpieces designed for global excellence.
+                </p>
+</div>
+</header>
+<div class="flex flex-col lg:flex-row gap-lg">
+<!-- Sidebar Filters -->
+<aside class="w-full lg:w-72 flex-shrink-0">
+<div class="sticky top-28 space-y-lg">
+<!-- Categories -->
+<section>
+<h3 class="font-headline-md text-label-md uppercase tracking-widest text-on-surface mb-md">Categories</h3>
+<div class="space-y-sm">
+<label class="flex items-center gap-sm group cursor-pointer">
+<input checked="" class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-body-md text-on-surface-variant group-hover:text-primary transition-colors">Architectural Glass</span>
+</label>
+<label class="flex items-center gap-sm group cursor-pointer">
+<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-body-md text-on-surface-variant group-hover:text-primary transition-colors">Industrial Steel</span>
+</label>
+<label class="flex items-center gap-sm group cursor-pointer">
+<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-body-md text-on-surface-variant group-hover:text-primary transition-colors">Smart Enclosures</span>
+</label>
+<label class="flex items-center gap-sm group cursor-pointer">
+<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-body-md text-on-surface-variant group-hover:text-primary transition-colors">Custom Façades</span>
+</label>
+<label class="flex items-center gap-sm group cursor-pointer">
+<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-body-md text-on-surface-variant group-hover:text-primary transition-colors">Solar Integrated</span>
+</label>
+</div>
+</section>
+<!-- Price Range -->
+<section>
+<h3 class="font-headline-md text-label-md uppercase tracking-widest text-on-surface mb-md">Tier</h3>
+<div class="flex flex-wrap gap-xs">
+<button class="px-sm py-1 border border-outline-variant rounded-full text-caption text-on-surface-variant hover:border-primary hover:text-primary transition-all">Essential</button>
+<button class="px-sm py-1 border border-primary bg-primary/5 rounded-full text-caption text-primary transition-all">Elite</button>
+<button class="px-sm py-1 border border-outline-variant rounded-full text-caption text-on-surface-variant hover:border-primary hover:text-primary transition-all">Bespoke</button>
+</div>
+</section>
+<!-- Promo Card -->
+<div class="p-md bg-inverse-surface rounded-xl text-surface relative overflow-hidden">
+<div class="relative z-10">
+<h4 class="font-headline-md text-body-lg mb-xs">Bespoke Consultations</h4>
+<p class="text-caption opacity-80 mb-md">Need a custom technical specification for your next major project?</p>
+<button class="text-primary-fixed-dim font-label-md text-label-md underline hover:text-primary-fixed transition-colors">Book Now</button>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-10">
+<span class="material-symbols-outlined text-[120px]" style="font-variation-settings: 'FILL' 1;">precision_manufacturing</span>
+</div>
+</div>
+</div>
+</aside>
+<!-- Product Grid -->
+<section class="flex-grow">
+<!-- Sort & Results count -->
+<div class="flex justify-between items-center mb-md">
+<span class="font-body-md text-on-surface-variant">Showing <span class="text-on-surface font-bold">12</span> high-performance solutions</span>
+<div class="flex items-center gap-xs">
+<span class="text-caption text-on-secondary-container">Sort by:</span>
+<select class="bg-transparent border-none text-label-md font-bold text-on-surface focus:ring-0 cursor-pointer">
+<option>Relevance</option>
+<option>Newest First</option>
+<option>Premium (High to Low)</option>
+</select>
+</div>
+</div>
+<!-- Catalogue Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-gutter">
+<!-- Product Card 1 -->
+<div class="group bg-surface-container-lowest border border-outline-variant/30 rounded-lg overflow-hidden flex flex-col transition-all hover:shadow-xl hover:shadow-primary/5 hover:translate-y-[-4px]">
+<div class="relative h-64 overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A professional close-up shot of architectural structural glass with a slight reflective gold tint, set against a modern minimalist building background. The lighting is crisp morning sun, highlighting the precision edges and metallic fixings. The aesthetic is clean, luxurious, and engineering-focused with Alif Global's signature gold and charcoal tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8WT43nBmRJNcMVVCgUt28D4j-dPfMmJt4bXlYKU-VaH6-sdLHLcclrpxR_dSHustjmZiYUQQuOhUzFf_K1-LJZ6XOfwQsifzvfw4HiibnFTju5IBWRG9u-NZmD-FWIl_mRX33jFRds0bCYddIbwbiUbHbagvwBqtFUmyBJP4JvztfWHJ4rEVuhBLTTA7OBg3IMom399l7SovtnC7r-RD5C-FsYM8X6MOFQxeHXCmOlGeNNdq56pgnMIQiRa9SCGO56hAr1N86Hg"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-on-primary px-sm py-1 rounded-full text-caption font-bold uppercase tracking-wider">New Release</span>
+</div>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<span class="text-primary font-label-md text-caption uppercase tracking-widest mb-xs">Architectural Glass</span>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors mb-sm">Titanium-Fused Quartz Panel</h3>
+<p class="text-on-surface-variant font-body-md text-sm mb-md line-clamp-2">Ultra-durable, high-clarity structural glass infused with titanium particles for extreme thermal insulation and seismic resistance.</p>
+<div class="mt-auto pt-md border-t border-outline-variant/20 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-caption text-on-secondary-container">Starting at</span>
+<span class="font-headline-md text-primary">$1,240 /m²</span>
+</div>
+<button class="flex items-center gap-xs bg-secondary hover:bg-inverse-surface text-on-secondary px-md py-2 rounded-lg transition-all group-active:scale-95">
+<span class="font-label-md text-label-md uppercase">Enquire</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group bg-surface-container-lowest border border-outline-variant/30 rounded-lg overflow-hidden flex flex-col transition-all hover:shadow-xl hover:shadow-primary/5 hover:translate-y-[-4px]">
+<div class="relative h-64 overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Macro photography of a brushed dark charcoal industrial steel beam with gold-plated precision bolts. The background is a blurred high-end manufacturing facility with cool blue and warm gold lighting. The image emphasizes texture, strength, and premium craftsmanship for Alif Global Solutions' industrial catalog." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2c41LBMPg43XIlO5fC0v_rVT1c7f_7MQekKnV-Ivc4vju81z8PCsR5f2yaDaTsvqj_t9uXDjtlY7EOLnqrBgiZjf1Ry_y44uoRTQ4862yaYSgDd5D4vb8cVvos3VEJbJO1ZVsh9EBtWGO6GXQoURAVFc9MNJJKash4e-wwdGLkNhgxk7GizaC671JE4rWRwtKlB9UkhH7UfQiTMEJdzNDDqTVtsA9bS9-yawWtvTRsgzomkRCReat1KiilqgxIv6ppbg0lA6dtA"/>
+<div class="absolute top-4 left-4">
+<span class="bg-on-surface/90 text-surface px-sm py-1 rounded-full text-caption font-bold uppercase tracking-wider">Best Seller</span>
+</div>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<span class="text-primary font-label-md text-caption uppercase tracking-widest mb-xs">Industrial Steel</span>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors mb-sm">Alloy-Core S12 Structural Beam</h3>
+<p class="text-on-surface-variant font-body-md text-sm mb-md line-clamp-2">Revolutionary lightweight carbon-alloy steel designed for wide-span architectural wonders and sustainable infrastructure projects.</p>
+<div class="mt-auto pt-md border-t border-outline-variant/20 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-caption text-on-secondary-container">Consult</span>
+<span class="font-headline-md text-primary">POA</span>
+</div>
+<button class="flex items-center gap-xs bg-secondary hover:bg-inverse-surface text-on-secondary px-md py-2 rounded-lg transition-all">
+<span class="font-label-md text-label-md uppercase">Enquire</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group bg-surface-container-lowest border border-outline-variant/30 rounded-lg overflow-hidden flex flex-col transition-all hover:shadow-xl hover:shadow-primary/5 hover:translate-y-[-4px]">
+<div class="relative h-64 overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A sophisticated smart façade system with hexagonal modular units. Each unit has a subtle gold outline and integrated dark solar glass. The setting is a sunset in a futuristic metropolis, with the warm light reflecting off the metallic and glass surfaces. Luxurious, sustainable, and technologically advanced branding for Alif Global Solutions." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDW3LN6jMkQ9sqJBjDsciU2cOXS2LZdwIlT9IBv1tk9nr1GNt_oVzLjVLn6rk4W4bUZ8B6PCs6UQcF0denfRF9nS2oMQxMorjc_c_qp-zCNMwJuBE74PztHrF4hWyKX9lO7Cr7hljJlxQeaP-pV85IA6HIdJ6QRuMr6QNqx_qOzHiSOM2psYqzOnrps_ev27e5j9Vg_0f_tNFxHJtG-W9AI-DRQR-4a2bJrj9JuXx8PowsiWd_isCbdBNLCBiRlRaOmzHqKknEaKw"/>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<span class="text-primary font-label-md text-caption uppercase tracking-widest mb-xs">Solar Integrated</span>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors mb-sm">Helios-Grid Façade V2</h3>
+<p class="text-on-surface-variant font-body-md text-sm mb-md line-clamp-2">Smart photovoltaic exterior cladding that generates renewable energy while providing superior noise cancellation and aesthetics.</p>
+<div class="mt-auto pt-md border-t border-outline-variant/20 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-caption text-on-secondary-container">Tier</span>
+<span class="font-headline-md text-primary">Custom</span>
+</div>
+<button class="flex items-center gap-xs bg-secondary hover:bg-inverse-surface text-on-secondary px-md py-2 rounded-lg transition-all">
+<span class="font-label-md text-label-md uppercase">Enquire</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group bg-surface-container-lowest border border-outline-variant/30 rounded-lg overflow-hidden flex flex-col transition-all hover:shadow-xl hover:shadow-primary/5 hover:translate-y-[-4px]">
+<div class="relative h-64 overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close up of a premium industrial filtration system component. Brushed silver steel with intricate mesh patterns and gold-colored seals. Cinematic lighting highlighting the precision of the micro-components. The background is a dark, clean room environment. Highly professional B2B engineering photography for a global catalog." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMPcXD9kvV46dWBUMBkiiG5s2O3s5Im1yx-b87NWbnJwtLAmt7PMULnwW8h-yfbNr7GmV37gxf8AIN4nb-624pwBz-2cDgu28ybHTpBB0Fj7vvSm-DArPLsBW6F9ihzZJd6R8vd62itwz7Xiiv1-PJJKQeQwMYv--1FCLMO3jIPW37qIhTKaODFOyWQq5Iki_KybpwjQY7OUbFu0I90JBnO7e4sFZOISIbAf4m62D1eFgpIGNtfGJwJuQk9gQTKtEixT3GT6nzlQ"/>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<span class="text-primary font-label-md text-caption uppercase tracking-widest mb-xs">Filtration</span>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors mb-sm">Nano-Matrix Air Purifier</h3>
+<p class="text-on-surface-variant font-body-md text-sm mb-md line-clamp-2">Hospital-grade air filtration modules for large-scale corporate campuses and manufacturing plants.</p>
+<div class="mt-auto pt-md border-t border-outline-variant/20 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-caption text-on-secondary-container">Unit Price</span>
+<span class="font-headline-md text-primary">$8,900</span>
+</div>
+<button class="flex items-center gap-xs bg-secondary hover:bg-inverse-surface text-on-secondary px-md py-2 rounded-lg transition-all">
+<span class="font-label-md text-label-md uppercase">Enquire</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="group bg-surface-container-lowest border border-outline-variant/30 rounded-lg overflow-hidden flex flex-col transition-all hover:shadow-xl hover:shadow-primary/5 hover:translate-y-[-4px]">
+<div class="relative h-64 overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A sleek, modern automated entrance system with brushed gold frames and seamless charcoal glass panels. A businessman in a tailored suit is partially visible in the background, walking through a high-end lobby. The lighting is soft and corporate, emphasizing architectural luxury and security. Professional Alif Global branding." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-Y9nFXsNTL3sUU-QNRho08fWEp3DQI9JOF_H9thdy_VbNk1qbSF3X5-Cm_0mlcNW3GQw07Eu7_WWubxz4BQXlrMBjDag37q3haA8fv6bkpnj3DT4loBdi3aozMvLe_o9bS3qcoCYjmPTx8JVAvcLL6nDthF42CVuY4kifvxw9OVanO9SRxURRofbyUVQBG4isQ7X7EAWVHL6KSomgUbI5PUyXHPkpGwtD-yfwlPF6pnUL5fOIUtg9R2nGAxu7HhTB9xH5i9gJfQ"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary-container text-on-primary-container px-sm py-1 rounded-full text-caption font-bold uppercase tracking-wider">Elite Tier</span>
+</div>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<span class="text-primary font-label-md text-caption uppercase tracking-widest mb-xs">Security Systems</span>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors mb-sm">Aegis Biometric Portal</h3>
+<p class="text-on-surface-variant font-body-md text-sm mb-md line-clamp-2">High-speed facial and thermal recognition portals integrated into seamless architectural entry points.</p>
+<div class="mt-auto pt-md border-t border-outline-variant/20 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-caption text-on-secondary-container">Starting at</span>
+<span class="font-headline-md text-primary">$15,400</span>
+</div>
+<button class="flex items-center gap-xs bg-secondary hover:bg-inverse-surface text-on-secondary px-md py-2 rounded-lg transition-all">
+<span class="font-label-md text-label-md uppercase">Enquire</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="group bg-surface-container-lowest border border-outline-variant/30 rounded-lg overflow-hidden flex flex-col transition-all hover:shadow-xl hover:shadow-primary/5 hover:translate-y-[-4px]">
+<div class="relative h-64 overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Precision engineering blueprints displayed on a high-resolution transparent OLED screen with floating golden 3D diagrams of a skyscraper's frame. Dark minimalist workspace with premium aluminum peripherals. Soft atmospheric glow reflecting on the glass surfaces. Luxurious tech-focused architectural design imagery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPfz0TUoiq1SRFGOqYeGeo6FNBROQQRcn3isAfYSaYbMrpPrf5yfz1vtkDfjD7izkbgijBMYf8R9P_ktwL1bq_VBJclry30v9_ay-4T1MULtnaorRlGUl5pf2seBpagPibsb_gc1Sh4E5Zt5dNwi9lxt57u3lpd-RkmXxNirL9JHlMdQBVmSTh-b3wNmDkvakoNXLxfclFC0a5RMc5Mob-9Q_fc11LpjvnEu9-4DT8_o491XN2ejbP5wBFJC0ntAzdVZYwdzaUuA"/>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<span class="text-primary font-label-md text-caption uppercase tracking-widest mb-xs">Digital Services</span>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors mb-sm">Smart-Twin BIM Platform</h3>
+<p class="text-on-surface-variant font-body-md text-sm mb-md line-clamp-2">Advanced digital twin modeling for real-time monitoring of structural health and energy consumption in skyscrapers.</p>
+<div class="mt-auto pt-md border-t border-outline-variant/20 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-caption text-on-secondary-container">License</span>
+<span class="font-headline-md text-primary">Annual Fee</span>
+</div>
+<button class="flex items-center gap-xs bg-secondary hover:bg-inverse-surface text-on-secondary px-md py-2 rounded-lg transition-all">
+<span class="font-label-md text-label-md uppercase">Enquire</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="mt-xl flex justify-center items-center gap-md">
+<button class="w-10 h-10 flex items-center justify-center rounded border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<div class="flex gap-sm">
+<button class="w-10 h-10 flex items-center justify-center rounded bg-primary text-on-primary font-bold">1</button>
+<button class="w-10 h-10 flex items-center justify-center rounded border border-outline-variant text-on-surface-variant hover:bg-surface-container transition-colors">2</button>
+<button class="w-10 h-10 flex items-center justify-center rounded border border-outline-variant text-on-surface-variant hover:bg-surface-container transition-colors">3</button>
+<span class="w-10 h-10 flex items-center justify-center text-on-surface-variant">...</span>
+<button class="w-10 h-10 flex items-center justify-center rounded border border-outline-variant text-on-surface-variant hover:bg-surface-container transition-colors">8</button>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-xl bg-inverse-surface dark:bg-surface-container-lowest border-t border-outline/20">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop gap-md">
+<div class="flex flex-col items-center md:items-start gap-xs">
+<span class="font-headline-md text-headline-md-mobile text-primary-fixed">Alif Global Solutions</span>
+<p class="font-caption text-caption text-surface-variant/70">© 2024 Alif Global Solutions. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-lg">
+<a class="font-caption text-caption text-surface-variant/70 hover:text-primary-fixed-dim transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-caption text-caption text-surface-variant/70 hover:text-primary-fixed-dim transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-caption text-caption text-surface-variant/70 hover:text-primary-fixed-dim transition-colors opacity-80 hover:opacity-100" href="#">Global Locations</a>
+<a class="font-caption text-caption text-surface-variant/70 hover:text-primary-fixed-dim transition-colors opacity-80 hover:opacity-100" href="#">Sitemap</a>
+</div>
+<div class="flex gap-md">
+<a class="text-surface-variant/70 hover:text-primary-fixed transition-colors" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+<a class="text-surface-variant/70 hover:text-primary-fixed transition-colors" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions and effects
+        document.addEventListener('DOMContentLoaded', () => {
+            // Hover effect for product cards
+            const cards = document.querySelectorAll('.group');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.borderColor = 'rgba(119, 90, 25, 0.4)'; // Shift to Primary color
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.borderColor = 'rgba(209, 197, 180, 0.3)'; // Back to Outline variant
+                });
+            });
+
+            // Smooth header scroll behavior
+            let lastScroll = 0;
+            const header = document.querySelector('nav');
+            window.addEventListener('scroll', () => {
+                const currentScroll = window.pageYOffset;
+                if (currentScroll > lastScroll && currentScroll > 100) {
+                    header.style.transform = 'translateY(-100%)';
+                } else {
+                    header.style.transform = 'translateY(0)';
+                }
+                lastScroll = currentScroll;
+            });
+        });
+    </script>
+</body></html>

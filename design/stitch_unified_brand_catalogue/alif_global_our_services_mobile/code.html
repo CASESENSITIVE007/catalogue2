@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alif Global | Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#2e3132",
+                    "secondary-container": "#e2e2e5",
+                    "background": "#f8f9fa",
+                    "secondary-fixed": "#e2e2e5",
+                    "tertiary-fixed": "#dee3e9",
+                    "inverse-on-surface": "#f0f1f2",
+                    "secondary-fixed-dim": "#c6c6c9",
+                    "tertiary": "#5a5f64",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#636467",
+                    "primary-fixed": "#ffdea5",
+                    "surface-container-high": "#e7e8e9",
+                    "on-tertiary-container": "#363c41",
+                    "on-secondary": "#ffffff",
+                    "surface-dim": "#d9dadb",
+                    "on-background": "#191c1d",
+                    "surface-container": "#edeeef",
+                    "primary": "#775a19",
+                    "error": "#ba1a1a",
+                    "outline": "#7f7667",
+                    "on-error-container": "#93000a",
+                    "inverse-primary": "#e9c176",
+                    "surface": "#f8f9fa",
+                    "outline-variant": "#d1c5b4",
+                    "surface-variant": "#e1e3e4",
+                    "on-secondary-fixed-variant": "#454749",
+                    "on-primary-fixed-variant": "#5d4201",
+                    "surface-container-low": "#f3f4f5",
+                    "primary-fixed-dim": "#e9c176",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#42474c",
+                    "tertiary-fixed-dim": "#c2c7cd",
+                    "on-tertiary-fixed": "#171c21",
+                    "on-surface": "#191c1d",
+                    "on-primary-container": "#4e3700",
+                    "on-secondary-fixed": "#1a1c1e",
+                    "secondary": "#5d5e61",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-tertiary": "#ffffff",
+                    "primary-container": "#c5a059",
+                    "surface-tint": "#775a19",
+                    "on-surface-variant": "#4e4639",
+                    "error-container": "#ffdad6",
+                    "tertiary-container": "#a1a6ac",
+                    "on-primary-fixed": "#261900",
+                    "surface-bright": "#f8f9fa",
+                    "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "lg": "48px",
+                    "xs": "8px",
+                    "sm": "16px",
+                    "margin-mobile": "16px",
+                    "margin-desktop": "64px",
+                    "xl": "80px",
+                    "base": "4px",
+                    "md": "24px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Manrope"],
+                    "body-md": ["Manrope"],
+                    "headline-md": ["Manrope"],
+                    "headline-lg-mobile": ["Manrope"],
+                    "headline-lg": ["Manrope"],
+                    "caption": ["Manrope"],
+                    "body-lg": ["Manrope"],
+                    "label-md": ["Manrope"]
+            },
+            "fontSize": {
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .service-card-expanded {
+            max-height: 1000px;
+            transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .service-card-collapsed {
+            max-height: 110px;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .filter-chip-active {
+            @apply bg-primary text-on-primary border-primary;
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 shadow-sm">
+<nav class="flex justify-between items-center px-margin-mobile py-sm max-w-7xl mx-auto">
+<span class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight">Alif Global</span>
+<button class="p-base active:opacity-80 transition-all">
+<span class="material-symbols-outlined text-primary text-[28px]">menu</span>
+</button>
+</nav>
+</header>
+<main class="pt-xl pb-32">
+<!-- Hero Section -->
+<section class="px-margin-mobile pt-md pb-lg">
+<h1 class="font-display-lg text-headline-lg-mobile text-on-surface mb-xs">Premium Services</h1>
+<p class="font-body-md text-on-surface-variant leading-relaxed">Tailored global solutions for the modern enterprise, driven by architectural precision and excellence.</p>
+</section>
+<!-- Search and Filter -->
+<div class="sticky top-[64px] z-40 bg-background/95 backdrop-blur-sm py-xs border-b border-outline-variant/10">
+<div class="px-margin-mobile flex gap-xs overflow-x-auto no-scrollbar pb-xs">
+<button class="filter-btn filter-chip-active whitespace-nowrap px-md py-xs rounded-full border border-outline-variant font-label-md transition-all active:scale-95" onclick="filterServices('all')">All Services</button>
+<button class="filter-btn whitespace-nowrap px-md py-xs rounded-full border border-outline-variant font-label-md transition-all active:scale-95" onclick="filterServices('consulting')">Consulting</button>
+<button class="filter-btn whitespace-nowrap px-md py-xs rounded-full border border-outline-variant font-label-md transition-all active:scale-95" onclick="filterServices('tech')">Technology</button>
+<button class="filter-btn whitespace-nowrap px-md py-xs rounded-full border border-outline-variant font-label-md transition-all active:scale-95" onclick="filterServices('logistics')">Logistics</button>
+</div>
+</div>
+<!-- Services List -->
+<div class="px-margin-mobile mt-md space-y-md" id="services-container">
+<!-- Service Card 1 -->
+<div class="service-card consulting group bg-surface-container-lowest border border-outline-variant/30 rounded-xl overflow-hidden transition-all duration-300" onclick="toggleExpand(this)">
+<div class="flex items-start p-md gap-md">
+<div class="w-16 h-16 shrink-0 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">strategy</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-primary uppercase tracking-widest text-[10px]">Consulting</span>
+<span class="material-symbols-outlined text-outline expand-icon transition-transform">expand_more</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs mt-1">Strategic Advisory</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-2 transition-all">Deep market analysis and execution frameworks for global expansion and resilience.</p>
+<!-- Expanded Content -->
+<div class="expanded-content hidden mt-md pt-md border-t border-outline-variant/20">
+<div class="space-y-md">
+<div class="bg-surface p-sm rounded-lg">
+<p class="font-label-md text-primary mb-1">Key Deliverables</p>
+<ul class="font-body-md text-on-surface-variant space-y-xs">
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-[16px] text-primary">check_circle</span> Market Entry Roadmap</li>
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-[16px] text-primary">check_circle</span> Competitive Benchmarking</li>
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-[16px] text-primary">check_circle</span> Operational Efficiency Audit</li>
+</ul>
+</div>
+<div class="aspect-video rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-500" data-alt="A high-contrast, professional architectural photograph of a modern corporate boardroom with sleek mahogany surfaces and warm gold lighting accents. The scene conveys executive authority and strategic depth within a minimalist, luxury light-mode aesthetic, emphasizing prestige and clarity." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCiNdEL8Wp-pSTR1hxXco6msqL6wHaz9MjCXkVvqGG-adnQIHYhxZkZzsQKn7Ku9gkl3cI61QEFM7MkwAmDkVrvFT5wqXnyXb19aPrblvy1ZI2MJWZUIxhoHL-r6uyXOYQL2MaGRO88uo0L70S9MpbSfngAnswi1m38577aXtMaQ2Sm911CkJMf6VKEIR11Y-W1yV0AxwEWNbMmYrZo3pofbEBr_T5hciWBZJEcRZyly9h3-eAptPMZu3aSkXbIf-lBD9IlPqcR1A')"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="service-card tech bg-surface-container-lowest border border-outline-variant/30 rounded-xl overflow-hidden transition-all duration-300" onclick="toggleExpand(this)">
+<div class="flex items-start p-md gap-md">
+<div class="w-16 h-16 shrink-0 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">terminal</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-primary uppercase tracking-widest text-[10px]">Technology</span>
+<span class="material-symbols-outlined text-outline expand-icon transition-transform">expand_more</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs mt-1">Digital Infrastructure</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-2">Scalable cloud ecosystems and enterprise-grade security protocols for global reach.</p>
+<div class="expanded-content hidden mt-md pt-md border-t border-outline-variant/20">
+<div class="space-y-md">
+<div class="bg-surface p-sm rounded-lg">
+<p class="font-label-md text-primary mb-1">Key Deliverables</p>
+<ul class="font-body-md text-on-surface-variant space-y-xs">
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-[16px] text-primary">check_circle</span> Multi-Cloud Orchestration</li>
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-[16px] text-primary">check_circle</span> Zero-Trust Security Architecture</li>
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-[16px] text-primary">check_circle</span> Custom API Ecosystems</li>
+</ul>
+</div>
+<div class="aspect-video rounded-lg overflow-hidden" data-alt="Close-up shot of server racks in a high-tech data center, illuminated by sophisticated amber and gold LED highlights against a cool silver-charcoal metallic background. The lighting is low-key and dramatic, emphasizing precision engineering and high-end technological sophistication." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA8b5hhSsZJASGQYlRxrTdGwB7NtDEzMXf9eKzYzGloeRdoVqOVXtAsxI3MgvLFDs9Tf4UlkEECf2woDn4caq067L7_ia5ChgR78qp03ScGVxhXYArbNeTmm70lGob1j-QHmvXHi7EDdJ0HPT06MA2pp_3azWAfePuClv6gVcKqMDTKfyMLE98VEMHPlHtZSKym_8DlY3OKbziv_CFlFw5IcIbMTJEFyO0z4H-U_m6084uUTL7MMa2HJmMeOqMbly1-vkaYPRa-Bw')"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="service-card logistics bg-surface-container-lowest border border-outline-variant/30 rounded-xl overflow-hidden transition-all duration-300" onclick="toggleExpand(this)">
+<div class="flex items-start p-md gap-md">
+<div class="w-16 h-16 shrink-0 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">public</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-primary uppercase tracking-widest text-[10px]">Logistics</span>
+<span class="material-symbols-outlined text-outline expand-icon transition-transform">expand_more</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs mt-1">Supply Chain Mastery</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-2">Optimized routing and real-time visibility for complex international trade lanes.</p>
+<div class="expanded-content hidden mt-md pt-md border-t border-outline-variant/20">
+<div class="space-y-md">
+<div class="bg-surface p-sm rounded-lg">
+<p class="font-label-md text-primary mb-1">Key Deliverables</p>
+<ul class="font-body-md text-on-surface-variant space-y-xs">
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-[16px] text-primary">check_circle</span> Predictive Routing AI</li>
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-[16px] text-primary">check_circle</span> Global Customs Compliance</li>
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-[16px] text-primary">check_circle</span> Last-Mile Perfection</li>
+</ul>
+</div>
+<div class="aspect-video rounded-lg overflow-hidden" data-alt="A breathtaking aerial view of a massive container port at sunrise. The golden morning light casts long shadows across the organized grid of silver containers, with the deep blue sea creating a powerful contrast. The mood is one of global connectivity, efficiency, and industrial prestige." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBsF4ue0cpqHq9gVxTApksMWzUJG2DiBkv9IWbwFhrg0ITJ-XqJNRD-3voniYCN1wJ5bcZhKKARJ8mcWktsiwFFvQ02gut-ZI7t8zhR9Xeo_gqUsPORSAslTwJNSdUQGeh7mualQQvEWUeHTK8pui_LVPpV1mpytkoaQHfVDGBti0wPYQrSSMThGc57erA4co71p4298QJ1e__IO-qg5l9npjmttqMolaMYZgwHoHU6PRnc5bBgcyUB_shZaOcXwUzCohxG3QG6Vw')"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- FAB: Get Proposal -->
+<button class="fixed bottom-24 right-6 bg-primary text-on-primary px-lg py-md rounded-full shadow-lg flex items-center gap-xs transition-transform hover:scale-105 active:scale-95 z-50 group">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">description</span>
+<span class="font-label-md">Get Proposal</span>
+</button>
+<!-- Footer -->
+<footer class="bg-inverse-surface dark:bg-surface-container-lowest w-full py-xl px-margin-mobile border-t border-outline/10 mb-0">
+<div class="flex flex-col gap-md">
+<span class="font-display-lg text-headline-md font-bold text-primary-fixed dark:text-primary">Alif Global</span>
+<nav class="grid grid-cols-2 gap-sm">
+<a class="font-body-md text-surface-variant/70 hover:text-primary-fixed-dim transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-surface-variant/70 hover:text-primary-fixed-dim transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-surface-variant/70 hover:text-primary-fixed-dim transition-colors" href="#">Careers</a>
+<a class="font-body-md text-surface-variant/70 hover:text-primary-fixed-dim transition-colors" href="#">LinkedIn</a>
+</nav>
+<p class="font-body-md text-surface-variant/70 mt-md">© 2024 Alif Global. All Rights Reserved.</p>
+</div>
+</footer>
+<!-- Bottom Navigation (Mobile Only) -->
+<nav class="fixed bottom-0 w-full bg-surface-container-lowest/90 backdrop-blur-md border-t border-outline-variant/20 flex justify-around items-center py-xs z-[60]">
+<div class="flex flex-col items-center gap-1 group">
+<span class="material-symbols-outlined text-outline">home</span>
+<span class="text-[10px] font-label-md text-outline">Home</span>
+</div>
+<div class="flex flex-col items-center gap-1 group">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">grid_view</span>
+<span class="text-[10px] font-label-md text-primary">Services</span>
+</div>
+<div class="flex flex-col items-center gap-1 group">
+<span class="material-symbols-outlined text-outline">work</span>
+<span class="text-[10px] font-label-md text-outline">Work</span>
+</div>
+<div class="flex flex-col items-center gap-1 group">
+<span class="material-symbols-outlined text-outline">account_circle</span>
+<span class="text-[10px] font-label-md text-outline">Profile</span>
+</div>
+</nav>
+<script>
+        function toggleExpand(card) {
+            const content = card.querySelector('.expanded-content');
+            const icon = card.querySelector('.expand-icon');
+            const desc = card.querySelector('p');
+            
+            // Close others
+            document.querySelectorAll('.service-card').forEach(c => {
+                if (c !== card) {
+                    c.querySelector('.expanded-content').classList.add('hidden');
+                    c.querySelector('.expand-icon').style.transform = 'rotate(0deg)';
+                    c.querySelector('p').classList.add('line-clamp-2');
+                    c.classList.remove('border-primary/40');
+                    c.classList.remove('shadow-md');
+                }
+            });
+
+            const isHidden = content.classList.contains('hidden');
+            if (isHidden) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+                desc.classList.remove('line-clamp-2');
+                card.classList.add('border-primary/40');
+                card.classList.add('shadow-md');
+                
+                // Scroll into view
+                setTimeout(() => {
+                    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 100);
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+                desc.classList.add('line-clamp-2');
+                card.classList.remove('border-primary/40');
+                card.classList.remove('shadow-md');
+            }
+        }
+
+        function filterServices(category) {
+            const cards = document.querySelectorAll('.service-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            // Update button styles
+            buttons.forEach(btn => {
+                btn.classList.remove('filter-chip-active');
+                if(btn.innerText.toLowerCase().includes(category) || (category === 'all' && btn.innerText === 'All Services')) {
+                    btn.classList.add('filter-chip-active');
+                }
+            });
+
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(10px)';
+                
+                setTimeout(() => {
+                    if (category === 'all' || card.classList.contains(category)) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 50);
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }, 200);
+            });
+        }
+
+        // Initialize micro-interactions
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-4');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.service-card').forEach(el => {
+                el.classList.add('transition-all', 'duration-500', 'opacity-0', 'translate-y-4');
+                observer.observe(el);
+            });
+        });
+    </script>
+</body></html>

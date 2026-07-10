@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alif Global | Product Catalogue</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .backdrop-blur-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .bottom-sheet {
+            transform: translateY(100%);
+            transition: transform 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+        }
+        .bottom-sheet.active {
+            transform: translateY(0);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "background": "#f8f9fa",
+                      "on-secondary-container": "#636467",
+                      "tertiary": "#5a5f64",
+                      "on-tertiary-fixed": "#171c21",
+                      "outline": "#7f7667",
+                      "secondary-container": "#e2e2e5",
+                      "surface-variant": "#e1e3e4",
+                      "on-error": "#ffffff",
+                      "inverse-on-surface": "#f0f1f2",
+                      "on-secondary": "#ffffff",
+                      "secondary-fixed": "#e2e2e5",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-highest": "#e1e3e4",
+                      "on-primary": "#ffffff",
+                      "on-background": "#191c1d",
+                      "surface-bright": "#f8f9fa",
+                      "surface-tint": "#775a19",
+                      "on-secondary-fixed": "#1a1c1e",
+                      "error-container": "#ffdad6",
+                      "on-surface-variant": "#4e4639",
+                      "primary-container": "#c5a059",
+                      "on-primary-fixed": "#261900",
+                      "on-secondary-fixed-variant": "#454749",
+                      "primary": "#775a19",
+                      "surface": "#f8f9fa",
+                      "tertiary-container": "#a1a6ac",
+                      "secondary-fixed-dim": "#c6c6c9",
+                      "primary-fixed": "#ffdea5",
+                      "on-tertiary-container": "#363c41",
+                      "surface-container": "#edeeef",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-high": "#e7e8e9",
+                      "on-primary-container": "#4e3700",
+                      "outline-variant": "#d1c5b4",
+                      "tertiary-fixed-dim": "#c2c7cd",
+                      "on-error-container": "#93000a",
+                      "on-surface": "#191c1d",
+                      "on-primary-fixed-variant": "#5d4201",
+                      "secondary": "#5d5e61",
+                      "inverse-surface": "#2e3132",
+                      "primary-fixed-dim": "#e9c176",
+                      "error": "#ba1a1a",
+                      "surface-container-low": "#f3f4f5",
+                      "tertiary-fixed": "#dee3e9",
+                      "on-tertiary-fixed-variant": "#42474c",
+                      "inverse-primary": "#e9c176",
+                      "surface-dim": "#d9dadb"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "sm": "16px",
+                      "margin-desktop": "64px",
+                      "gutter": "24px",
+                      "lg": "48px",
+                      "md": "24px",
+                      "xs": "8px",
+                      "xl": "80px",
+                      "margin-mobile": "16px",
+                      "base": "4px"
+              },
+              "fontFamily": {
+                      "label-md": ["Manrope"],
+                      "caption": ["Manrope"],
+                      "headline-lg": ["Manrope"],
+                      "headline-lg-mobile": ["Manrope"],
+                      "headline-md": ["Manrope"],
+                      "body-lg": ["Manrope"],
+                      "body-md": ["Manrope"],
+                      "display-lg": ["Manrope"]
+              },
+              "fontSize": {
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                      "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 flex justify-between items-center px-margin-mobile py-4 lg:px-margin-desktop">
+<h1 class="font-display-lg text-headline-md font-bold text-primary">Alif Global</h1>
+<div class="flex items-center gap-4">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors" onclick="toggleBottomSheet()">
+<span class="material-symbols-outlined">filter_list</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-32 px-margin-mobile lg:px-margin-desktop max-w-screen-xl mx-auto">
+<!-- Category Chips -->
+<section class="mb-lg overflow-x-auto hide-scrollbar -mx-margin-mobile px-margin-mobile">
+<div class="flex gap-xs whitespace-nowrap">
+<button class="px-md py-xs bg-primary text-on-primary font-label-md text-label-md rounded-full shadow-sm">All Products</button>
+<button class="px-md py-xs bg-surface-container-high text-on-surface-variant font-label-md text-label-md rounded-full border border-outline-variant/30 hover:border-primary/50 transition-colors">Architectural</button>
+<button class="px-md py-xs bg-surface-container-high text-on-surface-variant font-label-md text-label-md rounded-full border border-outline-variant/30 hover:border-primary/50 transition-colors">Industrial</button>
+<button class="px-md py-xs bg-surface-container-high text-on-surface-variant font-label-md text-label-md rounded-full border border-outline-variant/30 hover:border-primary/50 transition-colors">Sustainable</button>
+<button class="px-md py-xs bg-surface-container-high text-on-surface-variant font-label-md text-label-md rounded-full border border-outline-variant/30 hover:border-primary/50 transition-colors">Global Edition</button>
+</div>
+</section>
+<!-- Catalogue Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<!-- Product Card 1 -->
+<article class="group relative bg-surface-container-lowest border border-outline-variant/30 overflow-hidden transition-all duration-300 hover:shadow-lg">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" data-alt="A high-end architectural component made of brushed gold and premium steel, displayed against a soft charcoal studio background. The lighting is focused and dramatic, highlighting the precise CNC machining and sophisticated metallic textures. The overall aesthetic is executive, minimalist, and extremely professional, reflecting global authority in engineering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKEZ2_aC86REp3AwgxUKe75598R8nKL_rDDt-1zB8cd7tizsveS0r6a4-1m1SSraL6imFpwnNAr_9mpRIt_DYD--wGD-0MbZq9WjlHFUPH8RXAMYfvJVC_W8lTqHpc-yEVrPHiMZ2bKQiiiAr9yT8-jA1k5LQc6u9WJtu1p42GvaUSZb32m6k1IdaOdu0uwy9xJUW_ed3NR7TO8trQxNcOIq-YVzBmXVysGml87tWUKCKjDiw0tgFNRWM3LBGue-FArCv2kbuBFw"/>
+<span class="absolute top-sm left-sm px-xs py-[2px] bg-primary-fixed text-on-primary-fixed-variant font-label-md text-caption rounded-xs uppercase tracking-tighter">Premium</span>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-headline-md-mobile text-on-surface mb-base group-hover:text-primary transition-colors">Aero-Luxe Composite</h3>
+<p class="font-body-md text-on-surface-variant mb-sm line-clamp-2">Precision-engineered structural component for high-performance architectural façades.</p>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-primary text-label-md uppercase tracking-widest">Global Series</span>
+<button class="text-primary hover:underline font-label-md text-label-md">View Specs</button>
+</div>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="group relative bg-surface-container-lowest border border-outline-variant/30 overflow-hidden transition-all duration-300 hover:shadow-lg">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" data-alt="An intricate industrial filtration system shown in a pristine laboratory environment. The machinery features matte silver finishes and subtle gold accents on the control knobs. High-key, diffused lighting creates a clean, Alabaster-white atmosphere. The image communicates technological sophistication and elite reliability for global manufacturing standards." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB92bFP2l3zFYhM0JElgLdQgKn4SP6sYWC_URVYWuF2_YGg7a3tM53xcJ_Ylb1z628EIQXVw-B6iQ--vXr2D5qRSgb32ahdOMwbJS137eMLMWK01edO1XLLgAOWn0Yonk3t8HYhWchjg0SwfPqW24VbEZyzp55mjIfTx4VQYb1IfHg0ZfylL5XtP-6z5KxKjY7bYboNYzkYOxtdrO3LLG0jft8a0v1zzg0CvrdV0w20Vxt1bBqg8u0-pCIUVx8vsJVr_0OKoXAO9g"/>
+<span class="absolute top-sm left-sm px-xs py-[2px] bg-secondary-fixed text-on-secondary-fixed font-label-md text-caption rounded-xs uppercase tracking-tighter">New Arrival</span>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-headline-md-mobile text-on-surface mb-base group-hover:text-primary transition-colors">Titan Flux Regulator</h3>
+<p class="font-body-md text-on-surface-variant mb-sm line-clamp-2">Advanced flow control system with integrated heat distribution and durability monitoring.</p>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-primary text-label-md uppercase tracking-widest">Industrial Edge</span>
+<button class="text-primary hover:underline font-label-md text-label-md">View Specs</button>
+</div>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="group relative bg-surface-container-lowest border border-outline-variant/30 overflow-hidden transition-all duration-300 hover:shadow-lg">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" data-alt="A close-up of sustainable building materials featuring organic textures and recycled gold flakes embedded in polished concrete. The perspective is architectural and low-angle, emphasizing depth and quality. Soft morning light streams across the surface, creating a warm, prestigious ambiance that blends eco-consciousness with executive luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhCxJZaJG_4Y0kHolIYGYGbWnaNh2BDCxArnbMGXUeHiMRy1wAaVZ_QmjOWwuTBKTNmzG9CfHfW-O60zJ56yBWLayjcBuQceW2UqLIfVntWYaCnWln8rNvSJ-gO39QC1-Zu8XyO_nJLxmxD6GjySpVfz_1ASnIvVYST8Gjy7pS5yOuA4G9IagCX6r2rYXNYL0e681bg7h-K9bqFEfUGrIyTuYCDmNvAg3lFsZl0b2K4auYvMT1ydelX1e0kXRDM9egYgrM1JnKfQ"/>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-headline-md-mobile text-on-surface mb-base group-hover:text-primary transition-colors">Eco-Core Insulator</h3>
+<p class="font-body-md text-on-surface-variant mb-sm line-clamp-2">Sustainable thermal insulation crafted from recycled composites for green-certified projects.</p>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-primary text-label-md uppercase tracking-widest">Sustainable Luxe</span>
+<button class="text-primary hover:underline font-label-md text-label-md">View Specs</button>
+</div>
+</div>
+</article>
+<!-- Product Card 4 -->
+<article class="group relative bg-surface-container-lowest border border-outline-variant/30 overflow-hidden transition-all duration-300 hover:shadow-lg">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" data-alt="A macro shot of a gold-plated precision gear assembly used in high-end global machinery. The image is captured with a shallow depth of field, making the metallic parts glow against a dark, moody background. The precision is evident in every tooth of the gear, symbolizing the reliability and elite craftsmanship of Alif Global Solutions." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARArdcR7xBziVPwDhxt1seeZ3cFl2hxRAU5dGl830sMwxBsOgK3tfqmD9qGvMQQk31LMBzotA8AJsuIsu57hm_dd0-mdVRSMujRVAciGCbu_BAx87TEAe1rOPsddX3VgI7I5QoU4kqlQS1eVdiLC9ezOmtkyHFc3FW6Plir23HwAFPQmD4uachPfgqk4HKNWDQacpYZmF-uMrIKtwKdZW6sYxF8rO9J1pY3lofF3wVuCqTWcZ28glpuZdeS2OQwZsKwufV32bqZw"/>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-headline-md-mobile text-on-surface mb-base group-hover:text-primary transition-colors">Omni-Drive Unit</h3>
+<p class="font-body-md text-on-surface-variant mb-sm line-clamp-2">Universal power transmission module designed for modularity and high-torque efficiency.</p>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-primary text-label-md uppercase tracking-widest">Engineering Master</span>
+<button class="text-primary hover:underline font-label-md text-label-md">View Specs</button>
+</div>
+</div>
+</article>
+</section>
+</main>
+<!-- Floating Action Button -->
+<button class="fixed bottom-24 right-sm z-40 bg-primary text-on-primary flex items-center gap-xs px-md py-md rounded-full shadow-lg shadow-primary/20 transition-transform active:scale-95 group">
+<span class="material-symbols-outlined">request_quote</span>
+<span class="font-label-md text-label-md">Request Quote</span>
+</button>
+<!-- Filter Bottom Sheet Overlay -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-[2px] z-[60] hidden opacity-0 transition-opacity duration-300" id="sheet-overlay" onclick="toggleBottomSheet()"></div>
+<!-- Filter Bottom Sheet Content -->
+<div class="bottom-sheet fixed bottom-0 left-0 right-0 bg-surface z-[70] rounded-t-xl px-margin-mobile pt-sm pb-xl shadow-2xl max-h-[751px] overflow-y-auto" id="bottom-sheet">
+<div class="w-12 h-1 bg-outline-variant/50 rounded-full mx-auto mb-md"></div>
+<div class="flex justify-between items-center mb-lg">
+<h2 class="font-headline-md text-headline-md-mobile text-on-surface">Filter Catalogue</h2>
+<button class="text-on-surface-variant" onclick="toggleBottomSheet()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="space-y-lg">
+<!-- Region Filter -->
+<div>
+<p class="font-label-md text-label-md uppercase tracking-widest text-primary mb-md">Region</p>
+<div class="grid grid-cols-2 gap-xs">
+<label class="flex items-center gap-sm p-sm bg-surface-container rounded-lg border border-transparent has-[:checked]:border-primary transition-all">
+<input class="rounded text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-body-md">Global</span>
+</label>
+<label class="flex items-center gap-sm p-sm bg-surface-container rounded-lg border border-transparent has-[:checked]:border-primary transition-all">
+<input class="rounded text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-body-md">Middle East</span>
+</label>
+<label class="flex items-center gap-sm p-sm bg-surface-container rounded-lg border border-transparent has-[:checked]:border-primary transition-all">
+<input class="rounded text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-body-md">Europe</span>
+</label>
+<label class="flex items-center gap-sm p-sm bg-surface-container rounded-lg border border-transparent has-[:checked]:border-primary transition-all">
+<input class="rounded text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-body-md">Asia Pacific</span>
+</label>
+</div>
+</div>
+<!-- Material Preference -->
+<div>
+<p class="font-label-md text-label-md uppercase tracking-widest text-primary mb-md">Engineering Core</p>
+<div class="space-y-xs">
+<label class="flex items-center justify-between p-sm bg-surface-container-low rounded-lg">
+<span class="text-body-md">Metallic Composites</span>
+<input class="text-primary focus:ring-primary" name="core" type="radio"/>
+</label>
+<label class="flex items-center justify-between p-sm bg-surface-container-low rounded-lg">
+<span class="text-body-md">Structural Polymers</span>
+<input class="text-primary focus:ring-primary" name="core" type="radio"/>
+</label>
+<label class="flex items-center justify-between p-sm bg-surface-container-low rounded-lg">
+<span class="text-body-md">Smart Ceramics</span>
+<input class="text-primary focus:ring-primary" name="core" type="radio"/>
+</label>
+</div>
+</div>
+<div class="flex gap-md pt-md">
+<button class="flex-1 py-md border border-outline font-label-md text-label-md text-on-surface-variant hover:bg-surface-variant transition-colors rounded-lg">Reset</button>
+<button class="flex-1 py-md bg-primary text-on-primary font-label-md text-label-md rounded-lg shadow-md" onclick="toggleBottomSheet()">Apply Filters</button>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 w-full z-50 bg-surface border-t border-outline-variant/30 px-margin-mobile py-2 flex justify-around items-center lg:hidden">
+<a class="flex flex-col items-center gap-1 text-on-surface-variant group" href="#">
+<span class="material-symbols-outlined text-[24px]">home</span>
+<span class="font-label-md text-[10px] uppercase">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary group" href="#">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">category</span>
+<span class="font-label-md text-[10px] uppercase font-bold">Catalog</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant group" href="#">
+<span class="material-symbols-outlined text-[24px]">precision_manufacturing</span>
+<span class="font-label-md text-[10px] uppercase">Solutions</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant group" href="#">
+<span class="material-symbols-outlined text-[24px]">mail</span>
+<span class="font-label-md text-[10px] uppercase">Contact</span>
+</a>
+</nav>
+<script>
+        function toggleBottomSheet() {
+            const sheet = document.getElementById('bottom-sheet');
+            const overlay = document.getElementById('sheet-overlay');
+            
+            if (sheet.classList.contains('active')) {
+                sheet.classList.remove('active');
+                overlay.classList.add('hidden');
+                overlay.classList.remove('opacity-100');
+                document.body.style.overflow = 'auto';
+            } else {
+                sheet.classList.add('active');
+                overlay.classList.remove('hidden');
+                setTimeout(() => overlay.classList.add('opacity-100'), 10);
+                document.body.style.overflow = 'hidden';
+            }
+        }
+    </script>
+</body></html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alif Global | Precision Excellence</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "background": "#f8f9fa",
+                    "on-secondary-container": "#636467",
+                    "tertiary": "#5a5f64",
+                    "on-tertiary-fixed": "#171c21",
+                    "outline": "#7f7667",
+                    "secondary-container": "#e2e2e5",
+                    "surface-variant": "#e1e3e4",
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#f0f1f2",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed": "#e2e2e5",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-primary": "#ffffff",
+                    "on-background": "#191c1d",
+                    "surface-bright": "#f8f9fa",
+                    "surface-tint": "#775a19",
+                    "on-secondary-fixed": "#1a1c1e",
+                    "error-container": "#ffdad6",
+                    "on-surface-variant": "#4e4639",
+                    "primary-container": "#c5a059",
+                    "on-primary-fixed": "#261900",
+                    "on-secondary-fixed-variant": "#454749",
+                    "primary": "#775a19",
+                    "surface": "#f8f9fa",
+                    "tertiary-container": "#a1a6ac",
+                    "secondary-fixed-dim": "#c6c6c9",
+                    "primary-fixed": "#ffdea5",
+                    "on-tertiary-container": "#363c41",
+                    "surface-container": "#edeeef",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#e7e8e9",
+                    "on-primary-container": "#4e3700",
+                    "outline-variant": "#d1c5b4",
+                    "tertiary-fixed-dim": "#c2c7cd",
+                    "on-error-container": "#93000a",
+                    "on-surface": "#191c1d",
+                    "on-primary-fixed-variant": "#5d4201",
+                    "secondary": "#5d5e61",
+                    "inverse-surface": "#2e3132",
+                    "primary-fixed-dim": "#e9c176",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#f3f4f5",
+                    "tertiary-fixed": "#dee3e9",
+                    "on-tertiary-fixed-variant": "#42474c",
+                    "inverse-primary": "#e9c176",
+                    "surface-dim": "#d9dadb"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "sm": "16px",
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "lg": "48px",
+                    "md": "24px",
+                    "xs": "8px",
+                    "xl": "80px",
+                    "margin-mobile": "16px",
+                    "base": "4px"
+            },
+            "fontFamily": {
+                    "label-md": ["Manrope"],
+                    "caption": ["Manrope"],
+                    "headline-lg": ["Manrope"],
+                    "headline-lg-mobile": ["Manrope"],
+                    "headline-md": ["Manrope"],
+                    "body-lg": ["Manrope"],
+                    "body-md": ["Manrope"],
+                    "display-lg": ["Manrope"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(233, 193, 118, 0.15), transparent),
+                        radial-gradient(circle at bottom left, rgba(119, 90, 25, 0.05), transparent);
+        }
+        .metallic-shine {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e2e2e5 50%, #f8f9fa 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .metallic-shine::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent 45%, rgba(255,255,255,0.8) 50%, transparent 55%);
+            animation: shine 6s infinite;
+        }
+        @keyframes shine {
+            0% { transform: translateX(-100%) translateY(-100%); }
+            100% { transform: translateX(100%) translateY(100%); }
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(168, 173, 179, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md border-b border-outline-variant/30 transition-all duration-200 ease-in-out">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-full mx-auto">
+<div class="flex items-center gap-xs">
+<img alt="Alif Global Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAucPXaZqlNHdZlcIZ4bkQb_fP0UiUTE9rDLFj5nTc4PEMuNWL7NQrLbGvXGb4HylADKSris4zkSrcOu-1pMd4h7DQqWW7hh59TPlN6ab05FguNgL0c7eQMtSNhKO_bfYuEDrfxSco3HQAstay4sI0vsBD90xspqlmpBrKRN5GI29rn6SYg0ZlBIFYX0y_j54B5XyTRJmMIiphCCTlhHbjSGHiC9qJn6PnsS74dHEHjUXtNAW-7h-Nw61rGiEVh7mBMr3ScJG0y1g"/>
+<span class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed ml-xs">Alif Global</span>
+</div>
+<div class="hidden md:flex items-center gap-lg">
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary dark:text-primary-fixed border-b-2 border-primary transition-colors duration-300" href="#">Solutions</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Catalog</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Projects</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">About</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-md">
+<div class="relative hidden lg:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="bg-surface-container-low border-none rounded-full py-2 pl-10 pr-4 text-sm focus:ring-1 focus:ring-primary w-48 transition-all" placeholder="Search solutions..." type="text"/>
+</div>
+<button class="bg-primary text-on-primary px-lg py-2 rounded-lg font-label-md text-label-md uppercase tracking-widest hover:bg-primary/90 transition-all active:scale-95">
+                    Enquire
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[90vh] flex items-center overflow-hidden hero-gradient">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 metallic-shine opacity-30"></div>
+<!-- Subtle texture/pattern can go here if needed -->
+</div>
+<div class="relative z-10 px-margin-desktop w-full grid grid-cols-12 gap-gutter items-center">
+<div class="col-span-12 lg:col-span-7 space-y-md">
+<div class="inline-flex items-center gap-xs px-sm py-base bg-primary-fixed text-on-primary-fixed-variant rounded-full font-label-md text-label-md uppercase tracking-tighter">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+                        Precision Redefined
+                    </div>
+<h1 class="font-display-lg text-display-lg text-on-background leading-tight">
+                        Global Solutions with <br/>
+<span class="text-primary italic">Architectural Precision</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                        Alif Global delivers sophisticated engineering and manufacturing excellence to the world's most discerning industries. We bridge the gap between complex challenges and elegant, scalable results.
+                    </p>
+<div class="flex flex-wrap gap-md pt-sm">
+<button class="bg-primary text-on-primary px-xl py-4 rounded-lg font-label-md text-label-md uppercase tracking-widest shadow-lg hover:shadow-primary/20 transition-all flex items-center gap-sm group">
+                            View Catalogue
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="border border-outline text-on-surface px-xl py-4 rounded-lg font-label-md text-label-md uppercase tracking-widest hover:bg-surface-variant transition-all">
+                            Our Impact
+                        </button>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-5 hidden lg:block">
+<div class="relative">
+<div class="absolute -inset-4 bg-primary/10 blur-3xl rounded-full"></div>
+<div class="relative glass-card p-xs rounded-xl overflow-hidden aspect-square border border-outline-variant/30">
+<img class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-700" data-alt="A high-end architectural shot of a precision-engineered metallic component, macro photography, soft golden light hitting brushed steel surfaces, minimalist industrial background, premium luxury corporate aesthetic, 8k resolution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1hRh2mIFhIKQH9r45ZTVVehqd3hg2gEAvzABGPos2RmIYMjqqh8zCLmrtdb9Sr41Qo3sM3-wZCwYxAtyEXVadkA268_8hxiMYj68LT5P_cQIEuQ5Js00wtCpP5wyyDvEPSyaVkDjMN74Dx4PP2aIYbpibjD9E_OthpwpBYuuwoZkApAgvXk8GTlf0oC1ShjxpQp5e_3S1VCcL58J_sUOvZiLbvtsCAyJ5_HRq_nroM1hdeYq26uypfKsShRcjvw-pOns3EhA5YQ"/>
+</div>
+<!-- Floating metrics -->
+<div class="absolute -bottom-10 -left-10 glass-card p-md rounded-xl shadow-xl animate-bounce-slow">
+<div class="text-primary font-display-lg text-headline-lg">99.9%</div>
+<div class="text-on-surface-variant font-label-md text-caption uppercase tracking-wider">Precision Accuracy</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Solutions - Bento Grid -->
+<section class="py-xl px-margin-desktop bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-lg">
+<div class="space-y-xs">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Featured Solutions</h2>
+<div class="w-16 h-1 bg-primary"></div>
+</div>
+<a class="text-primary font-label-md text-label-md uppercase tracking-widest hover:underline decoration-2 underline-offset-8" href="#">Explore All</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter h-auto md:h-[600px]">
+<!-- Large Feature Card -->
+<div class="md:col-span-2 relative group overflow-hidden rounded-xl border border-outline-variant/20">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110" data-alt="Wide angle view of a sophisticated global logistics and industrial hub, featuring sleek automated systems and glowing blue and gold accents, high-key lighting, clean executive atmosphere, architectural photography style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCPMDIz2xpH0MVa-hIp0JSgDDglzfQ_mAUc1puv5qZryY0bHjPdIHdaM2EAkWEX4k68WqfXUh21ZeS0mmpkazNLivShSH_Ix271Cib2GluEO7wEst44hg5quE2p5lDpOYoy2GhG3OW9_nm3ZvuXxdm6TEjYkvsXTB2Vwt4Xh-T6AcXKyzp8bAyI7k-ITpfiQPknyT2c_fPPQK783iul6QBkj-MaNpnpkPaoLzwKDEbuAWdjOT_gKoI-ZUctqtFwWiQ8DQZdHaRtJg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-lg w-full">
+<div class="text-primary-fixed font-label-md text-label-md uppercase mb-xs">Industrial Engineering</div>
+<h3 class="text-white font-headline-lg text-headline-lg mb-sm">Automated Global Infrastructure</h3>
+<p class="text-surface-variant max-w-md mb-md">Scaling operations with intelligent automation and sustainable energy frameworks for 21st-century industry leaders.</p>
+<button class="text-primary-fixed font-label-md text-label-md uppercase tracking-widest flex items-center gap-xs group/btn">
+                                Learn More <span class="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">east</span>
+</button>
+</div>
+</div>
+<!-- Small Feature Card 1 -->
+<div class="relative group overflow-hidden rounded-xl border border-outline-variant/20">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110" data-alt="Close up of a luxury precision tool or electronic component, showcasing intricate gold wiring and carbon fiber housing, bright studio lighting, soft shadows, high-end tech aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCu1lTPtCtH9mZXELpPZ9VjNp8PWp-HVfn0e9_rKzl3GW-vKPoKajwD2Moq8UVDl44NtMt7w45OqMwhZwzqWo2L-wKYTzHKQMi-qeOBaKx8jT7lsajPGxnPuDTudPO8dqWfXoW0FUZV-5diUSCs_awL_xeRCC_5g5Xb7nVLEeepUzPoZ6WVRNgVmuIZdPpQxDc9lzSViOrrNiQStf0mYGE23L4RsAcOg1nzzmAFb3R4GcOzWhJC669SY11RiMt3TRSaidmT9zH3zA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-md">
+<h3 class="text-white font-headline-md text-headline-md">Smart Assemblies</h3>
+<button class="text-primary-fixed font-label-md text-label-md mt-sm uppercase tracking-widest flex items-center gap-xs">
+                                View Specs
+                            </button>
+</div>
+</div>
+<!-- Small Feature Card 2 -->
+<div class="relative group overflow-hidden rounded-xl border border-outline-variant/20">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110" data-alt="Modern corporate conference room in a skyscraper with a panoramic city view, luxury furniture, gold and charcoal interior design, afternoon sunlight casting sharp elegant shadows." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBnLcWs2w8an5tLl1ytRMKS6UxSmoTequEl3sil_KJhYqXvKLcKJcdv278EQsBPCETPFJFXL0aCjaP5OArT4dnjwMFC-xCv9Geq1rBDU8ZvjhMgiQsKIP23WvSBD9Eu1dEHMGTvmM_Am306jDzEfYu2wFFY4ABTwa_IAj0IU_ddNtwdQkt8WDixYx89f3Pv6stIacycxIW1qrShwBKDlbCS9RaM_NS_7CrmUJGoChXZ8JMhjyv4cTJCdIxKDXAuzkeADxMbhZnIeg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-md">
+<h3 class="text-white font-headline-md text-headline-md">Strategic Consulting</h3>
+<button class="text-primary-fixed font-label-md text-label-md mt-sm uppercase tracking-widest flex items-center gap-xs">
+                                Global Reach
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Global Impact Section -->
+<section class="py-xl bg-inverse-surface text-on-primary-fixed">
+<div class="px-margin-desktop max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+<div class="space-y-md">
+<h2 class="font-display-lg text-display-lg text-white">Global Impact. <br/><span class="text-primary-fixed-dim">Localized Excellence.</span></h2>
+<p class="text-surface-variant font-body-lg">
+                            Operating across four continents, Alif Global Solutions provides the scale of a multi-national with the meticulous attention of a boutique consultancy. Our impact is measured in the reliability of the systems we build and the success of the partners we serve.
+                        </p>
+<div class="grid grid-cols-2 gap-md pt-md">
+<div class="border-l-2 border-primary-container pl-md">
+<div class="text-white font-display-lg text-headline-lg">24+</div>
+<div class="text-on-surface-variant font-label-md text-caption uppercase">Countries Served</div>
+</div>
+<div class="border-l-2 border-primary-container pl-md">
+<div class="text-white font-display-lg text-headline-lg">500k+</div>
+<div class="text-on-surface-variant font-label-md text-caption uppercase">Units Delivered</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<!-- Simulated Interactive Map -->
+<div class="aspect-video bg-surface-container-highest/10 rounded-xl overflow-hidden border border-white/10 relative">
+<img class="w-full h-full object-cover opacity-60" data-alt="A stylized minimalist world map glowing with gold connection lines on a dark charcoal background, dots indicating major global hubs, digital tech corporate style, high-end motion graphics aesthetic." data-location="Global" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd-dgKPnHldznu_7JW0VsGFKVz17jL84iSTjMgxUE4TwjnLywBgBAoTRFyTGhF66E8V_XSBq_wZoGhYhFr3CaVCL9XJ8it1OPUsHBoPrLC9yvhYKbbXJQnOhGATIveWsNAaUi-q2P-slM8JgZ9e7sjjHmVwFopyaVMV_F63jikrDAjGe9GanZBd5sYt5UQtZZdZl0-Fdcp82wmF6BHUHv8BgKIq-Oko1Dq5HTo3vnogZKHGVaJkeguXpJKgOUJ7mcmSntD3H0hVw"/>
+<!-- Hotspots -->
+<div class="absolute top-1/4 left-1/3 w-3 h-3 bg-primary rounded-full animate-ping"></div>
+<div class="absolute top-1/2 left-1/2 w-3 h-3 bg-primary rounded-full animate-ping" style="animation-delay: 1s;"></div>
+<div class="absolute bottom-1/3 right-1/4 w-3 h-3 bg-primary rounded-full animate-ping" style="animation-delay: 2s;"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-inverse-surface dark:bg-surface-container-lowest w-full py-xl border-t border-outline/20">
+<div class="flex flex-col md:flex-row justify-between items-start px-margin-desktop gap-md max-w-7xl mx-auto">
+<div class="space-y-md">
+<div class="flex items-center gap-xs">
+<img alt="Alif Global Logo" class="h-8 w-auto grayscale brightness-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAucPXaZqlNHdZlcIZ4bkQb_fP0UiUTE9rDLFj5nTc4PEMuNWL7NQrLbGvXGb4HylADKSris4zkSrcOu-1pMd4h7DQqWW7hh59TPlN6ab05FguNgL0c7eQMtSNhKO_bfYuEDrfxSco3HQAstay4sI0vsBD90xspqlmpBrKRN5GI29rn6SYg0ZlBIFYX0y_j54B5XyTRJmMIiphCCTlhHbjSGHiC9qJn6PnsS74dHEHjUXtNAW-7h-Nw61rGiEVh7mBMr3ScJG0y1g"/>
+<span class="font-headline-md text-headline-md text-primary-fixed">Alif Global</span>
+</div>
+<p class="text-surface-variant/70 max-w-xs font-caption text-caption">
+                    Engineering excellence for a connected world. Delivering precision solutions since 2004.
+                </p>
+<div class="flex gap-md">
+<a class="text-surface-variant/70 hover:text-primary-fixed transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-surface-variant/70 hover:text-primary-fixed transition-colors" href="#"><span class="material-symbols-outlined">description</span></a>
+<a class="text-surface-variant/70 hover:text-primary-fixed transition-colors" href="#"><span class="material-symbols-outlined">hub</span></a>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-lg">
+<div class="space-y-sm">
+<h4 class="text-white font-label-md text-label-md uppercase">Navigation</h4>
+<ul class="space-y-xs">
+<li><a class="text-surface-variant/70 font-caption text-caption hover:text-primary-fixed transition-colors" href="#">Solutions</a></li>
+<li><a class="text-surface-variant/70 font-caption text-caption hover:text-primary-fixed transition-colors" href="#">Catalog</a></li>
+<li><a class="text-surface-variant/70 font-caption text-caption hover:text-primary-fixed transition-colors" href="#">Global Network</a></li>
+</ul>
+</div>
+<div class="space-y-sm">
+<h4 class="text-white font-label-md text-label-md uppercase">Legal</h4>
+<ul class="space-y-xs">
+<li><a class="text-surface-variant/70 font-caption text-caption hover:text-primary-fixed transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-surface-variant/70 font-caption text-caption hover:text-primary-fixed transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-surface-variant/70 font-caption text-caption hover:text-primary-fixed transition-colors" href="#">Sitemap</a></li>
+</ul>
+</div>
+<div class="space-y-sm col-span-2 md:col-span-1">
+<h4 class="text-white font-label-md text-label-md uppercase">Office</h4>
+<p class="text-surface-variant/70 font-caption text-caption">
+                        Dubai International Financial Centre,<br/>
+                        Level 15, The Gate Building,<br/>
+                        Dubai, UAE
+                    </p>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop mt-xl pt-md border-t border-white/5 flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-sm">
+<p class="text-surface-variant/70 font-caption text-caption">© 2024 Alif Global Solutions. All rights reserved.</p>
+<div class="flex gap-lg">
+<span class="text-surface-variant/30 font-caption text-caption italic">Precision is our heritage.</span>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions for scrolling
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2', 'shadow-lg');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.add('py-4');
+                nav.classList.remove('py-2', 'shadow-lg');
+            }
+        });
+
+        // Simple reveal on scroll observer
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'ease-out', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body></html>

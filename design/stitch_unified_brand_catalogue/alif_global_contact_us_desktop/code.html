@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | Alif Global</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#2e3132",
+                    "secondary-container": "#e2e2e5",
+                    "background": "#f8f9fa",
+                    "secondary-fixed": "#e2e2e5",
+                    "tertiary-fixed": "#dee3e9",
+                    "inverse-on-surface": "#f0f1f2",
+                    "secondary-fixed-dim": "#c6c6c9",
+                    "tertiary": "#5a5f64",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#636467",
+                    "primary-fixed": "#ffdea5",
+                    "surface-container-high": "#e7e8e9",
+                    "on-tertiary-container": "#363c41",
+                    "on-secondary": "#ffffff",
+                    "surface-dim": "#d9dadb",
+                    "on-background": "#191c1d",
+                    "surface-container": "#edeeef",
+                    "primary": "#775a19",
+                    "error": "#ba1a1a",
+                    "outline": "#7f7667",
+                    "on-error-container": "#93000a",
+                    "inverse-primary": "#e9c176",
+                    "surface": "#f8f9fa",
+                    "outline-variant": "#d1c5b4",
+                    "surface-variant": "#e1e3e4",
+                    "on-secondary-fixed-variant": "#454749",
+                    "on-primary-fixed-variant": "#5d4201",
+                    "surface-container-low": "#f3f4f5",
+                    "primary-fixed-dim": "#e9c176",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#42474c",
+                    "tertiary-fixed-dim": "#c2c7cd",
+                    "on-tertiary-fixed": "#171c21",
+                    "on-surface": "#191c1d",
+                    "on-primary-container": "#4e3700",
+                    "on-secondary-fixed": "#1a1c1e",
+                    "secondary": "#5d5e61",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-tertiary": "#ffffff",
+                    "primary-container": "#c5a059",
+                    "surface-tint": "#775a19",
+                    "on-surface-variant": "#4e4639",
+                    "error-container": "#ffdad6",
+                    "tertiary-container": "#a1a6ac",
+                    "on-primary-fixed": "#261900",
+                    "surface-bright": "#f8f9fa",
+                    "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "lg": "48px",
+                    "xs": "8px",
+                    "sm": "16px",
+                    "margin-mobile": "16px",
+                    "margin-desktop": "64px",
+                    "xl": "80px",
+                    "base": "4px",
+                    "md": "24px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Manrope"],
+                    "body-md": ["Manrope"],
+                    "headline-md": ["Manrope"],
+                    "headline-lg-mobile": ["Manrope"],
+                    "headline-lg": ["Manrope"],
+                    "caption": ["Manrope"],
+                    "body-lg": ["Manrope"],
+                    "label-md": ["Manrope"]
+            },
+            "fontSize": {
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .frosted-glass {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .calendar-day:hover {
+            background-color: #ffdea5;
+            color: #261900;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md shadow-sm fixed top-0 w-full z-50 border-b border-outline-variant/30 dark:border-outline/20 transition-all duration-200">
+<div class="flex justify-between items-center px-margin-desktop py-sm max-w-7xl mx-auto">
+<div class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight">
+                Alif Global
+            </div>
+<nav class="hidden md:flex items-center gap-md">
+<a class="font-label-md text-label-md text-on-surface dark:text-inverse-on-surface hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Solutions</a>
+<a class="font-label-md text-label-md text-on-surface dark:text-inverse-on-surface hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Services</a>
+<a class="font-label-md text-label-md text-on-surface dark:text-inverse-on-surface hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Work</a>
+<a class="font-label-md text-label-md text-on-surface dark:text-inverse-on-surface hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">About Us</a>
+</nav>
+<div class="flex items-center gap-sm">
+<button class="bg-primary text-on-primary px-md py-xs font-label-md text-label-md rounded-lg hover:bg-primary/90 transition-all active:opacity-80">
+                    Consultation
+                </button>
+</div>
+</div>
+</header>
+<main class="pt-32 pb-xl">
+<!-- Hero Section -->
+<section class="px-margin-desktop max-w-7xl mx-auto mb-xl">
+<div class="grid lg:grid-cols-2 gap-lg items-center">
+<div class="space-y-md">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase">Global Network</span>
+<h1 class="font-display-lg text-display-lg text-on-background leading-none">Connect with our <br/><span class="text-primary">Executive Team.</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        Whether you're looking for enterprise solutions or specialized support, our global offices are ready to assist with architectural precision.
+                    </p>
+</div>
+<div class="relative group">
+<div class="absolute -inset-2 bg-primary-fixed/30 rounded-xl blur-xl group-hover:bg-primary-fixed/40 transition duration-1000"></div>
+<div class="relative bg-white border border-outline-variant/30 rounded-xl overflow-hidden shadow-sm aspect-video">
+<img class="w-full h-full object-cover" data-alt="A cinematic, high-angle shot of the Dubai International Financial Centre (DIFC) skyline at sunset. The architectural structures are sleek, featuring polished glass and steel facades reflecting a warm, golden hour glow. The overall lighting is sophisticated and professional, utilizing a palette of rich golds, deep charcoals, and clean whites to represent the Alif Global premium brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxabsOuiy0FTihpFGotcsDkpf-zIztytzdUA3OYTI801qEbzHyrygJgDm6JSxNEaFHdFeGiQPW9iXCSUlhMNDSMkZwQQORdtSwbJ9-m-ScWAdm6F30qjOHD4er6dR8cuLWoloncxBTVq3qZqGHnNwRlWR3KCqEQ5bVL4MLUWXuKj4EHqoYKI3-AHioaY2NtMpYTBj6fa9I8_rbeQT4Ulp8tHpT8jCuSBWfOwQkPuHCHtQ3gK34dRXEuPXNHFEaTpAWNu6kMzbKnA"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Department Contacts & Form Bento Grid -->
+<section class="px-margin-desktop max-w-7xl mx-auto mb-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Contact Form -->
+<div class="lg:col-span-8 bg-surface-container-lowest p-lg rounded-xl border border-outline-variant/20 shadow-sm">
+<h2 class="font-headline-lg text-headline-lg mb-md">Professional Inquiry</h2>
+<form class="grid md:grid-cols-2 gap-md">
+<div class="space-y-base">
+<label class="font-label-md text-label-md text-on-surface-variant">FULL NAME</label>
+<input class="w-full bg-transparent border-b border-outline-variant focus:border-primary focus:ring-0 transition-colors py-sm font-body-md" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-base">
+<label class="font-label-md text-label-md text-on-surface-variant">WORK EMAIL</label>
+<input class="w-full bg-transparent border-b border-outline-variant focus:border-primary focus:ring-0 transition-colors py-sm font-body-md" placeholder="john@enterprise.com" type="email"/>
+</div>
+<div class="space-y-base md:col-span-2">
+<label class="font-label-md text-label-md text-on-surface-variant">DEPARTMENT</label>
+<select class="w-full bg-transparent border-b border-outline-variant focus:border-primary focus:ring-0 transition-colors py-sm font-body-md appearance-none">
+<option>Global Solutions</option>
+<option>Technical Support</option>
+<option>Media &amp; PR</option>
+<option>Careers</option>
+</select>
+</div>
+<div class="space-y-base md:col-span-2">
+<label class="font-label-md text-label-md text-on-surface-variant">MESSAGE</label>
+<textarea class="w-full bg-transparent border-b border-outline-variant focus:border-primary focus:ring-0 transition-colors py-sm font-body-md resize-none" placeholder="Briefly describe your requirements..." rows="4"></textarea>
+</div>
+<div class="md:col-span-2 pt-sm">
+<button class="bg-primary text-on-primary px-xl py-sm font-label-md text-label-md rounded-lg hover:scale-[1.02] transition-transform flex items-center gap-xs" type="submit">
+                                Submit Inquiry
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Department Details -->
+<div class="lg:col-span-4 flex flex-col gap-gutter">
+<div class="bg-primary-container/10 p-md rounded-xl border border-primary-container/20">
+<span class="material-symbols-outlined text-primary mb-sm">payments</span>
+<h3 class="font-headline-md text-headline-md mb-xs">Sales</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-sm">Strategic partnerships &amp; enterprise deals.</p>
+<a class="font-label-md text-label-md text-primary hover:underline" href="mailto:sales@alifglobal.com">sales@alifglobal.com</a>
+</div>
+<div class="bg-secondary-container/20 p-md rounded-xl border border-secondary-container/30">
+<span class="material-symbols-outlined text-secondary mb-sm">support_agent</span>
+<h3 class="font-headline-md text-headline-md mb-xs">Support</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-sm">24/7 technical assistance for existing clients.</p>
+<a class="font-label-md text-label-md text-secondary hover:underline" href="mailto:support@alifglobal.com">support@alifglobal.com</a>
+</div>
+<div class="bg-surface-container-high p-md rounded-xl border border-outline-variant/10 flex items-center justify-between group cursor-pointer">
+<div>
+<h3 class="font-label-md text-label-md text-on-surface">Career Portal</h3>
+<p class="text-caption text-on-surface-variant">Join our global team</p>
+</div>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">open_in_new</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Map & Location -->
+<section class="px-margin-desktop max-w-7xl mx-auto mb-xl">
+<div class="grid lg:grid-cols-3 gap-gutter">
+<div class="lg:col-span-1 space-y-md">
+<h2 class="font-headline-lg text-headline-lg">Global Headquarters</h2>
+<div class="p-md bg-surface-container-lowest border border-outline-variant/30 rounded-xl">
+<div class="flex items-start gap-sm mb-md">
+<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<div>
+<p class="font-bold text-on-surface">DIFC Dubai</p>
+<p class="text-on-surface-variant">The Gate Building, Level 15<br/>Dubai International Financial Centre<br/>United Arab Emirates</p>
+</div>
+</div>
+<div class="flex items-center gap-sm mb-md">
+<span class="material-symbols-outlined text-primary">call</span>
+<p class="text-on-surface">+971 4 000 0000</p>
+</div>
+<button class="w-full py-sm border border-outline text-on-surface rounded-lg font-label-md hover:bg-on-surface hover:text-white transition-colors">
+                            Get Directions
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-2 h-[400px] rounded-xl overflow-hidden border border-outline-variant/30 shadow-sm relative">
+<div class="w-full h-full bg-surface-container" data-location="DIFC Dubai" style="">
+<!-- Map Placeholder -->
+<div class="w-full h-full bg-cover bg-center" data-alt="A minimalist, high-contrast digital map interface showing the Dubai DIFC area. The map uses a sophisticated color palette of grayscale for buildings and streets, with a single high-contrast gold marker pinpointing the Alif Global headquarters. The lighting is digital and clean, maintaining the executive minimalism style of the brand." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDM_Hr9-KCht-fn2ZRKaqoUKfNxm8soGJjq6eUTWDL6Y7Imra-TOR_0hsXucFP0_7G5vEoQXZpI8uW_rAFa_kcxUlDUI2v4o9H9ekIqVxATluUZO3jP4wmI056YYjLDxIIrGeajK1juR6VnUr_jBVJ2cDCgAVQVCtu1FBwoN9grK9a5rvlwtoWiGnqwl-IC9ibrnPbXKS7Sa_VNbpuNl_8-OaTnptswXhx8SEyYurE0tZHoM22YVgnZ3AbnkCgFfmx4xXqqpX5J2g')"></div>
+</div>
+<div class="absolute bottom-md left-md bg-surface/90 p-sm rounded shadow-sm flex items-center gap-xs">
+<div class="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
+<span class="text-caption font-bold">Office Open • Closing in 4h</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Calendar Integration Section -->
+<section class="bg-inverse-surface text-inverse-on-surface py-xl">
+<div class="px-margin-desktop max-w-7xl mx-auto">
+<div class="grid lg:grid-cols-2 gap-lg items-center">
+<div class="space-y-md">
+<h2 class="font-headline-lg text-headline-lg text-primary-fixed">Book a Strategic Consultation</h2>
+<p class="text-body-lg text-surface-variant/80">
+                            Select a preferred time slot for a private 1-on-1 session with our senior consultants. We offer both virtual and in-person sessions at our DIFC office.
+                        </p>
+<ul class="space-y-sm">
+<li class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary-fixed">check_circle</span>
+<span>30-minute strategic overview</span>
+</li>
+<li class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary-fixed">check_circle</span>
+<span>Architecture-first solutioning</span>
+</li>
+<li class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary-fixed">check_circle</span>
+<span>Global scaling feasibility report</span>
+</li>
+</ul>
+</div>
+<!-- Calendar UI Mockup -->
+<div class="bg-surface-container-lowest text-on-surface p-md rounded-xl shadow-xl">
+<div class="flex items-center justify-between mb-md border-b border-outline-variant/20 pb-sm">
+<h3 class="font-headline-md text-headline-md">October 2024</h3>
+<div class="flex gap-sm">
+<button class="p-xs hover:bg-surface-container rounded-full transition-colors"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="p-xs hover:bg-surface-container rounded-full transition-colors"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+</div>
+<div class="grid grid-cols-7 gap-xs text-center mb-sm">
+<span class="text-caption text-on-surface-variant font-bold">MON</span>
+<span class="text-caption text-on-surface-variant font-bold">TUE</span>
+<span class="text-caption text-on-surface-variant font-bold">WED</span>
+<span class="text-caption text-on-surface-variant font-bold">THU</span>
+<span class="text-caption text-on-surface-variant font-bold">FRI</span>
+<span class="text-caption text-on-surface-variant font-bold">SAT</span>
+<span class="text-caption text-on-surface-variant font-bold">SUN</span>
+</div>
+<div class="grid grid-cols-7 gap-xs mb-md">
+<!-- Simple mock calendar days -->
+<div class="h-10 flex items-center justify-center text-on-surface-variant opacity-30">28</div>
+<div class="h-10 flex items-center justify-center text-on-surface-variant opacity-30">29</div>
+<div class="h-10 flex items-center justify-center text-on-surface-variant opacity-30">30</div>
+<div class="calendar-day h-10 flex items-center justify-center rounded cursor-pointer transition-colors">1</div>
+<div class="calendar-day h-10 flex items-center justify-center rounded cursor-pointer transition-colors">2</div>
+<div class="calendar-day h-10 flex items-center justify-center rounded cursor-pointer transition-colors">3</div>
+<div class="h-10 flex items-center justify-center text-on-surface-variant">4</div>
+<div class="calendar-day h-10 flex items-center justify-center rounded cursor-pointer transition-colors">5</div>
+<div class="calendar-day h-10 flex items-center justify-center rounded cursor-pointer transition-colors">6</div>
+<div class="calendar-day h-10 flex items-center justify-center rounded cursor-pointer bg-primary-fixed/50 font-bold">7</div>
+<div class="calendar-day h-10 flex items-center justify-center rounded cursor-pointer transition-colors">8</div>
+<div class="calendar-day h-10 flex items-center justify-center rounded cursor-pointer transition-colors">9</div>
+<div class="h-10 flex items-center justify-center text-on-surface-variant">10</div>
+<div class="h-10 flex items-center justify-center text-on-surface-variant">11</div>
+<!-- ...more days -->
+<div class="calendar-day h-10 flex items-center justify-center rounded cursor-pointer transition-colors">12</div>
+<div class="calendar-day h-10 flex items-center justify-center rounded cursor-pointer transition-colors">13</div>
+<div class="calendar-day h-10 flex items-center justify-center rounded cursor-pointer transition-colors">14</div>
+<div class="calendar-day h-10 flex items-center justify-center rounded cursor-pointer transition-colors">15</div>
+<div class="calendar-day h-10 flex items-center justify-center rounded cursor-pointer transition-colors">16</div>
+<div class="h-10 flex items-center justify-center text-on-surface-variant">17</div>
+<div class="h-10 flex items-center justify-center text-on-surface-variant">18</div>
+</div>
+<div class="space-y-sm">
+<p class="font-label-md text-label-md">Available Times (GMT+4)</p>
+<div class="flex gap-sm overflow-x-auto pb-sm">
+<button class="flex-shrink-0 px-md py-xs border border-outline rounded hover:bg-primary hover:border-primary hover:text-white transition-colors">09:00 AM</button>
+<button class="flex-shrink-0 px-md py-xs border border-outline rounded hover:bg-primary hover:border-primary hover:text-white transition-colors">11:30 AM</button>
+<button class="flex-shrink-0 px-md py-xs border border-outline rounded hover:bg-primary hover:border-primary hover:text-white transition-colors">02:00 PM</button>
+<button class="flex-shrink-0 px-md py-xs border border-outline rounded hover:bg-primary hover:border-primary hover:text-white transition-colors">04:30 PM</button>
+</div>
+</div>
+<button class="w-full mt-md py-sm bg-primary text-on-primary rounded font-label-md hover:opacity-90 active:scale-95 transition-all">
+                            Confirm Appointment
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-inverse-surface dark:bg-surface-container-lowest w-full py-xl border-t border-outline/10">
+<div class="flex flex-col md:flex-row justify-between items-start px-margin-desktop gap-md max-w-7xl mx-auto">
+<div class="space-y-sm">
+<div class="font-display-lg text-headline-md font-bold text-primary-fixed dark:text-primary">Alif Global</div>
+<p class="text-surface-variant/70 max-w-xs font-body-md">Precision-engineered solutions for the global landscape.</p>
+</div>
+<div class="grid grid-cols-2 gap-xl">
+<div class="space-y-sm">
+<h4 class="text-primary-fixed font-bold font-label-md uppercase tracking-widest">Connect</h4>
+<nav class="flex flex-col gap-xs">
+<a class="text-surface-variant/70 hover:text-primary-fixed-dim transition-colors" href="#">LinkedIn</a>
+<a class="text-surface-variant/70 hover:text-primary-fixed-dim transition-colors" href="#">X (Twitter)</a>
+<a class="text-surface-variant/70 hover:text-primary-fixed-dim transition-colors" href="#">Instagram</a>
+</nav>
+</div>
+<div class="space-y-sm">
+<h4 class="text-primary-fixed font-bold font-label-md uppercase tracking-widest">Legal</h4>
+<nav class="flex flex-col gap-xs">
+<a class="text-surface-variant/70 hover:text-primary-fixed-dim transition-colors" href="#">Privacy Policy</a>
+<a class="text-surface-variant/70 hover:text-primary-fixed-dim transition-colors" href="#">Terms of Service</a>
+<a class="text-surface-variant/70 hover:text-primary-fixed-dim transition-colors" href="#">Careers</a>
+</nav>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop max-w-7xl mx-auto mt-xl pt-md border-t border-outline/10">
+<p class="text-surface-variant/50 text-caption">© 2024 Alif Global. All Rights Reserved.</p>
+</div>
+</footer>
+<script>
+        // Micro-interactions
+        document.addEventListener('DOMContentLoaded', () => {
+            const nav = document.querySelector('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    nav.classList.add('py-xs', 'shadow-md');
+                    nav.classList.remove('py-sm', 'shadow-sm');
+                } else {
+                    nav.classList.add('py-sm', 'shadow-sm');
+                    nav.classList.remove('py-xs', 'shadow-md');
+                }
+            });
+        });
+    </script>
+</body></html>

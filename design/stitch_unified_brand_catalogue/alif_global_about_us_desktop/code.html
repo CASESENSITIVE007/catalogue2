@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Alif Global</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-surface": "#2e3132",
+                      "secondary-container": "#e2e2e5",
+                      "background": "#f8f9fa",
+                      "secondary-fixed": "#e2e2e5",
+                      "tertiary-fixed": "#dee3e9",
+                      "inverse-on-surface": "#f0f1f2",
+                      "secondary-fixed-dim": "#c6c6c9",
+                      "tertiary": "#5a5f64",
+                      "on-error": "#ffffff",
+                      "on-secondary-container": "#636467",
+                      "primary-fixed": "#ffdea5",
+                      "surface-container-high": "#e7e8e9",
+                      "on-tertiary-container": "#363c41",
+                      "on-secondary": "#ffffff",
+                      "surface-dim": "#d9dadb",
+                      "on-background": "#191c1d",
+                      "surface-container": "#edeeef",
+                      "primary": "#775a19",
+                      "error": "#ba1a1a",
+                      "outline": "#7f7667",
+                      "on-error-container": "#93000a",
+                      "inverse-primary": "#e9c176",
+                      "surface": "#f8f9fa",
+                      "outline-variant": "#d1c5b4",
+                      "surface-variant": "#e1e3e4",
+                      "on-secondary-fixed-variant": "#454749",
+                      "on-primary-fixed-variant": "#5d4201",
+                      "surface-container-low": "#f3f4f5",
+                      "primary-fixed-dim": "#e9c176",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-fixed-variant": "#42474c",
+                      "tertiary-fixed-dim": "#c2c7cd",
+                      "on-tertiary-fixed": "#171c21",
+                      "on-surface": "#191c1d",
+                      "on-primary-container": "#4e3700",
+                      "on-secondary-fixed": "#1a1c1e",
+                      "secondary": "#5d5e61",
+                      "surface-container-highest": "#e1e3e4",
+                      "on-tertiary": "#ffffff",
+                      "primary-container": "#c5a059",
+                      "surface-tint": "#775a19",
+                      "on-surface-variant": "#4e4639",
+                      "error-container": "#ffdad6",
+                      "tertiary-container": "#a1a6ac",
+                      "on-primary-fixed": "#261900",
+                      "surface-bright": "#f8f9fa",
+                      "on-primary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "lg": "48px",
+                      "xs": "8px",
+                      "sm": "16px",
+                      "margin-mobile": "16px",
+                      "margin-desktop": "64px",
+                      "xl": "80px",
+                      "base": "4px",
+                      "md": "24px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "display-lg": ["Manrope"],
+                      "body-md": ["Manrope"],
+                      "headline-md": ["Manrope"],
+                      "headline-lg-mobile": ["Manrope"],
+                      "headline-lg": ["Manrope"],
+                      "caption": ["Manrope"],
+                      "body-lg": ["Manrope"],
+                      "label-md": ["Manrope"]
+              },
+              "fontSize": {
+                      "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                      "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                      "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                      "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                      "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                      "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+                      "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                      "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-pattern {
+            background-image: radial-gradient(circle at 2px 2px, #d1c5b4 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 shadow-sm transition-all duration-200">
+<nav class="flex justify-between items-center px-margin-desktop py-sm max-w-7xl mx-auto">
+<a class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight" href="#">Alif Global</a>
+<div class="hidden md:flex items-center gap-md">
+<a class="font-label-md text-label-md text-on-surface dark:text-inverse-on-surface hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Solutions</a>
+<a class="font-label-md text-label-md text-on-surface dark:text-inverse-on-surface hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Services</a>
+<a class="font-label-md text-label-md text-on-surface dark:text-inverse-on-surface hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Work</a>
+<a class="font-label-md text-label-md text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 transition-colors duration-300" href="#">About Us</a>
+</div>
+<button class="bg-primary text-on-primary font-label-md px-md py-xs rounded-lg hover:bg-surface-tint transition-all duration-200 active:opacity-80">
+                Consultation
+            </button>
+</nav>
+</header>
+<main class="pt-xl">
+<!-- Hero Section -->
+<section class="relative min-h-[614px] flex items-center px-margin-desktop overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 hero-pattern opacity-20"></div>
+<div class="max-w-4xl relative z-10">
+<span class="font-label-md text-primary tracking-widest uppercase mb-sm block">Precision. Heritage. Excellence.</span>
+<h1 class="font-display-lg text-display-lg mb-md text-on-surface">Architecting the future through <span class="text-primary">Executive Precision</span>.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-lg">
+                    Alif Global stands at the intersection of traditional business wisdom and modern technological mastery. We provide elite IT consultancy for global enterprises that value reliability as much as innovation.
+                </p>
+<div class="flex gap-sm">
+<button class="bg-primary text-on-primary font-label-md px-lg py-sm rounded hover:shadow-lg transition-all">Our Story</button>
+<button class="border border-outline text-on-surface font-label-md px-lg py-sm rounded hover:bg-surface-variant transition-all">View Methodology</button>
+</div>
+</div>
+<div class="hidden lg:block absolute right-[-10%] top-[10%] w-[500px] h-[500px] rounded-full border border-primary/10 animate-pulse"></div>
+</section>
+<!-- Core Values Bento -->
+<section class="py-xl px-margin-desktop max-w-7xl mx-auto">
+<div class="text-center mb-xl">
+<h2 class="font-headline-lg text-headline-lg mb-sm">Our Core Pillars</h2>
+<p class="font-body-md text-on-surface-variant">The foundations upon which we build every solution.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<div class="p-lg bg-surface border border-outline-variant/30 rounded-xl hover:border-primary transition-colors group">
+<span class="material-symbols-outlined text-primary text-4xl mb-md block">verified</span>
+<h3 class="font-headline-md text-headline-md mb-sm">Excellence</h3>
+<p class="text-on-surface-variant font-body-md">We refuse to settle for 'adequate'. Our benchmark is absolute technical perfection and operational fluidity.</p>
+</div>
+<div class="p-lg bg-inverse-surface text-inverse-on-surface rounded-xl hover:bg-on-surface transition-colors group">
+<span class="material-symbols-outlined text-primary-fixed text-4xl mb-md block">lightbulb</span>
+<h3 class="font-headline-md text-headline-md mb-sm text-surface">Innovation</h3>
+<p class="text-surface-variant font-body-md">Innovation is not a buzzword; it’s our commitment to finding elegant solutions to the most complex architectural problems.</p>
+</div>
+<div class="p-lg bg-surface border border-outline-variant/30 rounded-xl hover:border-primary transition-colors group">
+<span class="material-symbols-outlined text-primary text-4xl mb-md block">gavel</span>
+<h3 class="font-headline-md text-headline-md mb-sm">Integrity</h3>
+<p class="text-on-surface-variant font-body-md">Transparent communication and radical honesty form the bedrock of our long-term client partnerships.</p>
+</div>
+</div>
+</section>
+<!-- Heritage Timeline -->
+<section class="py-xl bg-surface-container-low px-margin-desktop">
+<div class="max-w-7xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg mb-xl text-center">Decades of Growth</h2>
+<div class="relative border-l-2 border-primary/20 ml-4 md:ml-0 md:flex md:border-l-0 md:border-t-2 md:pt-md">
+<!-- 2008 -->
+<div class="mb-lg md:mb-0 md:flex-1 relative pl-8 md:pl-0">
+<div class="absolute top-0 left-[-9px] md:left-0 md:top-[-11px] w-4 h-4 rounded-full bg-primary ring-4 ring-background"></div>
+<span class="font-display-lg text-primary text-headline-md block mb-xs">2008</span>
+<h4 class="font-label-md mb-xs">Inception</h4>
+<p class="text-on-surface-variant font-caption">Alif Global founded as a boutique systems integration firm in London.</p>
+</div>
+<!-- 2014 -->
+<div class="mb-lg md:mb-0 md:flex-1 relative pl-8 md:pl-0">
+<div class="absolute top-0 left-[-9px] md:left-0 md:top-[-11px] w-4 h-4 rounded-full bg-primary ring-4 ring-background"></div>
+<span class="font-display-lg text-primary text-headline-md block mb-xs">2014</span>
+<h4 class="font-label-md mb-xs">Global Expansion</h4>
+<p class="text-on-surface-variant font-caption">Opening of regional hubs in Singapore and Dubai to serve emerging markets.</p>
+</div>
+<!-- 2019 -->
+<div class="mb-lg md:mb-0 md:flex-1 relative pl-8 md:pl-0">
+<div class="absolute top-0 left-[-9px] md:left-0 md:top-[-11px] w-4 h-4 rounded-full bg-primary ring-4 ring-background"></div>
+<span class="font-display-lg text-primary text-headline-md block mb-xs">2019</span>
+<h4 class="font-label-md mb-xs">Precision Framework</h4>
+<p class="text-on-surface-variant font-caption">Formalization of our proprietary 'Precision Methodology' for IT consultancy.</p>
+</div>
+<!-- 2024 -->
+<div class="md:flex-1 relative pl-8 md:pl-0">
+<div class="absolute top-0 left-[-9px] md:left-0 md:top-[-11px] w-4 h-4 rounded-full bg-primary ring-4 ring-background"></div>
+<span class="font-display-lg text-primary text-headline-md block mb-xs">2024</span>
+<h4 class="font-label-md mb-xs">AI Leadership</h4>
+<p class="text-on-surface-variant font-caption">Pioneering ethical AI integration and high-end cloud infrastructure for the Fortune 500.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Methodology -->
+<section class="py-xl px-margin-desktop bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-xl items-center">
+<div class="w-full md:w-1/2">
+<div class="relative rounded-xl overflow-hidden shadow-xl aspect-square border border-outline-variant/30">
+<img class="w-full h-full object-cover" data-alt="A high-end architectural photo of a modern corporate boardroom featuring a large polished marble table and floor-to-ceiling windows overlooking a sleek city skyline. The lighting is bright and airy, reflecting a professional light-mode aesthetic. A palette of soft greys, whites, and gold accents is visible, creating a sense of executive prestige and calm authority." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4MiywSRYedFrU7b8HkhhZ4PMo7ZIIGa3GECFlbnprMki1AC01et6YgzNUc-85uo62LqENPs4S9Iq6Nkl8PO1KVVjvzFX0yuB11iFy61oht0YIIcNUpAArIyuFxVuuvbCSbHqJYo5nIWoLAf5zqzNcCtaCK1cLioi3JXJgCQvvjimpIRA70JmGhZA5OUZyQWyDwCbwu4EBPe8DkLHB39YrOhjt_j4LZfV9_5VcU5kbVWnFhpkW6ahlhCzdd8myiPVNbhg-jnbH5A"/>
+<div class="absolute inset-0 bg-primary/5"></div>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<h2 class="font-headline-lg text-headline-lg mb-md">Our Methodology: Precision First</h2>
+<p class="font-body-md text-on-surface-variant mb-lg">
+                        We don’t believe in one-size-fits-all. Our approach is a rigorous, 4-stage cycle designed to ensure maximum ROI and zero-friction deployment.
+                    </p>
+<ul class="space-y-md">
+<li class="flex gap-sm">
+<span class="font-display-lg text-primary text-headline-md opacity-20">01</span>
+<div>
+<h4 class="font-label-md text-on-surface">Deep Audit</h4>
+<p class="text-on-surface-variant font-body-md">Thorough analysis of existing legacy structures and future scalability needs.</p>
+</div>
+</li>
+<li class="flex gap-sm">
+<span class="font-display-lg text-primary text-headline-md opacity-20">02</span>
+<div>
+<h4 class="font-label-md text-on-surface">Architectural Blueprinting</h4>
+<p class="text-on-surface-variant font-body-md">Crafting custom roadmaps that align IT infrastructure with business objectives.</p>
+</div>
+</li>
+<li class="flex gap-sm">
+<span class="font-display-lg text-primary text-headline-md opacity-20">03</span>
+<div>
+<h4 class="font-label-md text-on-surface">Agile Execution</h4>
+<p class="text-on-surface-variant font-body-md">Precision engineering and rapid prototyping with continuous stakeholder feedback.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Expert Team -->
+<section class="py-xl px-margin-desktop max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-xl">
+<div class="max-w-xl">
+<h2 class="font-headline-lg text-headline-lg mb-sm">The Engineering Vanguard</h2>
+<p class="font-body-md text-on-surface-variant">Our team consists of veteran architects, security specialists, and strategy consultants with decades of combined experience.</p>
+</div>
+<button class="hidden md:block text-primary font-label-md hover:underline decoration-2 underline-offset-4">Join our team</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-md">
+<!-- Team Member -->
+<div class="text-center group">
+<div class="aspect-[3/4] rounded-xl overflow-hidden mb-sm border border-outline-variant/20">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional headshot of a middle-aged male executive with a focused expression, wearing a tailored charcoal suit and a crisp white shirt. The background is a blurred high-end office environment with soft warm lighting and metallic gold accents. The overall tone is established, trustworthy, and authoritative, matching a corporate luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXdmidlQLZhmKpj9M4Jbt_vVp4LRPLabka4-scNHZ4nKrT0OuEb2qtEUAcr6gpa7XECFAXtAjONPIqliP-Pc69L7rMkbsPELlErmBqAgirO7pRWr2o40zqOTXoDqFMFTVRNkuVn1Cj50MLShJ26M9QpCPyiKz7TwcjNvuB4MoMEokjlby1fMh3NZGX8OA9W_JVBzSvdMcytIwZPibT1Yq7Q2SUBp3szGy9Ht_apgnoliTKkNT80LvzDdkj-Xng1Pby5ZPeJfMSXA"/>
+</div>
+<h4 class="font-label-md">Marcus Thorne</h4>
+<p class="text-primary font-caption">Chief Technical Officer</p>
+</div>
+<!-- Team Member -->
+<div class="text-center group">
+<div class="aspect-[3/4] rounded-xl overflow-hidden mb-sm border border-outline-variant/20">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional headshot of a female technology leader in her late 30s, dressed in a minimalist cream-colored silk blouse. Her expression is intelligent and approachable. The studio lighting is soft and neutral with hints of warm gold light. The background features clean, architectural lines, emphasizing a sense of modern prestige and professional clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeJqRByKQ-GDjsPEV5_RWqw2MIM6f-Ik71CJ9y6dHhvOG_X7MbuPX4Xnofe1mzoQed0eGYsqkvL6_KKxUEoL0wdhuRxQkh_VLIWm5v_Fns77-SgqBx3wbXmKcwlNjOP-CirdHtG1AcHnQ0ZFbnhToxhvDa3r-mwJro6Mqdp_5lPzUoJMkBDBn5hVMm5rc3Qn2mN1GWV9ru17N4SAZbA_CYW-PdffvO1uq-_RFA3N6CrroUnzTYgkd0PXwM1ClfCSseJG-Muq-qWQ"/>
+</div>
+<h4 class="font-label-md">Elena Voss</h4>
+<p class="text-primary font-caption">VP of Engineering</p>
+</div>
+<!-- Team Member -->
+<div class="text-center group">
+<div class="aspect-[3/4] rounded-xl overflow-hidden mb-sm border border-outline-variant/20">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A close-up professional portrait of a senior consultant in a modern workspace. He is wearing a dark grey blazer and looking directly at the camera with confidence. The setting is bright and spacious with high-key lighting that creates a pristine, minimalist gallery feel. Touches of silver and deep charcoal are prominent in the color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvfjhEjCZHB0zZNQUbo4hQDKsCcM817OYfYDLOidzW8qJj_DjA_ARnWrZ3G-dNqA2yF8OM5cbQ2QD46ioUMun2LiWdNAlZDDuw-LIa0emvyIozUJ3EXLhnf8XLlSEQkzX7uhUuZBZxrmtkUV24jvCdL1p1SzE8g0zc1ALuLjiYEogMrudxzdsyHJlx2tKoqH4y88kyI3umPberzUxA9cPZpvmG4ybYu-1nTf6iRQeRnDZm-11SRb0CrSXwYourebTu5BdRgeyEgQ"/>
+</div>
+<h4 class="font-label-md">Sanjay Gupta</h4>
+<p class="text-primary font-caption">Head of Global Strategy</p>
+</div>
+<!-- Team Member -->
+<div class="text-center group">
+<div class="aspect-[3/4] rounded-xl overflow-hidden mb-sm border border-outline-variant/20">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional portrait of a female cybersecurity expert with a sharp, intelligent look. She is dressed in a navy executive suit against a backdrop of a blurred digital operations center with soft blue and gold glow. The visual style is premium and corporate, focused on reliability and sophisticated technical craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuiQ_Cc0Omk7frLEfRUBFyaVn9yNI-dd3z2qk1N4LFtN7sLGJEwEE_MTRIHUR_ALurZ_XFCVeqdB2r6IE3smY6FZ0HMgkoBOi-WYFBerFHyhnxtM8Ys54ai0_aGCasz-Jket74AgTW8mEaGhZGJFJ36lkCBzCUIHkSnplGVvVssu5TxHcBLOI3lA7RIIe2xK7NNgeWbD31gt6NNHQew_6Sfc02cgDUZt_rtXR7mhMRmvqKMr89bwEuLbkJfxo18tg7GOkN1xAySQ"/>
+</div>
+<h4 class="font-label-md">Sarah Jenkins</h4>
+<p class="text-primary font-caption">Security Lead</p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-xl px-margin-desktop bg-inverse-surface text-inverse-on-surface overflow-hidden relative">
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<h2 class="font-headline-lg text-display-lg mb-md text-surface">Ready to define your digital future?</h2>
+<p class="font-body-lg mb-xl text-surface-variant/70">Our consultants are ready to discuss your next breakthrough project. Let’s build something enduring together.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-md">
+<button class="bg-primary text-on-primary font-label-md px-lg py-sm rounded-lg hover:bg-primary-container transition-all">Schedule a Consultation</button>
+<button class="border border-surface-variant/30 text-surface font-label-md px-lg py-sm rounded-lg hover:bg-surface/10 transition-all">Contact Sales</button>
+</div>
+</div>
+<div class="absolute inset-0 opacity-10 flex items-center justify-center">
+<span class="font-display-lg text-[20vw] font-extrabold uppercase select-none tracking-tighter">ALIF GLOBAL</span>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-xl bg-inverse-surface dark:bg-surface-container-lowest border-t border-outline/10 px-margin-desktop">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-md">
+<div class="max-w-xs">
+<a class="font-display-lg text-headline-md font-bold text-primary-fixed dark:text-primary tracking-tight" href="#">Alif Global</a>
+<p class="mt-sm text-surface-variant/70 font-body-md">Precision-led consultancy for the world's most ambitious enterprises.</p>
+</div>
+<div class="flex flex-wrap gap-xl">
+<div>
+<h4 class="font-label-md text-primary-fixed mb-sm uppercase tracking-widest">Connect</h4>
+<div class="flex flex-col gap-xs">
+<a class="text-surface-variant/70 hover:text-primary-fixed-dim transition-colors" href="#">LinkedIn</a>
+<a class="text-surface-variant/70 hover:text-primary-fixed-dim transition-colors" href="#">Twitter</a>
+</div>
+</div>
+<div>
+<h4 class="font-label-md text-primary-fixed mb-sm uppercase tracking-widest">Company</h4>
+<div class="flex flex-col gap-xs">
+<a class="text-surface-variant/70 hover:text-primary-fixed-dim transition-colors" href="#">Careers</a>
+<a class="text-surface-variant/70 hover:text-primary-fixed-dim transition-colors" href="#">Terms of Service</a>
+<a class="text-surface-variant/70 hover:text-primary-fixed-dim transition-colors" href="#">Privacy Policy</a>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-xl pt-lg border-t border-outline/10 flex justify-between items-center">
+<p class="text-surface-variant/70 font-body-md">© 2024 Alif Global. All Rights Reserved.</p>
+<div class="flex gap-sm">
+<span class="material-symbols-outlined text-surface-variant/30">language</span>
+<span class="text-surface-variant/70 font-label-md">EN (International)</span>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll behavior for header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-xs', 'shadow-md');
+                header.classList.remove('py-sm', 'shadow-sm');
+            } else {
+                header.classList.add('py-sm', 'shadow-sm');
+                header.classList.remove('py-xs', 'shadow-md');
+            }
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
+            observer.observe(section);
+        });
+    </script>
+</body></html>

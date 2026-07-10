@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | Alif Global</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#2e3132",
+                    "secondary-container": "#e2e2e5",
+                    "background": "#f8f9fa",
+                    "secondary-fixed": "#e2e2e5",
+                    "tertiary-fixed": "#dee3e9",
+                    "inverse-on-surface": "#f0f1f2",
+                    "secondary-fixed-dim": "#c6c6c9",
+                    "tertiary": "#5a5f64",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#636467",
+                    "primary-fixed": "#ffdea5",
+                    "surface-container-high": "#e7e8e9",
+                    "on-tertiary-container": "#363c41",
+                    "on-secondary": "#ffffff",
+                    "surface-dim": "#d9dadb",
+                    "on-background": "#191c1d",
+                    "surface-container": "#edeeef",
+                    "primary": "#775a19",
+                    "error": "#ba1a1a",
+                    "outline": "#7f7667",
+                    "on-error-container": "#93000a",
+                    "inverse-primary": "#e9c176",
+                    "surface": "#f8f9fa",
+                    "outline-variant": "#d1c5b4",
+                    "surface-variant": "#e1e3e4",
+                    "on-secondary-fixed-variant": "#454749",
+                    "on-primary-fixed-variant": "#5d4201",
+                    "surface-container-low": "#f3f4f5",
+                    "primary-fixed-dim": "#e9c176",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#42474c",
+                    "tertiary-fixed-dim": "#c2c7cd",
+                    "on-tertiary-fixed": "#171c21",
+                    "on-surface": "#191c1d",
+                    "on-primary-container": "#4e3700",
+                    "on-secondary-fixed": "#1a1c1e",
+                    "secondary": "#5d5e61",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-tertiary": "#ffffff",
+                    "primary-container": "#c5a059",
+                    "surface-tint": "#775a19",
+                    "on-surface-variant": "#4e4639",
+                    "error-container": "#ffdad6",
+                    "tertiary-container": "#a1a6ac",
+                    "on-primary-fixed": "#261900",
+                    "surface-bright": "#f8f9fa",
+                    "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "lg": "48px",
+                    "xs": "8px",
+                    "sm": "16px",
+                    "margin-mobile": "16px",
+                    "margin-desktop": "64px",
+                    "xl": "80px",
+                    "base": "4px",
+                    "md": "24px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Manrope"],
+                    "body-md": ["Manrope"],
+                    "headline-md": ["Manrope"],
+                    "headline-lg-mobile": ["Manrope"],
+                    "headline-lg": ["Manrope"],
+                    "caption": ["Manrope"],
+                    "body-lg": ["Manrope"],
+                    "label-md": ["Manrope"]
+            },
+            "fontSize": {
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .form-focus-halo:focus {
+            outline: none;
+            border-color: #775a19;
+            box-shadow: 0 0 0 2px rgba(119, 90, 25, 0.1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 shadow-sm">
+<div class="flex justify-between items-center px-margin-mobile py-sm max-w-7xl mx-auto">
+<span class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight">Alif Global</span>
+<button class="md:hidden p-2 text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="hidden md:flex gap-md items-center">
+<a class="font-label-md text-label-md text-on-surface dark:text-inverse-on-surface hover:text-primary transition-colors" href="#">Solutions</a>
+<a class="font-label-md text-label-md text-on-surface dark:text-inverse-on-surface hover:text-primary transition-colors" href="#">Services</a>
+<a class="font-label-md text-label-md text-on-surface dark:text-inverse-on-surface hover:text-primary transition-colors" href="#">Work</a>
+<a class="font-label-md text-label-md text-on-surface dark:text-inverse-on-surface hover:text-primary transition-colors" href="#">About Us</a>
+<button class="bg-primary text-on-primary px-md py-xs font-label-md text-label-md rounded-lg transition-all active:opacity-80">Consultation</button>
+</div>
+</div>
+</nav>
+<main class="pt-xl pb-lg px-margin-mobile">
+<!-- Header Section -->
+<header class="mb-lg mt-md">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase mb-base block">Contact Us</span>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface mb-sm">Let's build the future together.</h1>
+<p class="font-body-md text-body-md text-tertiary">Our team is ready to provide global expertise for your local challenges. Reach out through any of the channels below.</p>
+</header>
+<!-- Tap-to-Action Grid -->
+<div class="grid grid-cols-2 gap-sm mb-lg">
+<a class="flex flex-col items-center justify-center p-md bg-surface-container-lowest border border-outline-variant/30 rounded-xl transition-all active:scale-95" href="tel:+15550123">
+<span class="material-symbols-outlined text-primary mb-xs" style="font-size: 32px;">call</span>
+<span class="font-label-md text-label-md text-on-surface">Call Us</span>
+</a>
+<a class="flex flex-col items-center justify-center p-md bg-surface-container-lowest border border-outline-variant/30 rounded-xl transition-all active:scale-95" href="mailto:hello@alifglobal.com">
+<span class="material-symbols-outlined text-primary mb-xs" style="font-size: 32px;">mail</span>
+<span class="font-label-md text-label-md text-on-surface">Email Us</span>
+</a>
+</div>
+<!-- Contact Form -->
+<section class="bg-surface-container-lowest p-md rounded-xl border border-outline-variant/20 shadow-sm mb-lg">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-md">Inquiry Form</h2>
+<form class="space-y-md">
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant mb-base block">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-sm font-body-md text-body-md form-focus-halo" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant mb-base block">Company Email</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-sm font-body-md text-body-md form-focus-halo" placeholder="john@company.com" type="email"/>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant mb-base block">Subject</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant py-sm font-body-md text-body-md form-focus-halo">
+<option>Strategic Consultation</option>
+<option>Global Expansion</option>
+<option>Partnership Inquiry</option>
+<option>Other</option>
+</select>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant mb-base block">Message</label>
+<textarea class="w-full bg-transparent border border-outline-variant/50 rounded-lg p-sm font-body-md text-body-md form-focus-halo" placeholder="How can we help you?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary font-label-md text-label-md py-md rounded-lg shadow-sm active:scale-[0.98] transition-transform" type="submit">
+                    Send Message
+                </button>
+</form>
+</section>
+<!-- Global Offices -->
+<section class="space-y-md">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-sm">Our Presence</h2>
+<!-- Dubai Office -->
+<div class="overflow-hidden bg-surface-container-lowest border border-outline-variant/30 rounded-xl">
+<div class="h-40 bg-cover bg-center" data-alt="A high-angle drone shot of the Dubai International Financial Centre (DIFC) skyline at sunset, featuring iconic architecture in warm golden lighting. The aesthetic is clean, professional, and reflects global corporate authority with a palette of sandy golds and glass-tower blues." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDEU5tCIHeSF500ZGuz0mHVfRi_e8FCwLGugBPZ0ngihbBE9sPePWoPstQrsFZ3wHwvwbv0ZvEVSbHVFndKhy3k6fDBtivP6IF-6nPWUlPxMoIUom_Zw_Ej4kbRauc8IHV7jYTn9hGIkWtlq9o1Hfgwie-wcol5eablpc9lTgp9NBYKNN_jRthhvUXmSlO2P8-e-7wYhuzWPULhiue6Tqq_ldzD6DFfb4KS4ERJzc_R610hW-3PxoubTZxKqTEwaDQFkphI9c_-Uw')"></div>
+<div class="p-md">
+<span class="font-label-md text-label-md text-primary uppercase">Regional Hub</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-xs">Dubai, UAE</h3>
+<p class="font-body-md text-body-md text-tertiary mt-xs">Level 15, Alif Tower, Financial District</p>
+<button class="mt-md flex items-center text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined mr-xs">near_me</span>
+                        Get Directions
+                    </button>
+</div>
+</div>
+<!-- London Office -->
+<div class="overflow-hidden bg-surface-container-lowest border border-outline-variant/30 rounded-xl">
+<div class="h-40 bg-cover bg-center" data-alt="A street-level view of a classic yet modernized corporate building in Canary Wharf, London. The lighting is crisp morning light, highlighting the silver steel and glass facades. The mood is sophisticated and established, emphasizing architectural precision and financial strength." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDQSdqz2oX4F6YAI_xIvs9RfTTXwtpH6Rh63WLmIlgnuH_157G2WvhqeihZT2wztJmgsyJp3FY8QCtSj2uUkOY6YiJnMLlaBe1-8cd59eA9lttVqrI_rR6X5rey2zYLnO77z2m1-P8TDYydjudqCbucaBin8N5Xom60nzHRo-B5qOln00CDVaw4h1TRqydaSE3R6N1nH27F1iJpEJ_vNMprgY4o88vNJ0KfquFhOqbAhcEo6A-vIR8ycoFlaPpvy3dXlV55k5Z5GA')"></div>
+<div class="p-md">
+<span class="font-label-md text-label-md text-primary uppercase">European Operations</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-xs">London, UK</h3>
+<p class="font-body-md text-body-md text-tertiary mt-xs">42 One Canada Square, Canary Wharf</p>
+<button class="mt-md flex items-center text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined mr-xs">near_me</span>
+                        Get Directions
+                    </button>
+</div>
+</div>
+<!-- Singapore Office -->
+<div class="overflow-hidden bg-surface-container-lowest border border-outline-variant/30 rounded-xl">
+<div class="h-40 bg-cover bg-center" data-alt="A lush, modern interior of a biophilic office building in Singapore's Marina Bay Sands district. High-key natural lighting illuminates green foliage and warm wood textures. The visual style is futuristic and sustainable, capturing the essence of global innovation and executive minimalism." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBUYZj_qkw2rNxDtcGJUAOOdLuqBDN39otnbsEI8vMUnBQ9LOeyMA7IxOvYfEa3pus-wtvW_T8bm_LtqHQdWfWnnRa8ofkx_Kl5ZAptpbG0rDeVZVBju-PpJpQJWl-9kMOmApv7f_QcdGrpcK4pj-80tk_M_jPluRoshysAPn1IPXKX-asL6bRvmlLEnDv11v_J0bfNe5kq88gRv2kd_UZQF6qVwN61TG36lDIQIQYjl9jARLTKS64qFjP9ZYZzoHrMHukSJcw3ZA')"></div>
+<div class="p-md">
+<span class="font-label-md text-label-md text-primary uppercase">APAC Headquarters</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-xs">Singapore</h3>
+<p class="font-body-md text-body-md text-tertiary mt-xs">Suite 801, Marina Bay Corporate Centre</p>
+<button class="mt-md flex items-center text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined mr-xs">near_me</span>
+                        Get Directions
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-xl bg-inverse-surface dark:bg-surface-container-lowest border-t border-outline/10 px-margin-mobile">
+<div class="flex flex-col gap-md">
+<span class="font-display-lg text-headline-md font-bold text-primary-fixed dark:text-primary">Alif Global</span>
+<nav class="flex flex-col gap-sm">
+<a class="text-surface-variant/70 font-body-md text-body-md hover:text-primary-fixed-dim transition-colors" href="#">Privacy Policy</a>
+<a class="text-surface-variant/70 font-body-md text-body-md hover:text-primary-fixed-dim transition-colors" href="#">Terms of Service</a>
+<a class="text-surface-variant/70 font-body-md text-body-md hover:text-primary-fixed-dim transition-colors" href="#">Careers</a>
+<a class="text-surface-variant/70 font-body-md text-body-md hover:text-primary-fixed-dim transition-colors" href="#">LinkedIn</a>
+</nav>
+<p class="text-surface-variant/70 font-body-md text-body-md mt-md">© 2024 Alif Global. All Rights Reserved.</p>
+</div>
+</footer>
+<!-- Bottom Navigation (Mobile Only) -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 bg-surface/95 backdrop-blur-md flex justify-around items-center py-sm shadow-[0_-2px_10px_rgba(0,0,0,0.05)] z-50">
+<a class="flex flex-col items-center text-on-surface" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-label-md">Home</span>
+</a>
+<a class="flex flex-col items-center text-on-surface" href="#">
+<span class="material-symbols-outlined">explore</span>
+<span class="text-[10px] font-label-md">Solutions</span>
+</a>
+<a class="flex flex-col items-center text-primary border-t-2 border-primary pt-1" href="#">
+<span class="material-symbols-outlined">chat</span>
+<span class="text-[10px] font-label-md">Contact</span>
+</a>
+<a class="flex flex-col items-center text-on-surface" href="#">
+<span class="material-symbols-outlined">info</span>
+<span class="text-[10px] font-label-md">About</span>
+</a>
+</div>
+<script>
+        // Micro-interactions for form
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerText;
+            btn.innerText = 'Sending...';
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                btn.innerText = 'Message Sent';
+                btn.classList.remove('bg-primary');
+                btn.classList.add('bg-green-600');
+                
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.classList.add('bg-primary');
+                    btn.classList.remove('bg-green-600');
+                    btn.disabled = false;
+                    e.target.reset();
+                }, 3000);
+            }, 1500);
+        });
+    </script>
+</body></html>

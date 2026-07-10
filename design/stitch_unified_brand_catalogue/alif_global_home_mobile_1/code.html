@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alif Global | Precision Excellence</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Manrope -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "background": "#f8f9fa",
+                    "on-secondary-container": "#636467",
+                    "tertiary": "#5a5f64",
+                    "on-tertiary-fixed": "#171c21",
+                    "outline": "#7f7667",
+                    "secondary-container": "#e2e2e5",
+                    "surface-variant": "#e1e3e4",
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#f0f1f2",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed": "#e2e2e5",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-primary": "#ffffff",
+                    "on-background": "#191c1d",
+                    "surface-bright": "#f8f9fa",
+                    "surface-tint": "#775a19",
+                    "on-secondary-fixed": "#1a1c1e",
+                    "error-container": "#ffdad6",
+                    "on-surface-variant": "#4e4639",
+                    "primary-container": "#c5a059",
+                    "on-primary-fixed": "#261900",
+                    "on-secondary-fixed-variant": "#454749",
+                    "primary": "#775a19",
+                    "surface": "#f8f9fa",
+                    "tertiary-container": "#a1a6ac",
+                    "secondary-fixed-dim": "#c6c6c9",
+                    "primary-fixed": "#ffdea5",
+                    "on-tertiary-container": "#363c41",
+                    "surface-container": "#edeeef",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#e7e8e9",
+                    "on-primary-container": "#4e3700",
+                    "outline-variant": "#d1c5b4",
+                    "tertiary-fixed-dim": "#c2c7cd",
+                    "on-error-container": "#93000a",
+                    "on-surface": "#191c1d",
+                    "on-primary-fixed-variant": "#5d4201",
+                    "secondary": "#5d5e61",
+                    "inverse-surface": "#2e3132",
+                    "primary-fixed-dim": "#e9c176",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#f3f4f5",
+                    "tertiary-fixed": "#dee3e9",
+                    "on-tertiary-fixed-variant": "#42474c",
+                    "inverse-primary": "#e9c176",
+                    "surface-dim": "#d9dadb"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "sm": "16px",
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "lg": "48px",
+                    "md": "24px",
+                    "xs": "8px",
+                    "xl": "80px",
+                    "margin-mobile": "16px",
+                    "base": "4px"
+            },
+            "fontFamily": {
+                    "label-md": ["Manrope"],
+                    "caption": ["Manrope"],
+                    "headline-lg": ["Manrope"],
+                    "headline-lg-mobile": ["Manrope"],
+                    "headline-md": ["Manrope"],
+                    "body-lg": ["Manrope"],
+                    "body-md": ["Manrope"],
+                    "display-lg": ["Manrope"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        /* Premium Background Gradient */
+        body {
+            background-attachment: fixed;
+            background-image: radial-gradient(circle at 0% 0%, rgba(226, 226, 229, 0.4) 0%, transparent 50%),
+                              radial-gradient(circle at 100% 100%, rgba(197, 160, 89, 0.05) 0%, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen">
+<!-- Top Bar (Mobile Anchor) -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-md px-margin-mobile py-4 border-b border-outline-variant/30 flex justify-between items-center h-16">
+<div class="flex items-center gap-3">
+<img alt="Alif Global Logo" class="h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAucPXaZqlNHdZlcIZ4bkQb_fP0UiUTE9rDLFj5nTc4PEMuNWL7NQrLbGvXGb4HylADKSris4zkSrcOu-1pMd4h7DQqWW7hh59TPlN6ab05FguNgL0c7eQMtSNhKO_bfYuEDrfxSco3HQAstay4sI0vsBD90xspqlmpBrKRN5GI29rn6SYg0ZlBIFYX0y_j54B5XyTRJmMIiphCCTlhHbjSGHiC9qJn6PnsS74dHEHjUXtNAW-7h-Nw61rGiEVh7mBMr3ScJG0y1g"/>
+</div>
+<div class="flex gap-4">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="pt-20 pb-24 max-w-md mx-auto px-margin-mobile">
+<!-- Welcome Section -->
+<section class="mb-lg">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-xs">Precision Excellence</h1>
+<p class="font-body-md text-on-surface-variant">Welcome back to Alif Global. High-end solutions for the modern industry.</p>
+</section>
+<!-- Search Bar -->
+<section class="mb-lg">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-on-surface-variant">search</span>
+<input class="w-full pl-12 pr-4 py-4 rounded-xl border-none bg-surface-container-high text-on-surface focus:ring-2 focus:ring-primary/20 transition-all font-body-md placeholder:text-on-surface-variant/50" placeholder="Search catalog, solutions..." type="text"/>
+</div>
+</section>
+<!-- Quick Access Categories (Bento Style) -->
+<section class="mb-lg">
+<h2 class="font-label-md text-label-md uppercase tracking-wider text-outline mb-sm">Quick Access</h2>
+<div class="grid grid-cols-2 gap-md">
+<!-- Solutions -->
+<div class="bg-surface-container-low p-md rounded-xl border border-outline-variant/30 hover:border-primary/50 transition-all cursor-pointer group">
+<div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">precision_manufacturing</span>
+</div>
+<span class="font-label-md text-label-md block">Solutions</span>
+<span class="font-caption text-caption text-on-surface-variant">Industrial Power</span>
+</div>
+<!-- Projects -->
+<div class="bg-surface-container-low p-md rounded-xl border border-outline-variant/30 hover:border-primary/50 transition-all cursor-pointer group">
+<div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">architecture</span>
+</div>
+<span class="font-label-md text-label-md block">Projects</span>
+<span class="font-caption text-caption text-on-surface-variant">Global Reach</span>
+</div>
+<!-- Contact (Full width) -->
+<div class="col-span-2 bg-inverse-surface p-md rounded-xl border border-outline-variant/30 hover:opacity-90 transition-all cursor-pointer flex items-center justify-between group">
+<div>
+<span class="font-label-md text-label-md text-primary-fixed block">Contact Support</span>
+<span class="font-caption text-caption text-surface-variant/70">24/7 Premium Assistance</span>
+</div>
+<div class="w-10 h-10 bg-primary-container rounded-lg flex items-center justify-center text-on-primary-container group-hover:translate-x-1 transition-transform">
+<span class="material-symbols-outlined">mail</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Latest Catalogues (Scrollable Card Section) -->
+<section class="mb-lg overflow-hidden -mx-margin-mobile">
+<div class="px-margin-mobile flex justify-between items-end mb-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface">Latest Catalogues</h2>
+<a class="font-label-md text-label-md text-primary hover:underline" href="#">View All</a>
+</div>
+<div class="flex overflow-x-auto gap-md px-margin-mobile hide-scrollbar snap-x">
+<!-- Card 1 -->
+<div class="snap-start flex-shrink-0 w-64 bg-surface-container-lowest rounded-xl border border-outline-variant/20 overflow-hidden shadow-sm">
+<div class="h-40 relative group overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A luxurious, high-resolution shot of high-end metallic architectural components presented on a dark marble surface. Soft, golden directional lighting highlights the precision edges and refined finish of the metal. The mood is sophisticated and expensive, reflecting an executive minimalist aesthetic with deep charcoal shadows and warm metallic glints." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAkh6NBeW-sS76BQSOx3wnIUV8j8Aok7dCshgWSGKyUn28DtoILvCo1_BSld0Ai7yHFf8DHZjeLXhqcvbPTNKaRb9phN5xgK8CdV80KH67u-4c_vh5sn2RQ00w7Bk1qcY_MlC8U13cjr9y0rR_MYYy9YIj1YJOYqRSAHskmoJWvFNKyjXh7IAL6rQ3lh1e3HKGTzqES5_S8YHJGCGe6aLVk4CpfgbhnjTTR3_FPGWsdpkEKgP-nOiArdFfyzHsyKkN4Zg8h34Mv7w')"></div>
+<div class="absolute top-2 right-2 bg-primary px-xs py-0.5 rounded text-[10px] uppercase font-bold text-white">New</div>
+</div>
+<div class="p-sm">
+<h3 class="font-label-md text-label-md text-on-surface line-clamp-1">Metallic Structural Systems</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-sm">Industrial Series 2024</p>
+<button class="w-full py-2 bg-surface-container text-on-surface font-label-md text-[12px] rounded uppercase tracking-tighter hover:bg-primary-container hover:text-on-primary-container transition-colors">Download PDF</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="snap-start flex-shrink-0 w-64 bg-surface-container-lowest rounded-xl border border-outline-variant/20 overflow-hidden shadow-sm">
+<div class="h-40 relative group overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Professional close-up of advanced global machinery components featuring intricate gears and polished surfaces. The scene is set in a clean, brightly lit corporate manufacturing environment with high-key lighting. The color palette consists of cool silvers, pristine whites, and subtle golden highlights on specific mechanical interfaces, emphasizing architectural precision." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCz3dQM_ocDmlCispJFA7VjZ5mDGF4MG3sK99i6D-ShnibckMGvk1XAGtlK7UU_xmeBfktbo6-DzITvrcgrg1GO1LMLDqt7qiAT3AapPRwh2xIQtmjcBj_e248xNwWK0E9fNxgVSmhyyTQhWz0T2F0r8Sv9jFG2YrgS6ZSo9TBRk2ciI73fXq6VF2_c_cA1Ben0OV5NMhTZyEQjF9yJSicwz7Wj4er2DtyFTi6-COQr4UZvcBIVhuMc_rL2Uc3gWSEyvwRANBJ5Jg')"></div>
+</div>
+<div class="p-sm">
+<h3 class="font-label-md text-label-md text-on-surface line-clamp-1">Precision Gear Hubs</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-sm">Master Collection</p>
+<button class="w-full py-2 bg-surface-container text-on-surface font-label-md text-[12px] rounded uppercase tracking-tighter hover:bg-primary-container hover:text-on-primary-container transition-colors">Download PDF</button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="snap-start flex-shrink-0 w-64 bg-surface-container-lowest rounded-xl border border-outline-variant/20 overflow-hidden shadow-sm">
+<div class="h-40 relative group overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="An abstract architectural shot of a modern corporate skyscraper's facade, reflecting a clear blue sky. The building features clean lines, expansive glass, and gold-tinted structural beams. The lighting is bright and airy, creating a professional and global atmosphere. The image communicates reliability and established authority through monumental scale." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDw7qBQZqQQNw6fNfh_C8AKR2rZbAaAW-pzRw0tfj17QtwqzO5qBdTQUrOSUCZp9SpuREMyRo55hYdvbU9kBkp1TCs3Lm4L1xr54zT9LlwMzdsas61LuDMfW6PmvL7jJy18croKw1sbMscXZjsb7FjQdgRfI15HFrx7BSBwXsfPkrbvDKQaud3cfnP5QTSrYKLt4YGmzWdX_sBjh3FYDuHvFO7Py0JYesxqLalTSpGEesCKCEOIk_28xxRieyvuweBm6DN5NRvNHA')"></div>
+</div>
+<div class="p-sm">
+<h3 class="font-label-md text-label-md text-on-surface line-clamp-1">Global Project Portfolio</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-sm">Volume IV</p>
+<button class="w-full py-2 bg-surface-container text-on-surface font-label-md text-[12px] rounded uppercase tracking-tighter hover:bg-primary-container hover:text-on-primary-container transition-colors">Download PDF</button>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-primary-container p-lg rounded-2xl relative overflow-hidden group">
+<div class="relative z-10">
+<h2 class="font-headline-md text-headline-md text-on-primary-container mb-xs">Ready for a custom solution?</h2>
+<p class="font-body-md text-on-primary-container/80 mb-md">Our global team of engineers is ready to assist your next major project.</p>
+<button class="bg-on-primary-container text-primary-fixed px-lg py-3 rounded-lg font-label-md text-label-md uppercase transition-transform active:scale-95">Request Quote</button>
+</div>
+<!-- Decorative circle -->
+<div class="absolute -right-10 -bottom-10 w-40 h-40 bg-on-primary-container/10 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-1000"></div>
+</section>
+</main>
+<!-- Bottom Nav Bar (Mobile Fixed) -->
+<nav class="fixed bottom-0 left-0 right-0 bg-surface/90 backdrop-blur-xl border-t border-outline-variant/20 pb-safe-area shadow-2xl z-50">
+<div class="max-w-md mx-auto flex justify-between px-md py-3">
+<button class="flex flex-col items-center gap-1 group text-primary">
+<div class="bg-primary-container text-on-primary-container px-4 py-1 rounded-full flex items-center justify-center transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+</div>
+<span class="font-caption text-[10px] font-bold uppercase">Home</span>
+</button>
+<button class="flex flex-col items-center gap-1 group text-on-surface-variant hover:text-primary transition-colors">
+<div class="px-4 py-1 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">category</span>
+</div>
+<span class="font-caption text-[10px] uppercase">Products</span>
+</button>
+<button class="flex flex-col items-center gap-1 group text-on-surface-variant hover:text-primary transition-colors">
+<div class="px-4 py-1 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">precision_manufacturing</span>
+</div>
+<span class="font-caption text-[10px] uppercase">Solutions</span>
+</button>
+<button class="flex flex-col items-center gap-1 group text-on-surface-variant hover:text-primary transition-colors">
+<div class="px-4 py-1 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">history_edu</span>
+</div>
+<span class="font-caption text-[10px] uppercase">History</span>
+</button>
+<button class="flex flex-col items-center gap-1 group text-on-surface-variant hover:text-primary transition-colors">
+<div class="px-4 py-1 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<span class="font-caption text-[10px] uppercase">Contact</span>
+</button>
+</div>
+</nav>
+<!-- Micro-interaction Scripts -->
+<script>
+        // Subtle scroll reveal effect for cards
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-4');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'ease-out', 'opacity-0', 'translate-y-4');
+            observer.observe(section);
+        });
+
+        // Quick active state toggle for demo
+        document.querySelectorAll('nav button').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('nav button').forEach(b => {
+                    const iconWrapper = b.querySelector('div');
+                    iconWrapper.classList.remove('bg-primary-container', 'text-on-primary-container');
+                    b.classList.add('text-on-surface-variant');
+                    b.classList.remove('text-primary');
+                    const span = b.querySelector('span');
+                    span.style.fontVariationSettings = "'FILL' 0";
+                });
+                
+                const iconWrapper = this.querySelector('div');
+                iconWrapper.classList.add('bg-primary-container', 'text-on-primary-container');
+                this.classList.add('text-primary');
+                this.classList.remove('text-on-surface-variant');
+                const span = this.querySelector('span');
+                span.style.fontVariationSettings = "'FILL' 1";
+            });
+        });
+    </script>
+</body></html>
