@@ -1,15 +1,23 @@
 import Link from "next/link";
 import { Reveal, RevealGroup, RevealItem } from "./components/Reveal";
 import { HeroVisual } from "./components/HeroVisual";
-import { GlobeBackground } from "./components/GlobeBackground";
 
 export default function Home() {
   return (
     <>
       {/* Hero Section */}
       <section className="relative pt-32 md:pt-40 pb-xl overflow-hidden">
+        <video
+          className="absolute inset-0 w-full h-full object-cover -z-20"
+          src="/herovideo.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+        <div className="absolute inset-0 -z-10 bg-background/70 md:hidden" />
         <div
-          className="absolute inset-0 -z-10 opacity-[0.4]"
+          className="hidden md:block absolute inset-0 -z-10 opacity-[0.4]"
           style={{
             background:
               "radial-gradient(600px circle at 15% 20%, color-mix(in srgb, var(--color-primary) 10%, transparent), transparent 60%)",
@@ -17,10 +25,7 @@ export default function Home() {
         />
         <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop relative z-10 grid grid-cols-1 md:grid-cols-12 gap-lg items-center">
           <div className="md:col-span-7 relative">
-            <div className="md:hidden pointer-events-none absolute -top-4 left-1/2 -translate-x-1/2 w-[320px] h-[320px] max-w-[85vw] max-h-[85vw] opacity-60">
-              <GlobeBackground className="w-full h-full" />
-            </div>
-            <div className="relative p-sm bg-background/55 backdrop-blur-[2px] rounded-2xl md:p-0 md:bg-transparent md:backdrop-blur-none md:rounded-none">
+            <div className="relative">
               <Reveal duration={0.8}>
                 <h1 className="font-display-lg text-[36px] leading-[1.1] md:text-display-lg text-on-surface mb-md text-balance">
                   Empowering Enterprise with{" "}
