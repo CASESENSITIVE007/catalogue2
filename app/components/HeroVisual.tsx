@@ -2,18 +2,22 @@
 
 import { motion } from "framer-motion";
 
+const BADGE_SIZE = "clamp(30px, 11cqw, 52px)";
+const ICON_SIZE = "clamp(14px, 5cqw, 22px)";
+
 const floatingIcons = [
-  { icon: "settings", top: "4%", left: "50%", size: 52, delay: 0, duration: 5 },
-  { icon: "psychology", top: "16%", left: "42%", size: 46, delay: 0.6, duration: 6 },
-  { icon: "neurology", top: "13%", left: "68%", size: 46, delay: 1.1, duration: 5.5 },
-  { icon: "cloud", top: "30%", left: "78%", size: 46, delay: 0.3, duration: 6.5 },
-  { icon: "neurology", top: "57%", left: "74%", size: 46, delay: 0.9, duration: 5 },
+  { icon: "settings", top: "4%", left: "50%", delay: 0, duration: 5 },
+  { icon: "psychology", top: "16%", left: "42%", delay: 0.6, duration: 6 },
+  { icon: "neurology", top: "13%", left: "68%", delay: 1.1, duration: 5.5 },
+  { icon: "cloud", top: "30%", left: "78%", delay: 0.3, duration: 6.5 },
+  { icon: "neurology", top: "57%", left: "74%", delay: 0.9, duration: 5 },
 ];
 
 export function HeroVisual() {
   return (
     <motion.div
       className="relative w-full aspect-square"
+      style={{ containerType: "inline-size" }}
       whileHover={{ scale: 1.02 }}
       transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
     >
@@ -58,8 +62,8 @@ export function HeroVisual() {
           style={{
             top: item.top,
             left: item.left,
-            width: item.size,
-            height: item.size,
+            width: BADGE_SIZE,
+            height: BADGE_SIZE,
           }}
           animate={{ y: [0, -12, 0], rotate: [0, 4, 0, -4, 0] }}
           transition={{
@@ -69,7 +73,10 @@ export function HeroVisual() {
             ease: "easeInOut",
           }}
         >
-          <span className="material-symbols-outlined text-[22px]">
+          <span
+            className="material-symbols-outlined"
+            style={{ fontSize: ICON_SIZE }}
+          >
             {item.icon}
           </span>
         </motion.div>

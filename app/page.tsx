@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Reveal, RevealGroup, RevealItem } from "./components/Reveal";
 import { HeroVisual } from "./components/HeroVisual";
+import { GlobeBackground } from "./components/GlobeBackground";
 
 export default function Home() {
   return (
@@ -15,38 +16,43 @@ export default function Home() {
           }}
         />
         <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop relative z-10 grid grid-cols-1 md:grid-cols-12 gap-lg items-center">
-          <div className="md:col-span-7">
-            <Reveal duration={0.8}>
-              <h1 className="font-display-lg text-[36px] leading-[1.1] md:text-display-lg text-on-surface mb-md text-balance">
-                Empowering Enterprise with{" "}
-                <span className="gold-gradient-text gold-gradient-text-animated italic">
-                  AI-Driven Excellence
-                </span>
-              </h1>
-            </Reveal>
-            <Reveal delay={0.15} duration={0.8}>
-              <p className="font-body-lg text-body-lg text-tertiary mb-lg ">
-                We bridge the gap between complex technological evolution and
-                sustainable business growth through elite architectural
-                precision and deep learning integration.
-              </p>
-            </Reveal>
-            <Reveal delay={0.3} duration={0.8}>
-              <div className="flex flex-wrap gap-md">
-                <Link
-                  href="/contact"
-                  className="shine bg-primary text-on-primary px-lg py-sm rounded-full font-label-md text-label-md hover:shadow-xl hover:shadow-primary/30 transition-all active:scale-95"
-                >
-                  Initiate Strategy
-                </Link>
-                <Link
-                  href="/work"
-                  className="border border-outline text-on-surface px-lg py-sm rounded-full font-label-md text-label-md hover:bg-surface-container hover:-translate-y-0.5 transition-all"
-                >
-                  View Portfolio
-                </Link>
-              </div>
-            </Reveal>
+          <div className="md:col-span-7 relative">
+            <div className="md:hidden pointer-events-none absolute -top-4 left-1/2 -translate-x-1/2 w-[320px] h-[320px] max-w-[85vw] max-h-[85vw] opacity-60">
+              <GlobeBackground className="w-full h-full" />
+            </div>
+            <div className="relative p-sm bg-background/55 backdrop-blur-[2px] rounded-2xl md:p-0 md:bg-transparent md:backdrop-blur-none md:rounded-none">
+              <Reveal duration={0.8}>
+                <h1 className="font-display-lg text-[36px] leading-[1.1] md:text-display-lg text-on-surface mb-md text-balance">
+                  Empowering Enterprise with{" "}
+                  <span className="gold-gradient-text gold-gradient-text-animated italic">
+                    AI-Driven Excellence
+                  </span>
+                </h1>
+              </Reveal>
+              <Reveal delay={0.15} duration={0.8}>
+                <p className="font-body-lg text-body-lg text-tertiary mb-lg ">
+                  We bridge the gap between complex technological evolution
+                  and sustainable business growth through elite architectural
+                  precision and deep learning integration.
+                </p>
+              </Reveal>
+              <Reveal delay={0.3} duration={0.8}>
+                <div className="flex flex-wrap gap-md">
+                  <Link
+                    href="/contact"
+                    className="shine bg-primary text-on-primary px-lg py-sm rounded-full font-label-md text-label-md hover:shadow-xl hover:shadow-primary/30 transition-all active:scale-95"
+                  >
+                    Initiate Strategy
+                  </Link>
+                  <Link
+                    href="/work"
+                    className="border border-outline text-on-surface px-lg py-sm rounded-full font-label-md text-label-md hover:bg-surface-container hover:-translate-y-0.5 transition-all"
+                  >
+                    View Portfolio
+                  </Link>
+                </div>
+              </Reveal>
+            </div>
           </div>
           <div className="md:col-span-5 relative hidden md:block">
             <Reveal delay={0.2} duration={0.9} y={0}>
