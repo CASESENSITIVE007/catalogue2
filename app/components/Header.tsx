@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { LogoMark } from "./LogoMark";
 
 const NAV_LINKS = [
   { href: "/", label: "Solutions" },
@@ -48,9 +49,10 @@ export default function Header() {
         <div className="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-sm max-w-7xl mx-auto">
           <Link
             href="/"
-            className="font-display-lg text-headline-md font-bold text-primary tracking-tight transition-transform duration-300 hover:scale-[1.03] inline-block"
+            aria-label="Alif Global"
+            className="transition-transform duration-300 hover:scale-[1.03] inline-block"
           >
-            Alif Global
+            <LogoMark className="h-9 w-auto" />
           </Link>
           <nav className="hidden md:flex items-center gap-lg">
             {NAV_LINKS.map((link) => {
