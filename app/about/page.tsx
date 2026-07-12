@@ -125,14 +125,14 @@ export default function AboutPage() {
               absolute technical perfection and operational fluidity.
             </p>
           </RevealItem>
-          <RevealItem className="p-lg bg-inverse-surface text-inverse-on-surface rounded-xl transition-all duration-300 hover:bg-on-surface hover:-translate-y-1 hover:shadow-lg">
-            <span className="material-symbols-outlined text-primary-fixed text-4xl mb-md block">
+          <RevealItem className="p-lg bg-inverse-surface text-inverse-on-surface rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+            <span className="material-symbols-outlined text-inverse-primary text-4xl mb-md block">
               lightbulb
             </span>
-            <h3 className="font-headline-md text-headline-md mb-sm text-surface">
+            <h3 className="font-headline-md text-headline-md mb-sm">
               Innovation
             </h3>
-            <p className="text-surface-variant font-body-md">
+            <p className="text-inverse-on-surface/70 font-body-md">
               Innovation is not a buzzword; it&apos;s our commitment to
               finding elegant solutions to the most complex architectural
               problems.
@@ -292,10 +292,10 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="py-xl px-margin-mobile md:px-margin-desktop bg-inverse-surface text-inverse-on-surface overflow-hidden relative">
         <Reveal className="max-w-4xl mx-auto text-center relative z-10">
-          <h2 className="font-headline-lg text-[28px] md:text-display-lg mb-md text-surface">
+          <h2 className="font-headline-lg text-[28px] md:text-display-lg mb-md">
             Ready to define your digital future?
           </h2>
-          <p className="font-body-lg mb-xl text-surface-variant/70">
+          <p className="font-body-lg mb-xl text-inverse-on-surface/70">
             Our consultants are ready to discuss your next breakthrough
             project. Let&apos;s build something enduring together.
           </p>
@@ -308,7 +308,7 @@ export default function AboutPage() {
             </Link>
             <Link
               href="/contact"
-              className="border border-surface-variant/30 text-surface font-label-md px-lg py-sm rounded-lg hover:bg-surface/10 transition-all"
+              className="border border-inverse-on-surface/30 text-inverse-on-surface font-label-md px-lg py-sm rounded-lg hover:bg-inverse-on-surface/10 transition-all"
             >
               Contact Sales
             </Link>

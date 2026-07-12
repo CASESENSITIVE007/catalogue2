@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { Manrope, Geist } from "next/font/google";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -22,8 +25,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${manrope.variable} scroll-smooth`}>
+    <html lang="en" className={cn("scroll-smooth", manrope.variable, "font-sans", geist.variable)} suppressHydrationWarning>
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('theme');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();`,
+          }}
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"

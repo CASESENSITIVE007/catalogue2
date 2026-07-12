@@ -199,20 +199,20 @@ export default function ServicesPage() {
 
           <RevealItem className="md:col-span-4 group bg-inverse-surface text-inverse-on-surface p-lg flex flex-col justify-center text-center relative transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
             <div className="relative z-10 space-y-md">
-              <div className="inline-block px-sm py-1 border border-primary-fixed text-primary-fixed font-label-md text-label-md mb-md uppercase tracking-tighter">
+              <div className="inline-block px-sm py-1 border border-inverse-primary text-inverse-primary font-label-md text-label-md mb-md uppercase tracking-tighter">
                 Bespoke Strategy
               </div>
-              <h3 className="font-headline-md text-headline-md text-primary-fixed">
+              <h3 className="font-headline-md text-headline-md text-inverse-primary">
                 Executive AI Strategy
               </h3>
-              <p className="text-surface-variant/70">
+              <p className="text-inverse-on-surface/70">
                 A specialized consultancy for C-suite leaders looking to
                 navigate the transition into the AI-first economy.
               </p>
               <div className="pt-md">
                 <Link
                   href="/contact"
-                  className="inline-block border-b-2 border-primary-fixed pb-1 font-label-md text-label-md hover:text-primary-fixed-dim transition-colors"
+                  className="inline-block border-b-2 border-inverse-primary pb-1 font-label-md text-label-md hover:text-inverse-primary transition-colors"
                 >
                   REQUEST ADVISORY
                 </Link>
@@ -279,7 +279,7 @@ export default function ServicesPage() {
                 <h4
                   className={
                     tier.style === "bespoke"
-                      ? "font-headline-md text-headline-md text-primary-fixed"
+                      ? "font-headline-md text-headline-md text-inverse-primary"
                       : "font-headline-md text-headline-md text-on-background"
                   }
                 >
@@ -288,7 +288,7 @@ export default function ServicesPage() {
                 <p
                   className={
                     tier.style === "bespoke"
-                      ? "text-label-md text-surface-variant/70"
+                      ? "text-label-md text-inverse-on-surface/70"
                       : "text-label-md text-on-surface-variant"
                   }
                 >
@@ -308,7 +308,7 @@ export default function ServicesPage() {
                     <span
                       className={
                         tier.style === "bespoke"
-                          ? "material-symbols-outlined text-primary-fixed text-[20px]"
+                          ? "material-symbols-outlined text-inverse-primary text-[20px]"
                           : "material-symbols-outlined text-primary text-[20px]"
                       }
                     >
@@ -323,8 +323,8 @@ export default function ServicesPage() {
                   tier.style === "enterprise"
                     ? "shine w-full py-sm bg-primary text-on-primary font-label-md text-label-md hover:opacity-90 transition-all"
                     : tier.style === "bespoke"
-                      ? "w-full py-sm border border-primary-fixed text-primary-fixed font-label-md text-label-md hover:bg-primary-fixed hover:text-on-primary-fixed transition-all"
-                      : "w-full py-sm border border-secondary text-secondary font-label-md text-label-md hover:bg-secondary hover:text-white transition-all"
+                      ? "w-full py-sm border border-inverse-primary text-inverse-primary font-label-md text-label-md hover:bg-primary-fixed hover:text-on-primary-fixed transition-all"
+                      : "w-full py-sm border border-secondary text-secondary font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-all"
                 }
               >
                 {tier.cta}

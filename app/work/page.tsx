@@ -51,7 +51,7 @@ export default function WorkPage() {
         <RevealGroup className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-2 md:grid-cols-4 gap-md text-center">
           {stats.map((stat) => (
             <RevealItem key={stat.label}>
-              <div className="font-display-lg text-headline-lg text-primary-fixed mb-base">
+              <div className="font-display-lg text-headline-lg text-inverse-primary mb-base">
                 <AnimatedCounter value={stat.value} />
               </div>
               <div className="font-label-md text-label-md opacity-70">
@@ -83,7 +83,7 @@ export default function WorkPage() {
           </div>
         </Reveal>
         <RevealGroup className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-          <RevealItem className="md:col-span-8 group relative overflow-hidden rounded-xl border border-outline/10 bg-white hover-lift hover:shadow-xl">
+          <RevealItem className="md:col-span-8 group relative overflow-hidden rounded-xl border border-outline/10 bg-surface hover-lift hover:shadow-xl">
             <div className="aspect-[16/9] overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -127,7 +127,7 @@ export default function WorkPage() {
             </div>
           </RevealItem>
 
-          <RevealItem className="md:col-span-4 group relative overflow-hidden rounded-xl border border-outline/10 bg-white hover-lift hover:shadow-xl">
+          <RevealItem className="md:col-span-4 group relative overflow-hidden rounded-xl border border-outline/10 bg-surface hover-lift hover:shadow-xl">
             <div className="aspect-square md:aspect-auto md:h-full flex flex-col">
               <div className="flex-grow overflow-hidden relative">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -158,7 +158,7 @@ export default function WorkPage() {
             </div>
           </RevealItem>
 
-          <RevealItem className="md:col-span-4 group relative overflow-hidden rounded-xl border border-outline/10 bg-white hover-lift hover:shadow-xl">
+          <RevealItem className="md:col-span-4 group relative overflow-hidden rounded-xl border border-outline/10 bg-surface hover-lift hover:shadow-xl">
             <div className="aspect-square overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -180,7 +180,7 @@ export default function WorkPage() {
             </div>
           </RevealItem>
 
-          <RevealItem className="md:col-span-8 group relative overflow-hidden rounded-xl border border-outline/10 bg-white hover-lift hover:shadow-xl">
+          <RevealItem className="md:col-span-8 group relative overflow-hidden rounded-xl border border-outline/10 bg-surface hover-lift hover:shadow-xl">
             <div className="flex flex-col md:flex-row h-full">
               <div className="md:w-1/2 aspect-square md:aspect-auto overflow-hidden relative">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -255,10 +255,10 @@ export default function WorkPage() {
       <section className="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto py-xl">
         <div className="bg-inverse-surface rounded-xl p-lg md:p-xl relative overflow-hidden text-center md:text-left md:flex justify-between items-center">
           <Reveal className="relative z-10 max-w-[36rem]">
-            <h2 className="font-display-lg text-headline-lg text-on-inverse-surface mb-md">
+            <h2 className="font-display-lg text-headline-lg text-inverse-on-surface mb-md">
               Ready to Architect Your Transformation?
             </h2>
-            <p className="font-body-md text-body-md text-on-inverse-surface opacity-80 mb-lg">
+            <p className="font-body-md text-body-md text-inverse-on-surface opacity-80 mb-lg">
               Our team of global consultants is ready to discuss how our AI
               and digital frameworks can be tailored to your specific
               industrial challenges.
@@ -270,7 +270,7 @@ export default function WorkPage() {
               >
                 Schedule a Consultation
               </Link>
-              <button className="border border-outline-variant text-on-inverse-surface px-lg py-sm font-label-md rounded-lg hover:bg-white/10 transition-all">
+              <button className="border border-outline-variant text-inverse-on-surface px-lg py-sm font-label-md rounded-lg hover:bg-inverse-on-surface/10 transition-all">
                 Download Portfolio (PDF)
               </button>
             </div>

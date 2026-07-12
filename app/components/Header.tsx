@@ -5,10 +5,12 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { LogoMark } from "./LogoMark";
+import { ThemeToggle } from "./ThemeToggle";
 
 const NAV_LINKS = [
   { href: "/", label: "Solutions" },
   { href: "/services", label: "Services" },
+  { href: "/contact", label: "Contact Us" },
   { href: "/work", label: "Work" },
   { href: "/about", label: "About Us" },
 ];
@@ -76,6 +78,7 @@ export default function Header() {
             })}
           </nav>
           <div className="flex items-center gap-sm">
+            <ThemeToggle className="w-9 h-9" />
             <Link
               href="/contact"
               className="shine hidden sm:inline-flex bg-primary text-on-primary px-md py-xs rounded-full font-label-md text-label-md hover:shadow-lg hover:shadow-primary/30 transition-all active:scale-95"

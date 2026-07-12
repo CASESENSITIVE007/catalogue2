@@ -1,6 +1,41 @@
 import Link from "next/link";
 import { Reveal, RevealGroup, RevealItem } from "./components/Reveal";
 import { HeroVisual } from "./components/HeroVisual";
+import { Timeline } from "@/components/ui/timeline";
+
+const processSteps = [
+  {
+    title: "Discovery",
+    body: "We dive into your goals, users, and constraints to map the right approach before writing a spec.",
+  },
+  {
+    title: "Design",
+    body: "Wireframes and prototypes validated with you before a single line of code gets written.",
+  },
+  {
+    title: "Build",
+    body: "Agile sprints with weekly demos, so you always see real, working progress.",
+  },
+  {
+    title: "Launch",
+    body: "Rigorous QA and a smooth, zero-drama deployment to production.",
+  },
+  {
+    title: "Support",
+    body: "Ongoing monitoring, fast fixes, and a direct line to the team post-launch.",
+  },
+];
+
+const timelineData = processSteps.map((step) => ({
+  title: step.title,
+  content: (
+    <div className="pb-8">
+      <p className="text-inverse-on-surface/70 font-body-md text-body-md max-w-112">
+        {step.body}
+      </p>
+    </div>
+  ),
+}));
 
 export default function Home() {
   return (
@@ -35,7 +70,7 @@ export default function Home() {
                 </h1>
               </Reveal>
               <Reveal delay={0.15} duration={0.8}>
-                <p className="font-body-lg text-body-lg text-tertiary mb-lg ">
+                <p className="font-body-lg text-body-lg text-black mb-lg ">
                   We bridge the gap between complex technological evolution
                   and sustainable business growth through elite architectural
                   precision and deep learning integration.
@@ -88,157 +123,86 @@ export default function Home() {
               </div>
             </div>
           </Reveal>
-          <RevealGroup className="grid grid-cols-1 md:grid-cols-4 gap-md">
-            <RevealItem className="md:col-span-2 md:row-span-2 group relative overflow-hidden rounded-xl bg-surface border border-outline-variant/30 transition-all duration-300 hover:border-primary/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5">
-              <div className="p-lg h-full flex flex-col justify-between relative z-10">
-                <div>
-                  <span
-                    className="material-symbols-outlined text-primary text-[32px] mb-md block transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6"
-                    style={{ fontVariationSettings: "'FILL' 1" }}
-                  >
-                    psychology
-                  </span>
-                  <h3 className="font-display-lg text-headline-md mb-sm">
-                    Cognitive AI Systems
-                  </h3>
-                  <p className="font-body-md text-body-md text-tertiary ">
-                    Deploying bespoke Large Language Models and predictive
-                    analytics tailored for enterprise-scale logistics and
-                    decision-making.
-                  </p>
-                </div>
-                <Link
-                  href="/services"
-                  className="inline-flex items-center text-primary font-label-md text-label-md mt-lg group-hover:gap-sm transition-all w-fit"
-                >
-                  Learn More{" "}
-                  <span className="material-symbols-outlined ml-xs transition-transform group-hover:translate-x-1">
-                    arrow_right_alt
-                  </span>
-                </Link>
-              </div>
-              <div className="absolute bottom-0 right-0 w-1/2 h-1/2 opacity-10 group-hover:opacity-20 transition-opacity pointer-events-none">
-                <span className="material-symbols-outlined text-[160px] translate-x-12 translate-y-12">
-                  neurology
-                </span>
-              </div>
-            </RevealItem>
-            <RevealItem className="md:col-span-2 group relative overflow-hidden rounded-xl bg-surface border border-outline-variant/30 p-lg hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5">
-              <div className="flex items-start justify-between">
-                <div>
-                  <span className="material-symbols-outlined text-primary text-[24px] mb-sm block transition-transform duration-300 group-hover:scale-110">
-                    terminal
-                  </span>
-                  <h3 className="font-display-lg text-headline-md mb-xs">
-                    Web Architecture
-                  </h3>
-                  <p className="font-body-md text-body-md text-tertiary">
-                    Scalable, high-performance web solutions built on modern
-                    tech stacks like Next.js and Cloud-Native platforms.
-                  </p>
-                </div>
-                <div className="w-16 h-16 bg-primary/5 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110 group-hover:bg-primary/10">
-                  <span className="material-symbols-outlined text-primary">
-                    sync_desktop
-                  </span>
-                </div>
-              </div>
-            </RevealItem>
-            <RevealItem className="md:col-span-1 group relative overflow-hidden rounded-xl bg-surface border border-outline-variant/30 p-md hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5">
+          <RevealGroup className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-md mx-auto ">
+            <RevealItem className="group relative overflow-hidden rounded-xl bg-surface border border-outline-variant/30 p-md hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5">
               <span className="material-symbols-outlined text-primary mb-sm block transition-transform duration-300 group-hover:scale-110">
-                shield_lock
+                web
               </span>
               <h4 className="font-headline-md text-label-md font-bold mb-xs">
-                Cyber Security
+                Website Development
               </h4>
               <p className="text-caption font-caption text-tertiary">
-                Architecting zero-trust environments for sensitive global
-                data.
+                High-performance, scalable websites built on modern
+                frameworks like Next.js.
               </p>
             </RevealItem>
-            <RevealItem className="md:col-span-1 group relative overflow-hidden rounded-xl bg-surface border border-outline-variant/30 p-md hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5">
+            <RevealItem className="group relative overflow-hidden rounded-xl bg-surface border border-outline-variant/30 p-md hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5">
               <span className="material-symbols-outlined text-primary mb-sm block transition-transform duration-300 group-hover:scale-110">
-                cloud_sync
+                smartphone
               </span>
               <h4 className="font-headline-md text-label-md font-bold mb-xs">
-                Cloud Migration
+                App Development
               </h4>
               <p className="text-caption font-caption text-tertiary">
-                Optimizing heritage systems for agile cloud-first performance.
+                Native and cross-platform mobile apps engineered for speed
+                and reliability.
+              </p>
+            </RevealItem>
+            <RevealItem className="group relative overflow-hidden rounded-xl bg-surface border border-outline-variant/30 p-md hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5">
+              <span className="material-symbols-outlined text-primary mb-sm block transition-transform duration-300 group-hover:scale-110">
+                psychology
+              </span>
+              <h4 className="font-headline-md text-label-md font-bold mb-xs">
+                AI Solutions
+              </h4>
+              <p className="text-caption font-caption text-tertiary">
+                Bespoke machine learning and LLM-powered systems for
+                enterprise decision-making.
+              </p>
+            </RevealItem>
+            <RevealItem className="group relative overflow-hidden rounded-xl bg-surface border border-outline-variant/30 p-md hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5">
+              <span className="material-symbols-outlined text-primary mb-sm block transition-transform duration-300 group-hover:scale-110">
+                hub
+              </span>
+              <h4 className="font-headline-md text-label-md font-bold mb-xs">
+                AI Integrations
+              </h4>
+              <p className="text-caption font-caption text-tertiary">
+                Embedding intelligent capabilities into your existing tools
+                and workflows.
+              </p>
+            </RevealItem>
+            <RevealItem className="group relative overflow-hidden rounded-xl bg-surface border border-outline-variant/30 p-md hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5">
+              <span className="material-symbols-outlined text-primary mb-sm block transition-transform duration-300 group-hover:scale-110">
+                smart_toy
+              </span>
+              <h4 className="font-headline-md text-label-md font-bold mb-xs">
+                AI Automations
+              </h4>
+              <p className="text-caption font-caption text-tertiary">
+                Intelligent agents that automate complex operations around
+                the clock.
               </p>
             </RevealItem>
           </RevealGroup>
         </div>
       </section>
 
-      {/* Global Reach Impact Map */}
+      {/* How We Work */}
       <section className="py-xl bg-inverse-surface text-inverse-on-surface overflow-hidden">
         <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
           <Reveal>
             <div className="text-center mb-xl">
               <h2 className="font-display-lg text-headline-lg mb-sm">
-                Global Impact
+                How We Work
               </h2>
-              <p className="font-body-md text-body-md text-surface-variant/70  mx-auto">
-                Operating across 14 time zones, Alif Global provides 24/7
-                technical oversight for multinational conglomerates.
+              <p className="font-body-md text-body-md text-inverse-on-surface/70 mx-auto">
+                A disciplined, transparent process from first conversation to
+                long-term support.
               </p>
             </div>
           </Reveal>
-          <Reveal delay={0.15} duration={0.9}>
-            <div className="relative w-full aspect-[21/9] rounded-2xl overflow-hidden shadow-inner">
-              <div className="absolute inset-0 bg-[#1a1c1e] opacity-80" />
-              <div className="absolute inset-0 z-0">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  className="w-full h-full object-cover filter grayscale contrast-125 opacity-40"
-                  alt="Global network map"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuByDXhv_j1yczqRbg8iwy-ka_7fJqGJ5qw8MO0CIQF5nVYsOWvV_i1i371zxym00sFqKlB2kTyPS9TEXkLJHWhlcRgy8oWiB2lW-AoYOFAjWRzg1bT_nRMfoWDuYH6WgJQb-nZn8TJIhcbtmtvqu0FnhX-DLOhSYOAAEVqZ1PyJ4zqXiahSIk8-mBz4Tho-JCW5lBgWpY82z5s6KJt81nO0DNDgR6DgOnqKICyeDq3tlb33PYdPezA6dbE87S9K9RpPOFJtEUi5Vw"
-                />
-              </div>
-              <div className="hidden md:block absolute top-1/4 left-1/4 z-10 group">
-                <div className="w-3 h-3 bg-primary rounded-full animate-ping absolute" />
-                <div className="w-3 h-3 bg-primary rounded-full relative shadow-lg shadow-primary/50" />
-                <div className="absolute left-full ml-xs top-1/2 -translate-y-1/2 glass-card p-xs rounded border border-primary/20 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-                  <p className="text-caption text-on-surface font-bold">
-                    New York Hub
-                  </p>
-                </div>
-              </div>
-              <div className="hidden md:block absolute top-1/3 right-1/4 z-10 group">
-                <div className="w-3 h-3 bg-primary rounded-full animate-ping absolute" />
-                <div className="w-3 h-3 bg-primary rounded-full relative shadow-lg shadow-primary/50" />
-                <div className="absolute left-full ml-xs top-1/2 -translate-y-1/2 glass-card p-xs rounded border border-primary/20 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-                  <p className="text-caption text-on-surface font-bold">
-                    Dubai HQ
-                  </p>
-                </div>
-              </div>
-              <div className="hidden md:block absolute bottom-1/4 right-1/3 z-10 group">
-                <div className="w-3 h-3 bg-primary rounded-full animate-ping absolute" />
-                <div className="w-3 h-3 bg-primary rounded-full relative shadow-lg shadow-primary/50" />
-                <div className="absolute left-full ml-xs top-1/2 -translate-y-1/2 glass-card p-xs rounded border border-primary/20 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-                  <p className="text-caption text-on-surface font-bold">
-                    Singapore Lab
-                  </p>
-                </div>
-              </div>
-              <div className="absolute bottom-sm left-sm md:bottom-md md:left-md glass-card p-sm rounded-lg flex gap-md">
-                <div className="flex items-center gap-xs">
-                  <span className="w-2 h-2 rounded-full bg-primary" />
-                  <span className="text-caption text-on-surface font-bold">
-                    Active Hubs
-                  </span>
-                </div>
-                <div className="flex items-center gap-xs">
-                  <span className="w-2 h-2 rounded-full bg-outline" />
-                  <span className="text-caption text-on-surface">
-                    Data Nodes
-                  </span>
-                </div>
-              </div>
-            </div>
-          </Reveal>
+          <Timeline data={timelineData} />
         </div>
       </section>
 
@@ -253,7 +217,7 @@ export default function Home() {
                 <span className="text-primary italic">Digital Future?</span>
               </h2>
               <p className="font-body-lg text-body-lg text-tertiary mb-md">
-                Our consultants provide a 45-minute zero-obligation strategy
+                Our consultants provide a 30-minute zero-obligation strategy
                 audit for enterprise leaders.
               </p>
               <ul className="space-y-sm mb-lg">
@@ -299,16 +263,7 @@ export default function Home() {
                     type="email"
                   />
                 </div>
-                <div>
-                  <label className="block font-label-md text-caption mb-xs text-tertiary uppercase">
-                    Inquiry Type
-                  </label>
-                  <select className="w-full border-b border-outline-variant py-xs focus:border-primary focus:ring-0 outline-none transition-colors bg-transparent font-body-md">
-                    <option>AI Implementation</option>
-                    <option>Web Ecosystem Audit</option>
-                    <option>Cyber Security Overhaul</option>
-                  </select>
-                </div>
+              
                 <button
                   type="submit"
                   className="shine w-full bg-primary text-on-primary py-md rounded-full font-label-md text-label-md mt-md hover:shadow-lg transition-all active:scale-95"

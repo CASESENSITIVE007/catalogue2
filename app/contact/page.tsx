@@ -51,7 +51,7 @@ export default function ContactPage() {
           </Reveal>
           <Reveal delay={0.15} className="relative group">
             <div className="absolute -inset-2 bg-primary-fixed/30 rounded-xl blur-xl group-hover:bg-primary-fixed/40 transition duration-1000" />
-            <div className="relative bg-white border border-outline-variant/30 rounded-xl overflow-hidden shadow-sm aspect-video">
+            <div className="relative bg-surface border border-outline-variant/30 rounded-xl overflow-hidden shadow-sm aspect-video">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 className="w-full h-full object-cover"
@@ -207,7 +207,7 @@ export default function ContactPage() {
                 </span>
                 <p className="text-on-surface">+971 4 000 0000</p>
               </div>
-              <button className="w-full py-sm border border-outline text-on-surface rounded-lg font-label-md hover:bg-on-surface hover:text-white transition-colors">
+              <button className="w-full py-sm border border-outline text-on-surface rounded-lg font-label-md hover:bg-inverse-surface hover:text-inverse-on-surface transition-colors">
                 Get Directions
               </button>
             </div>
@@ -239,29 +239,29 @@ export default function ContactPage() {
         <div className="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-lg items-center">
             <Reveal className="space-y-md">
-              <h2 className="font-headline-lg text-headline-lg text-primary-fixed">
+              <h2 className="font-headline-lg text-headline-lg text-inverse-primary">
                 Book a Strategic Consultation
               </h2>
-              <p className="text-body-lg text-surface-variant/80">
+              <p className="text-body-lg text-inverse-on-surface/80">
                 Select a preferred time slot for a private 1-on-1 session
                 with our senior consultants. We offer both virtual and
                 in-person sessions at our DIFC office.
               </p>
               <ul className="space-y-sm">
                 <li className="flex items-center gap-sm">
-                  <span className="material-symbols-outlined text-primary-fixed">
+                  <span className="material-symbols-outlined text-inverse-primary">
                     check_circle
                   </span>
                   <span>30-minute strategic overview</span>
                 </li>
                 <li className="flex items-center gap-sm">
-                  <span className="material-symbols-outlined text-primary-fixed">
+                  <span className="material-symbols-outlined text-inverse-primary">
                     check_circle
                   </span>
                   <span>Architecture-first solutioning</span>
                 </li>
                 <li className="flex items-center gap-sm">
-                  <span className="material-symbols-outlined text-primary-fixed">
+                  <span className="material-symbols-outlined text-inverse-primary">
                     check_circle
                   </span>
                   <span>Global scaling feasibility report</span>
@@ -328,7 +328,7 @@ export default function ContactPage() {
                     (time) => (
                       <button
                         key={time}
-                        className="flex-shrink-0 px-md py-xs border border-outline rounded hover:bg-primary hover:border-primary hover:text-white transition-colors"
+                        className="flex-shrink-0 px-md py-xs border border-outline rounded hover:bg-primary hover:border-primary hover:text-on-primary transition-colors"
                       >
                         {time}
                       </button>
