@@ -1,33 +1,23 @@
 import type { Metadata } from "next";
-import { Reveal, RevealGroup, RevealItem } from "../components/Reveal";
+import { Reveal } from "../components/Reveal";
+
+const description =
+  "Get in touch with Alif Global Solutions for your next website, app, or AI project. Send an inquiry or reach us directly by email or phone.";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Alif Global",
+  title: "Contact Us",
+  description,
+  alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Contact Us | Alif Global Solutions",
+    description,
+    url: "/contact",
+  },
+  twitter: {
+    title: "Contact Us | Alif Global Solutions",
+    description,
+  },
 };
-
-const calendarDays = [
-  { day: 28, muted: true },
-  { day: 29, muted: true },
-  { day: 30, muted: true },
-  { day: 1 },
-  { day: 2 },
-  { day: 3 },
-  { day: 4, disabled: true },
-  { day: 5 },
-  { day: 6 },
-  { day: 7, selected: true },
-  { day: 8 },
-  { day: 9 },
-  { day: 10, disabled: true },
-  { day: 11, disabled: true },
-  { day: 12 },
-  { day: 13 },
-  { day: 14 },
-  { day: 15 },
-  { day: 16 },
-  { day: 17, disabled: true },
-  { day: 18, disabled: true },
-];
 
 export default function ContactPage() {
   return (
@@ -116,221 +106,52 @@ export default function ContactPage() {
             </form>
           </Reveal>
 
-          <RevealGroup delay={0.1} className="lg:col-span-4 flex flex-col gap-gutter">
-            <RevealItem className="bg-primary-container/10 p-md rounded-xl border border-primary-container/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-              <span className="material-symbols-outlined text-primary mb-sm block">
-                payments
+          <Reveal
+            delay={0.1}
+            className="lg:col-span-4 bg-surface-container-lowest p-lg rounded-xl border border-outline-variant/20 shadow-sm transition-shadow duration-300 hover:shadow-lg flex flex-col justify-center gap-md"
+          >
+            <div>
+              <span className="material-symbols-outlined text-primary text-4xl mb-sm block">
+                forum
               </span>
               <h3 className="font-headline-md text-headline-md mb-xs">
-                Sales
+                Get in Touch
               </h3>
-              <p className="font-body-md text-body-md text-on-surface-variant mb-sm">
-                Strategic partnerships &amp; enterprise deals.
+              <p className="font-body-md text-body-md text-on-surface-variant">
+                Have a question or want to start a project? Reach out
+                directly — we typically respond within 24 hours.
               </p>
+            </div>
+            <div className="space-y-sm pt-sm border-t border-outline-variant/20">
               <a
-                className="font-label-md text-label-md text-primary hover:underline"
-                href="mailto:sales@alifglobal.com"
+                className="flex items-center gap-sm font-label-md text-label-md text-on-surface hover:text-primary transition-colors"
+                href="mailto:support@alifglobalsolutions.com"
               >
-                sales@alifglobal.com
-              </a>
-            </RevealItem>
-            <RevealItem className="bg-secondary-container/20 p-md rounded-xl border border-secondary-container/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-              <span className="material-symbols-outlined text-secondary mb-sm block">
-                support_agent
-              </span>
-              <h3 className="font-headline-md text-headline-md mb-xs">
-                Support
-              </h3>
-              <p className="font-body-md text-body-md text-on-surface-variant mb-sm">
-                24/7 technical assistance for existing clients.
-              </p>
-              <a
-                className="font-label-md text-label-md text-secondary hover:underline"
-                href="mailto:support@alifglobal.com"
-              >
-                support@alifglobal.com
-              </a>
-            </RevealItem>
-            <RevealItem className="bg-surface-container-high p-md rounded-xl border border-outline-variant/10 flex items-center justify-between group cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-              <div>
-                <h3 className="font-label-md text-label-md text-on-surface">
-                  Career Portal
-                </h3>
-                <p className="text-caption text-on-surface-variant">
-                  Join our global team
-                </p>
-              </div>
-              <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
-                open_in_new
-              </span>
-            </RevealItem>
-          </RevealGroup>
-        </div>
-      </section>
-
-      {/* Location */}
-      <section className="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto mb-xl">
-        <div className="grid lg:grid-cols-3 gap-gutter">
-          <Reveal className="lg:col-span-1 space-y-md">
-            <h2 className="font-headline-lg text-headline-lg">
-              Global Headquarters
-            </h2>
-            <div className="p-md bg-surface-container-lowest border border-outline-variant/30 rounded-xl">
-              <div className="flex items-start gap-sm mb-md">
-                <span className="material-symbols-outlined text-primary mt-1">
-                  location_on
+                <span className="material-symbols-outlined text-primary text-[20px]">
+                  mail
                 </span>
-                <div>
-                  <p className="font-bold text-on-surface">DIFC Dubai</p>
-                  <p className="text-on-surface-variant">
-                    The Gate Building, Level 15
-                    <br />
-                    Dubai International Financial Centre
-                    <br />
-                    United Arab Emirates
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center gap-sm mb-md">
-                <span className="material-symbols-outlined text-primary">
+                support@alifglobalsolutions.com
+              </a>
+              <a
+                className="flex items-center gap-sm font-label-md text-label-md text-on-surface hover:text-primary transition-colors"
+                href="tel:+918864931882"
+              >
+                <span className="material-symbols-outlined text-primary text-[20px]">
                   call
                 </span>
-                <p className="text-on-surface">+971 4 000 0000</p>
-              </div>
-              <button className="w-full py-sm border border-outline text-on-surface rounded-lg font-label-md hover:bg-inverse-surface hover:text-inverse-on-surface transition-colors">
-                Get Directions
-              </button>
+                +91 88649 31882
+              </a>
+              <a
+                className="flex items-center gap-sm font-label-md text-label-md text-on-surface hover:text-primary transition-colors"
+                href="tel:+917060912207"
+              >
+                <span className="material-symbols-outlined text-primary text-[20px]">
+                  call
+                </span>
+                +91 70609 12207
+              </a>
             </div>
           </Reveal>
-          <Reveal
-            delay={0.15}
-            className="lg:col-span-2 h-[280px] md:h-[400px] rounded-xl overflow-hidden border border-outline-variant/30 shadow-sm relative"
-          >
-            <div className="w-full h-full bg-surface-container relative">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                className="w-full h-full object-cover"
-                alt="A minimalist, high-contrast digital map of the Dubai DIFC area with a gold marker for the Alif Global headquarters."
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM_Hr9-KCht-fn2ZRKaqoUKfNxm8soGJjq6eUTWDL6Y7Imra-TOR_0hsXucFP0_7G5vEoQXZpI8uW_rAFa_kcxUlDUI2v4o9H9ekIqVxATluUZO3jP4wmI056YYjLDxIIrGeajK1juR6VnUr_jBVJ2cDCgAVQVCtu1FBwoN9grK9a5rvlwtoWiGnqwl-IC9ibrnPbXKS7Sa_VNbpuNl_8-OaTnptswXhx8SEyYurE0tZHoM22YVgnZ3AbnkCgFfmx4xXqqpX5J2g"
-              />
-            </div>
-            <div className="absolute bottom-md left-md bg-surface/90 p-sm rounded shadow-sm flex items-center gap-xs">
-              <div className="w-3 h-3 bg-primary rounded-full animate-pulse" />
-              <span className="text-caption font-bold">
-                Office Open • Closing in 4h
-              </span>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* Calendar Integration Section */}
-      <section className="bg-inverse-surface text-inverse-on-surface py-xl">
-        <div className="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-lg items-center">
-            <Reveal className="space-y-md">
-              <h2 className="font-headline-lg text-headline-lg text-inverse-primary">
-                Book a Strategic Consultation
-              </h2>
-              <p className="text-body-lg text-inverse-on-surface/80">
-                Select a preferred time slot for a private 1-on-1 session
-                with our senior consultants. We offer both virtual and
-                in-person sessions at our DIFC office.
-              </p>
-              <ul className="space-y-sm">
-                <li className="flex items-center gap-sm">
-                  <span className="material-symbols-outlined text-inverse-primary">
-                    check_circle
-                  </span>
-                  <span>30-minute strategic overview</span>
-                </li>
-                <li className="flex items-center gap-sm">
-                  <span className="material-symbols-outlined text-inverse-primary">
-                    check_circle
-                  </span>
-                  <span>Architecture-first solutioning</span>
-                </li>
-                <li className="flex items-center gap-sm">
-                  <span className="material-symbols-outlined text-inverse-primary">
-                    check_circle
-                  </span>
-                  <span>Global scaling feasibility report</span>
-                </li>
-              </ul>
-            </Reveal>
-
-            <Reveal
-              delay={0.15}
-              className="bg-surface-container-lowest text-on-surface p-md rounded-xl shadow-xl"
-            >
-              <div className="flex items-center justify-between mb-md border-b border-outline-variant/20 pb-sm">
-                <h3 className="font-headline-md text-headline-md">
-                  October 2024
-                </h3>
-                <div className="flex gap-sm">
-                  <button className="p-xs hover:bg-surface-container rounded-full transition-colors">
-                    <span className="material-symbols-outlined">
-                      chevron_left
-                    </span>
-                  </button>
-                  <button className="p-xs hover:bg-surface-container rounded-full transition-colors">
-                    <span className="material-symbols-outlined">
-                      chevron_right
-                    </span>
-                  </button>
-                </div>
-              </div>
-              <div className="grid grid-cols-7 gap-xs text-center mb-sm">
-                {["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"].map(
-                  (day) => (
-                    <span
-                      key={day}
-                      className="text-caption text-on-surface-variant font-bold"
-                    >
-                      {day}
-                    </span>
-                  ),
-                )}
-              </div>
-              <div className="grid grid-cols-7 gap-xs mb-md">
-                {calendarDays.map((d, i) => (
-                  <div
-                    key={i}
-                    className={
-                      d.muted || d.disabled
-                        ? "h-10 flex items-center justify-center text-on-surface-variant" +
-                          (d.muted ? " opacity-30" : "")
-                        : d.selected
-                          ? "h-10 flex items-center justify-center rounded cursor-pointer bg-primary-fixed/50 font-bold"
-                          : "h-10 flex items-center justify-center rounded cursor-pointer transition-all hover:scale-110 hover:bg-primary-fixed hover:text-on-primary-fixed"
-                    }
-                  >
-                    {d.day}
-                  </div>
-                ))}
-              </div>
-              <div className="space-y-sm">
-                <p className="font-label-md text-label-md">
-                  Available Times (GMT+4)
-                </p>
-                <div className="flex gap-sm overflow-x-auto no-scrollbar pb-sm">
-                  {["09:00 AM", "11:30 AM", "02:00 PM", "04:30 PM"].map(
-                    (time) => (
-                      <button
-                        key={time}
-                        className="flex-shrink-0 px-md py-xs border border-outline rounded hover:bg-primary hover:border-primary hover:text-on-primary transition-colors"
-                      >
-                        {time}
-                      </button>
-                    ),
-                  )}
-                </div>
-              </div>
-              <button className="shine w-full mt-md py-sm bg-primary text-on-primary rounded font-label-md hover:opacity-90 active:scale-95 transition-all">
-                Confirm Appointment
-              </button>
-            </Reveal>
-          </div>
         </div>
       </section>
     </div>

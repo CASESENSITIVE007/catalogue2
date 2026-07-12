@@ -2,57 +2,36 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { Reveal, RevealGroup, RevealItem } from "../components/Reveal";
 
+const description =
+  "Meet the founders behind Alif Global Solutions — two developers building fast, polished websites, apps, and AI-powered tools, with a clear, collaborative process from first conversation to launch.";
+
 export const metadata: Metadata = {
-  title: "About Us | Alif Global",
+  title: "About Us",
+  description,
+  alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About Us | Alif Global Solutions",
+    description,
+    url: "/about",
+  },
+  twitter: {
+    title: "About Us | Alif Global Solutions",
+    description,
+  },
 };
 
 const team = [
   {
-    name: "Marcus Thorne",
-    role: "Chief Technical Officer",
-    alt: "Professional headshot of a male executive in a charcoal suit.",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCXdmidlQLZhmKpj9M4Jbt_vVp4LRPLabka4-scNHZ4nKrT0OuEb2qtEUAcr6gpa7XECFAXtAjONPIqliP-Pc69L7rMkbsPELlErmBqAgirO7pRWr2o40zqOTXoDqFMFTVRNkuVn1Cj50MLShJ26M9QpCPyiKz7TwcjNvuB4MoMEokjlby1fMh3NZGX8OA9W_JVBzSvdMcytIwZPibT1Yq7Q2SUBp3szGy9Ht_apgnoliTKkNT80LvzDdkj-Xng1Pby5ZPeJfMSXA",
+    name: "Ayan Rahat Ali",
+    role: "Founder & Developer",
+    initials: "AR",
+    linkedin: "https://www.linkedin.com/in/ayan-rahat-ali-01ba98215/",
   },
   {
-    name: "Elena Voss",
-    role: "VP of Engineering",
-    alt: "Professional headshot of a female technology leader.",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCeJqRByKQ-GDjsPEV5_RWqw2MIM6f-Ik71CJ9y6dHhvOG_X7MbuPX4Xnofe1mzoQed0eGYsqkvL6_KKxUEoL0wdhuRxQkh_VLIWm5v_Fns77-SgqBx3wbXmKcwlNjOP-CirdHtG1AcHnQ0ZFbnhToxhvDa3r-mwJro6Mqdp_5lPzUoJMkBDBn5hVMm5rc3Qn2mN1GWV9ru17N4SAZbA_CYW-PdffvO1uq-_RFA3N6CrroUnzTYgkd0PXwM1ClfCSseJG-Muq-qWQ",
-  },
-  {
-    name: "Sanjay Gupta",
-    role: "Head of Global Strategy",
-    alt: "Professional portrait of a senior consultant in a dark grey blazer.",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDvfjhEjCZHB0zZNQUbo4hQDKsCcM817OYfYDLOidzW8qJj_DjA_ARnWrZ3G-dNqA2yF8OM5cbQ2QD46ioUMun2LiWdNAlZDDuw-LIa0emvyIozUJ3EXLhnf8XLlSEQkzX7uhUuZBZxrmtkUV24jvCdL1p1SzE8g0zc1ALuLjiYEogMrudxzdsyHJlx2tKoqH4y88kyI3umPberzUxA9cPZpvmG4ybYu-1nTf6iRQeRnDZm-11SRb0CrSXwYourebTu5BdRgeyEgQ",
-  },
-  {
-    name: "Sarah Jenkins",
-    role: "Security Lead",
-    alt: "Professional portrait of a female cybersecurity expert in a navy suit.",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBuiQ_Cc0Omk7frLEfRUBFyaVn9yNI-dd3z2qk1N4LFtN7sLGJEwEE_MTRIHUR_ALurZ_XFCVeqdB2r6IE3smY6FZ0HMgkoBOi-WYFBerFHyhnxtM8Ys54ai0_aGCasz-Jket74AgTW8mEaGhZGJFJ36lkCBzCUIHkSnplGVvVssu5TxHcBLOI3lA7RIIe2xK7NNgeWbD31gt6NNHQew_6Sfc02cgDUZt_rtXR7mhMRmvqKMr89bwEuLbkJfxo18tg7GOkN1xAySQ",
-  },
-];
-
-const timeline = [
-  {
-    year: "2008",
-    title: "Inception",
-    body: "Alif Global founded as a boutique systems integration firm in London.",
-  },
-  {
-    year: "2014",
-    title: "Global Expansion",
-    body: "Opening of regional hubs in Singapore and Dubai to serve emerging markets.",
-  },
-  {
-    year: "2019",
-    title: "Precision Framework",
-    body: "Formalization of our proprietary 'Precision Methodology' for IT consultancy.",
-  },
-  {
-    year: "2024",
-    title: "AI Leadership",
-    body: "Pioneering ethical AI integration and high-end cloud infrastructure for the Fortune 500.",
+    name: "Mohammad Saad",
+    role: "Founder & Developer",
+    initials: "MS",
+    linkedin: "https://www.linkedin.com/in/mohammadsaad007/",
   },
 ];
 
@@ -74,7 +53,7 @@ export default function AboutPage() {
           </Reveal>
           <Reveal delay={0.15} duration={0.7}>
             <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-lg">
-              Alif Global stands at the intersection of traditional business
+              Alif Global Solutions stands at the intersection of traditional business
               wisdom and modern technological mastery. We provide elite IT
               consultancy for global enterprises that value reliability as
               much as innovation.
@@ -83,13 +62,13 @@ export default function AboutPage() {
           <Reveal delay={0.3} duration={0.7}>
             <div className="flex flex-wrap gap-sm">
               <Link
-                href="/contact"
+                href="#team"
                 className="shine bg-primary text-on-primary font-label-md px-lg py-sm rounded hover:shadow-lg transition-all active:scale-95"
               >
                 Our Story
               </Link>
               <Link
-                href="/services"
+                href="#methodology"
                 className="border border-outline text-on-surface font-label-md px-lg py-sm rounded hover:bg-surface-variant hover:-translate-y-0.5 transition-all"
               >
                 View Methodology
@@ -153,36 +132,11 @@ export default function AboutPage() {
         </RevealGroup>
       </section>
 
-      {/* Heritage Timeline */}
-      <section className="py-xl bg-surface-container-low px-margin-mobile md:px-margin-desktop">
-        <div className="max-w-7xl mx-auto">
-          <Reveal>
-            <h2 className="font-headline-lg text-headline-lg mb-xl text-center">
-              Decades of Growth
-            </h2>
-          </Reveal>
-          <RevealGroup className="relative border-l-2 border-primary/20 ml-4 md:ml-0 md:flex md:border-l-0 md:border-t-2 md:pt-md">
-            {timeline.map((item) => (
-              <RevealItem
-                key={item.year}
-                className="mb-lg md:mb-0 md:flex-1 relative pl-8 md:pl-0"
-              >
-                <div className="absolute top-0 left-[-9px] md:left-0 md:top-[-11px] w-4 h-4 rounded-full bg-primary ring-4 ring-background" />
-                <span className="font-display-lg text-primary text-headline-md block mb-xs">
-                  {item.year}
-                </span>
-                <h4 className="font-label-md mb-xs">{item.title}</h4>
-                <p className="text-on-surface-variant font-caption">
-                  {item.body}
-                </p>
-              </RevealItem>
-            ))}
-          </RevealGroup>
-        </div>
-      </section>
-
       {/* Our Methodology */}
-      <section className="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+      <section
+        id="methodology"
+        className="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-lowest scroll-mt-24"
+      >
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-xl items-center">
           <Reveal className="w-full md:w-1/2">
             <div className="relative rounded-xl overflow-hidden shadow-xl aspect-square border border-outline-variant/30 group">
@@ -190,19 +144,19 @@ export default function AboutPage() {
               <img
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 alt="A modern corporate boardroom with a polished marble table and floor-to-ceiling windows."
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4MiywSRYedFrU7b8HkhhZ4PMo7ZIIGa3GECFlbnprMki1AC01et6YgzNUc-85uo62LqENPs4S9Iq6Nkl8PO1KVVjvzFX0yuB11iFy61oht0YIIcNUpAArIyuFxVuuvbCSbHqJYo5nIWoLAf5zqzNcCtaCK1cLioi3JXJgCQvvjimpIRA70JmGhZA5OUZyQWyDwCbwu4EBPe8DkLHB39YrOhjt_j4LZfV9_5VcU5kbVWnFhpkW6ahlhCzdd8myiPVNbhg-jnbH5A"
+                src="/aboutusmethod.png"
               />
               <div className="absolute inset-0 bg-primary/5" />
             </div>
           </Reveal>
           <Reveal delay={0.15} className="w-full md:w-1/2">
             <h2 className="font-headline-lg text-headline-lg mb-md">
-              Our Methodology: Precision First
+              Our Methodology: Clear, Collaborative, Fast
             </h2>
             <p className="font-body-md text-on-surface-variant mb-lg">
-              We don&apos;t believe in one-size-fits-all. Our approach is a
-              rigorous, 4-stage cycle designed to ensure maximum ROI and
-              zero-friction deployment.
+              No jargon, no unnecessary complexity. We keep you involved at
+              every stage, from the first conversation to the final
+              deployment.
             </p>
             <RevealGroup className="space-y-md">
               <RevealItem className="flex gap-sm">
@@ -211,11 +165,12 @@ export default function AboutPage() {
                 </span>
                 <div>
                   <h4 className="font-label-md text-on-surface">
-                    Deep Audit
+                    Discovery &amp; Scoping
                   </h4>
                   <p className="text-on-surface-variant font-body-md">
-                    Thorough analysis of existing legacy structures and
-                    future scalability needs.
+                    We start by understanding your goals, users, and
+                    constraints — so every decision has a clear reason
+                    behind it.
                   </p>
                 </div>
               </RevealItem>
@@ -225,11 +180,11 @@ export default function AboutPage() {
                 </span>
                 <div>
                   <h4 className="font-label-md text-on-surface">
-                    Architectural Blueprinting
+                    Design &amp; Build
                   </h4>
                   <p className="text-on-surface-variant font-body-md">
-                    Crafting custom roadmaps that align IT infrastructure
-                    with business objectives.
+                    Wireframes and prototypes get validated with you before
+                    we write a single line of production code.
                   </p>
                 </div>
               </RevealItem>
@@ -239,11 +194,11 @@ export default function AboutPage() {
                 </span>
                 <div>
                   <h4 className="font-label-md text-on-surface">
-                    Agile Execution
+                    Launch &amp; Support
                   </h4>
                   <p className="text-on-surface-variant font-body-md">
-                    Precision engineering and rapid prototyping with
-                    continuous stakeholder feedback.
+                    Rigorous testing, a smooth deployment, and a direct line
+                    to the team once you&apos;re live.
                   </p>
                 </div>
               </RevealItem>
@@ -252,38 +207,53 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Expert Team */}
-      <section className="py-xl px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+      {/* Founders */}
+      <section
+        id="team"
+        className="py-xl px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto scroll-mt-24"
+      >
         <Reveal>
-          <div className="flex justify-between items-end mb-xl">
-            <div className="max-w-[36rem]">
-              <h2 className="font-headline-lg text-headline-lg mb-sm">
-                The Engineering Vanguard
-              </h2>
-              <p className="font-body-md text-on-surface-variant">
-                Our team consists of veteran architects, security
-                specialists, and strategy consultants with decades of
-                combined experience.
-              </p>
-            </div>
-            <button className="hidden md:block text-primary font-label-md hover:underline decoration-2 underline-offset-4 shrink-0">
-              Join our team
-            </button>
+          <div className="text-center mb-xl">
+            <h2 className="font-headline-lg text-headline-lg mb-sm">
+              Meet the Founders
+            </h2>
+            <p className="font-body-md text-on-surface-variant max-w-[36rem] mx-auto">
+              Two developers who decided to build something of their own.
+            </p>
           </div>
         </Reveal>
-        <RevealGroup className="grid grid-cols-2 md:grid-cols-4 gap-md">
+        <RevealGroup className="grid grid-cols-1 sm:grid-cols-2 gap-md max-w-2xl mx-auto">
           {team.map((member) => (
-            <RevealItem key={member.name} className="text-center group">
-              <div className="aspect-[3/4] rounded-xl overflow-hidden mb-sm border border-outline-variant/20">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  alt={member.alt}
-                  src={member.src}
-                />
+            <RevealItem
+              key={member.name}
+              className="text-center group p-lg bg-surface border border-outline-variant/30 rounded-xl transition-all duration-300 hover:border-primary hover:-translate-y-1 hover:shadow-lg"
+            >
+              <div className="w-24 h-24 mx-auto rounded-full bg-surface-container-high border border-outline-variant/30 flex items-center justify-center mb-md">
+                <span className="font-headline-lg text-headline-lg text-primary">
+                  {member.initials}
+                </span>
               </div>
-              <h4 className="font-label-md">{member.name}</h4>
-              <p className="text-primary font-caption">{member.role}</p>
+              <h4 className="font-label-md text-headline-md mb-xs">
+                {member.name}
+              </h4>
+              <p className="text-primary font-caption mb-sm">{member.role}</p>
+              <a
+                href={member.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-xs text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.558V9h3.556v11.452z" />
+                </svg>
+                LinkedIn
+              </a>
             </RevealItem>
           ))}
         </RevealGroup>
@@ -307,10 +277,10 @@ export default function AboutPage() {
               Schedule a Consultation
             </Link>
             <Link
-              href="/contact"
+              href="/services"
               className="border border-inverse-on-surface/30 text-inverse-on-surface font-label-md px-lg py-sm rounded-lg hover:bg-inverse-on-surface/10 transition-all"
             >
-              Contact Sales
+              Explore Our Services
             </Link>
           </div>
         </Reveal>

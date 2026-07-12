@@ -6,7 +6,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  /* Brand colors — Alif Global "Prestige Global Identity" */
+  /* Brand colors — Alif Global Solutions "Prestige Global Identity" */
   --color-surface: #f8f9fa;
   --color-surface-dim: #d9dadb;
   --color-surface-bright: #f8f9fa;

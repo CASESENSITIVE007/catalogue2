@@ -51,7 +51,7 @@ export default function Header() {
         <div className="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-sm max-w-7xl mx-auto">
           <Link
             href="/"
-            aria-label="Alif Global"
+            aria-label="Alif Global Solutions"
             className="transition-transform duration-300 hover:scale-[1.03] inline-block"
           >
             <LogoMark className="h-9 w-auto" />

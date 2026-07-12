@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { siteConfig } from "@/lib/site-config";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
@@ -14,9 +15,57 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Alif Global | AI-Driven IT Consultancy",
-  description:
-    "Alif Global bridges complex technological evolution and sustainable business growth through elite architectural precision, AI integration, and scalable digital infrastructure.",
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: `${siteConfig.name} | Website, App & AI Development`,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  keywords: [
+    "website development",
+    "app development",
+    "AI solutions",
+    "AI integration",
+    "AI automation",
+    "Alif Global Solutions",
+  ],
+  authors: [{ name: siteConfig.name }],
+  creator: siteConfig.name,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    title: `${siteConfig.name} | Website, App & AI Development`,
+    description: siteConfig.description,
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.name} | Website, App & AI Development`,
+    description: siteConfig.description,
+    images: [siteConfig.ogImage],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -35,6 +84,32 @@ export default function RootLayout({
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ProfessionalService",
+              name: siteConfig.name,
+              url: siteConfig.url,
+              email: siteConfig.email,
+              description: siteConfig.description,
+              areaServed: "Worldwide",
+              sameAs: siteConfig.founders.map((founder) => founder.linkedin),
+              founder: siteConfig.founders.map((founder) => ({
+                "@type": "Person",
+                name: founder.name,
+              })),
+              makesOffer: [
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "Website Development" } },
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "App Development" } },
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "AI Solutions" } },
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "AI Integration" } },
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "AI Automation" } },
+              ],
+            }),
+          }}
         />
       </head>
       <body className="min-h-full flex flex-col font-body-md text-body-md bg-background text-on-surface antialiased overflow-x-hidden">

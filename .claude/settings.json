@@ -1,7 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "Bash(curl -s \"http://localhost:3000/\")"
+      "Bash(curl -s \"http://localhost:3000/\")",
+      "PowerShell(Start-Process \"C:\\\\Program Files \\(x86\\)\\\\Microsoft\\\\Edge\\\\Application\\\\msedge.exe\" -ArgumentList \"--headless=new\",\"--disable-gpu\",\"--no-sandbox\",\"--remote-debugging-port=9342\",\"--window-size=1600,1000\",\"about:blank\" -PassThru)",
+      "Bash(curl -s http://localhost:9342/json)",
+      "Bash(node -e ' *)",
+      "Bash(cp \"C:\\\\Users\\\\moham\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\d--working-cataloge-catalogue\\\\c2f4b80d-2cc9-4ee1-bca9-a15cf5cba0f6\\\\scratchpad\\\\site_original_traders.png\" \"d:\\\\working\\\\cataloge\\\\catalogue\\\\public\\\\workOriginalTraders.png\" *)"
+    ],
+    "additionalDirectories": [
+      "d:\\working\\cataloge\\catalogue\\public"
     ]
   }
 }

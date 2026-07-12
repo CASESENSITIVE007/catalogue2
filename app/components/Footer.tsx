@@ -7,7 +7,7 @@ export default function Footer() {
       <Reveal className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-start gap-md">
         <div className="">
           <div className="font-display-lg text-headline-md font-bold text-inverse-primary tracking-tight mb-sm">
-            Alif Global
+            Alif Global Solutions
           </div>
           <p className="font-body-md text-body-md text-inverse-on-surface/70">
             A vanguard of technology consultancy, redefining the boundaries of
@@ -42,18 +42,18 @@ export default function Footer() {
             <h5 className="text-inverse-primary font-bold font-label-md text-label-md uppercase">
               Legal
             </h5>
-            <a
+            <Link
               className="text-inverse-on-surface/70 hover:text-inverse-primary transition-colors"
-              href="#"
+              href="/privacy-policy"
             >
               Privacy Policy
-            </a>
-            <a
+            </Link>
+            <Link
               className="text-inverse-on-surface/70 hover:text-inverse-primary transition-colors"
-              href="#"
+              href="/terms-of-service"
             >
               Terms of Service
-            </a>
+            </Link>
           </div>
           <div className="flex flex-col gap-sm">
             <h5 className="text-inverse-primary font-bold font-label-md text-label-md uppercase">
@@ -79,7 +79,7 @@ export default function Footer() {
         className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop mt-xl pt-lg border-t border-outline/10 flex flex-col md:flex-row justify-between items-center gap-md"
       >
         <span className="font-body-md text-body-md text-inverse-on-surface/70">
-          © 2022 Alif Global. All Rights Reserved.
+          © 2022 Alif Global Solutions. All Rights Reserved.
         </span>
         <div className="flex gap-md items-center">
           <span className="material-symbols-outlined text-inverse-primary">

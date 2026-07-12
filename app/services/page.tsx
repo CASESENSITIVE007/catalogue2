@@ -4,8 +4,22 @@ import { Reveal } from "../components/Reveal";
 import { ServiceCatalogue } from "./ServiceCatalogue";
 import { ServicesFaq } from "./ServicesFaq";
 
+const description =
+  "Website development, app development, AI solutions, AI integration, and AI automation — explore the services Alif Global Solutions can build for your business.";
+
 export const metadata: Metadata = {
-  title: "Services | Alif Global",
+  title: "Services",
+  description,
+  alternates: { canonical: "/services" },
+  openGraph: {
+    title: "Services | Alif Global Solutions",
+    description,
+    url: "/services",
+  },
+  twitter: {
+    title: "Services | Alif Global Solutions",
+    description,
+  },
 };
 
 export default function ServicesPage() {
