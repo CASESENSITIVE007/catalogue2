@@ -45,7 +45,7 @@ export default function ContactPage() {
             </h1>
             <p className="font-body-lg text-body-lg text-on-surface-variant max-w-[32rem]">
               Whether you&apos;re looking for enterprise solutions or
-              specialized support, our global offices are ready to assist
+              specialized support, we are ready to assist
               with architectural precision.
             </p>
           </Reveal>
@@ -56,7 +56,7 @@ export default function ContactPage() {
               <img
                 className="w-full h-full object-cover"
                 alt="A cinematic, high-angle shot of the Dubai International Financial Centre skyline at sunset."
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxabsOuiy0FTihpFGotcsDkpf-zIztytzdUA3OYTI801qEbzHyrygJgDm6JSxNEaFHdFeGiQPW9iXCSUlhMNDSMkZwQQORdtSwbJ9-m-ScWAdm6F30qjOHD4er6dR8cuLWoloncxBTVq3qZqGHnNwRlWR3KCqEQ5bVL4MLUWXuKj4EHqoYKI3-AHioaY2NtMpYTBj6fa9I8_rbeQT4Ulp8tHpT8jCuSBWfOwQkPuHCHtQ3gK34dRXEuPXNHFEaTpAWNu6kMzbKnA"
+                src="/contactHero.png"
               />
             </div>
           </Reveal>
@@ -91,17 +91,7 @@ export default function ContactPage() {
                   type="email"
                 />
               </div>
-              <div className="space-y-base md:col-span-2">
-                <label className="font-label-md text-label-md text-on-surface-variant">
-                  DEPARTMENT
-                </label>
-                <select className="w-full bg-transparent border-b border-outline-variant focus:border-primary focus:ring-0 transition-colors py-sm font-body-md appearance-none outline-none">
-                  <option>Global Solutions</option>
-                  <option>Technical Support</option>
-                  <option>Media &amp; PR</option>
-                  <option>Careers</option>
-                </select>
-              </div>
+            
               <div className="space-y-base md:col-span-2">
                 <label className="font-label-md text-label-md text-on-surface-variant">
                   MESSAGE

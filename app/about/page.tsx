@@ -316,7 +316,10 @@ export default function AboutPage() {
         </Reveal>
         <div className="absolute inset-0 opacity-10 flex items-center justify-center pointer-events-none">
           <span className="font-display-lg text-[20vw] font-extrabold uppercase select-none tracking-tighter">
-            ALIF GLOBAL
+            ALIF
+          </span>
+          <span className="font-display-lg text-[20vw] font-extrabold uppercase select-none tracking-tighter">
+            GLOBAL
           </span>
         </div>
       </section>
