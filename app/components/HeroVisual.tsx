@@ -51,7 +51,7 @@ export function HeroVisual() {
         <img
           className="w-full h-full object-cover"
           alt="A highly sophisticated 3D abstract visualization of neural network connections glowing in soft gold and metallic silver, set against a minimalist architectural background."
-          src="/heroimage.png"
+          src="https://res.cloudinary.com/dfhuyzaxw/image/upload/v1784039689/heroimage_qxwbn4.png"
         />
       </div>
 

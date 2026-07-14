@@ -46,7 +46,7 @@ export default function ContactPage() {
               <img
                 className="w-full h-full object-cover"
                 alt="A cinematic, high-angle shot of the Dubai International Financial Centre skyline at sunset."
-                src="/contactHero.png"
+                src="https://res.cloudinary.com/dfhuyzaxw/image/upload/v1784039698/contactHero_knqquj.png"
               />
             </div>
           </Reveal>

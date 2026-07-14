@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { LogoMark } from "./LogoMark";
 import { ThemeToggle } from "./ThemeToggle";
 
 const NAV_LINKS = [
@@ -54,7 +53,8 @@ export default function Header() {
             aria-label="Alif Global Solutions"
             className="transition-transform duration-300 hover:scale-[1.03] inline-block"
           >
-            <LogoMark className="h-9 w-auto" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo.png" alt="Alif Global Solutions" className="h-9 w-9 object-contain" />
           </Link>
           <nav className="hidden md:flex items-center gap-lg">
             {NAV_LINKS.map((link) => {
@@ -81,24 +81,11 @@ export default function Header() {
             <ThemeToggle className="w-9 h-9" />
             <Link
               href="/contact"
-              className="shine hidden sm:inline-flex bg-primary text-on-primary px-md py-xs rounded-full font-label-md text-label-md hover:shadow-lg hover:shadow-primary/30 transition-all active:scale-95"
+              className="shine  sm:inline-flex bg-primary text-on-primary px-md py-xs rounded-full font-label-md text-label-md hover:shadow-lg hover:shadow-primary/30 transition-all active:scale-95"
             >
               Consultation
             </Link>
-            <button
-              type="button"
-              aria-label="Toggle menu"
-              className="md:hidden text-on-surface flex items-center justify-center p-base"
-              onClick={() => setMenuOpen((v) => !v)}
-            >
-              <motion.span
-                className="material-symbols-outlined text-[28px]"
-                animate={{ rotate: menuOpen ? 90 : 0 }}
-                transition={{ duration: 0.25, ease: "easeOut" }}
-              >
-                {menuOpen ? "close" : "menu"}
-              </motion.span>
-            </button>
+          
           </div>
         </div>
         <AnimatePresence>

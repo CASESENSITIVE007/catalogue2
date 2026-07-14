@@ -6,8 +6,16 @@ export default function Footer() {
     <footer className="bg-inverse-surface text-inverse-on-surface w-full py-xl border-t border-outline/10">
       <Reveal className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-start gap-md">
         <div className="">
-          <div className="font-display-lg text-headline-md font-bold text-inverse-primary tracking-tight mb-sm">
-            Alif Global Solutions
+          <div className="flex items-center gap-xs mb-sm">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logo.png"
+              alt="Alif Global Solutions"
+              className="h-8 w-8 object-contain"
+            />
+            <div className="font-display-lg text-headline-md font-bold text-inverse-primary tracking-tight">
+              Alif Global Solutions
+            </div>
           </div>
           <p className="font-body-md text-body-md text-inverse-on-surface/70">
             A vanguard of technology consultancy, redefining the boundaries of

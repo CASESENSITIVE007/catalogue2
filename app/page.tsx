@@ -37,6 +37,30 @@ const timelineData = processSteps.map((step) => ({
   ),
 }));
 
+const featuredWork = [
+  {
+    name: "Vista Exhibition",
+    description: "Exhibition stand design & booking platform.",
+    url: "https://vistaexhibition.com/",
+    image: "/workHero.png",
+    alt: "Homepage of Vista Exhibition, a web platform for exhibition stand design and construction.",
+  },
+  {
+    name: "Nacaram",
+    description: "Handmade Canarian leather goods & jewelry e-commerce.",
+    url: "https://www.nacaram.com/",
+    image: "/workNacaram.png",
+    alt: "Homepage of Nacaram, a handmade leather goods e-commerce store.",
+  },
+  {
+    name: "Seedlings Academy",
+    description: "School admissions & academics website.",
+    url: "https://seedlingsacademy.vercel.app/",
+    image: "/workSeedlings.png",
+    alt: "Homepage of Seedlings Academy, a school admissions website.",
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -44,7 +68,7 @@ export default function Home() {
       <section className="relative pt-32 md:pt-40 pb-xl overflow-hidden">
         <video
           className="absolute inset-0 w-full h-full object-cover -z-20"
-          src="/herovideo.mp4"
+          src="https://res.cloudinary.com/dfhuyzaxw/video/upload/v1784039702/herovideo_j8gu2q.mp4"
           autoPlay
           muted
           loop
@@ -203,6 +227,79 @@ export default function Home() {
             </div>
           </Reveal>
           <Timeline data={timelineData} />
+        </div>
+      </section>
+
+      {/* Featured Work */}
+      <section className="py-xl bg-surface-container-lowest relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+          <Reveal>
+            <div className="flex flex-col md:flex-row justify-between items-end mb-xl gap-md">
+              <div className="max-w-2xl">
+                <h2 className="font-display-lg text-headline-lg mb-sm">
+                  Featured Work
+                </h2>
+                <p className="font-body-md text-body-md text-tertiary">
+                  A few of the real websites we&apos;ve designed and built
+                  for clients.
+                </p>
+              </div>
+              <Link
+                href="/work"
+                className="hidden md:inline-flex items-center gap-xs text-primary font-label-md text-label-md hover:underline underline-offset-4 shrink-0"
+              >
+                View All Work
+                <span className="material-symbols-outlined text-[18px]">
+                  arrow_forward
+                </span>
+              </Link>
+            </div>
+          </Reveal>
+          <RevealGroup className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-md">
+            {featuredWork.map((project) => (
+              <RevealItem key={project.name}>
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative block overflow-hidden rounded-xl border border-outline-variant/30 bg-surface transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                >
+                  <div className="aspect-[4/3] overflow-hidden">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                      alt={project.alt}
+                      src={project.image}
+                    />
+                  </div>
+                  <div className="p-md flex items-center justify-between gap-sm">
+                    <div>
+                      <h3 className="font-headline-md text-label-md font-bold mb-xs">
+                        {project.name}
+                      </h3>
+                      <p className="text-caption font-caption text-tertiary">
+                        {project.description}
+                      </p>
+                    </div>
+                    <span className="material-symbols-outlined text-primary shrink-0 transition-transform group-hover:translate-x-1">
+                      arrow_outward
+                    </span>
+                  </div>
+                </a>
+              </RevealItem>
+            ))}
+          </RevealGroup>
+          <div className="mt-lg text-center md:hidden">
+            <Link
+              href="/work"
+              className="inline-flex items-center gap-xs text-primary font-label-md text-label-md hover:underline underline-offset-4"
+            >
+              View All Work
+              <span className="material-symbols-outlined text-[18px]">
+                arrow_forward
+              </span>
+            </Link>
+          </div>
         </div>
       </section>
 
