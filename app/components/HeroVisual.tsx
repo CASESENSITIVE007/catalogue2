@@ -21,23 +21,6 @@ export function HeroVisual() {
       whileHover={{ scale: 1.02 }}
       transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
     >
-      {/* Simulated globe rotation: a slow-spinning light sweep blended over the artwork */}
-      <motion.div
-        className="absolute pointer-events-none rounded-full"
-        style={{
-          top: "-8%",
-          left: "-12%",
-          width: "78%",
-          height: "78%",
-          background:
-            "conic-gradient(from 0deg, transparent 0%, color-mix(in srgb, var(--color-primary) 70%, transparent) 8%, transparent 22%, transparent 60%, color-mix(in srgb, var(--color-primary-fixed) 50%, transparent) 68%, transparent 82%, transparent 100%)",
-          mixBlendMode: "overlay",
-          filter: "blur(3px)",
-        }}
-        animate={{ rotate: 360 }}
-        transition={{ duration: 24, repeat: Infinity, ease: "linear" }}
-      />
-
       <div
         className="relative w-full h-full"
         style={{

@@ -75,14 +75,7 @@ export default function Home() {
           preload="none"
           playsInline
         />
-        <div className="absolute inset-0 -z-10 bg-background/70 md:hidden" />
-        <div
-          className="hidden md:block absolute inset-0 -z-10 opacity-[0.4]"
-          style={{
-            background:
-              "radial-gradient(600px circle at 15% 20%, color-mix(in srgb, var(--color-primary) 10%, transparent), transparent 60%)",
-          }}
-        />
+        <div className="absolute inset-0 -z-10 bg-background/70" />
         <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop relative z-10 grid grid-cols-1 md:grid-cols-12 gap-lg items-center">
           <div className="md:col-span-7 relative">
             <div className="relative">
