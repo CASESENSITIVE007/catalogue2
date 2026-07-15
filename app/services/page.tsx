@@ -49,7 +49,7 @@ export default function ServicesPage() {
             <img
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               alt="A macro close-up of a high-tech architectural model crafted from brushed gold and matte charcoal metal."
-              src="https://res.cloudinary.com/dfhuyzaxw/image/upload/v1784039696/serviceHero_yhoxww.png"
+              src="https://res.cloudinary.com/dfhuyzaxw/image/upload/q_auto,f_auto,w_800/v1784039696/serviceHero_yhoxww.png"
             />
             <div className="absolute inset-0 border border-outline-variant/30 pointer-events-none" />
           </Reveal>

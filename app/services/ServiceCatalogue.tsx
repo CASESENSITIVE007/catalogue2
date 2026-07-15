@@ -45,7 +45,7 @@ const SERVICES: Service[] = [
     impact: 5,
     variant: "feature",
     image:
-      "https://res.cloudinary.com/dfhuyzaxw/image/upload/v1784039688/AISolutions_wnpix7.png",
+      "https://res.cloudinary.com/dfhuyzaxw/image/upload/q_auto,f_auto,w_800/v1784039688/AISolutions_wnpix7.png",
     imageAlt:
       "An abstract visualization of neural networks and data streams in charcoal and gold.",
     tags: ["Machine Learning", "LLM-Powered Systems", "Decision Intelligence"],
@@ -92,7 +92,7 @@ const SERVICES: Service[] = [
     impact: 1,
     variant: "media",
     image:
-      "https://res.cloudinary.com/dfhuyzaxw/image/upload/v1784039696/integration_hyb46v.png",
+      "https://res.cloudinary.com/dfhuyzaxw/image/upload/q_auto,f_auto,w_800/v1784039696/integration_hyb46v.png",
     imageAlt:
       "Conceptual digital art representing AI integration through layered translucent planes and golden light points.",
   },

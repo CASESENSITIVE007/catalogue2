@@ -144,7 +144,7 @@ export default function AboutPage() {
               <img
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 alt="A modern corporate boardroom with a polished marble table and floor-to-ceiling windows."
-                src="https://res.cloudinary.com/dfhuyzaxw/image/upload/v1784039693/aboutusmethod_smzhlz.png"
+                src="https://res.cloudinary.com/dfhuyzaxw/image/upload/q_auto,f_auto,w_900,c_limit/v1784039693/aboutusmethod_smzhlz.png"
               />
               <div className="absolute inset-0 bg-primary/5" />
             </div>

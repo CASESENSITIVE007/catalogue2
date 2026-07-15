@@ -42,21 +42,21 @@ const featuredWork = [
     name: "Vista Exhibition",
     description: "Exhibition stand design & booking platform.",
     url: "https://vistaexhibition.com/",
-    image: "/workHero.png",
+    image: "https://res.cloudinary.com/dfhuyzaxw/image/upload/q_auto,f_auto,w_800,c_limit/v1784105571/workHero_exvq70.png",
     alt: "Homepage of Vista Exhibition, a web platform for exhibition stand design and construction.",
   },
   {
     name: "Nacaram",
     description: "Handmade Canarian leather goods & jewelry e-commerce.",
     url: "https://www.nacaram.com/",
-    image: "/workNacaram.png",
+    image: "https://res.cloudinary.com/dfhuyzaxw/image/upload/q_auto,f_auto,w_800,c_limit/v1784105572/workNacaram_otwoa1.png",
     alt: "Homepage of Nacaram, a handmade leather goods e-commerce store.",
   },
   {
     name: "Seedlings Academy",
     description: "School admissions & academics website.",
     url: "https://seedlingsacademy.vercel.app/",
-    image: "/workSeedlings.png",
+    image: "https://res.cloudinary.com/dfhuyzaxw/image/upload/q_auto,f_auto,w_800,c_limit/v1784105572/workSeedlings_yodcvp.png",
     alt: "Homepage of Seedlings Academy, a school admissions website.",
   },
 ];
@@ -68,10 +68,11 @@ export default function Home() {
       <section className="relative pt-32 md:pt-40 pb-xl overflow-hidden">
         <video
           className="absolute inset-0 w-full h-full object-cover -z-20"
-          src="https://res.cloudinary.com/dfhuyzaxw/video/upload/v1784039702/herovideo_j8gu2q.mp4"
+          src="https://res.cloudinary.com/dfhuyzaxw/video/upload/q_auto,vc_auto,w_1280,br_800k/v1784039702/herovideo_j8gu2q.mp4"
           autoPlay
           muted
           loop
+          preload="none"
           playsInline
         />
         <div className="absolute inset-0 -z-10 bg-background/70 md:hidden" />

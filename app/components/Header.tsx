@@ -54,7 +54,7 @@ export default function Header() {
             className="transition-transform duration-300 hover:scale-[1.03] inline-block"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.png" alt="Alif Global Solutions" className="h-9 w-9 object-contain" />
+            <img src="https://res.cloudinary.com/dfhuyzaxw/image/upload/q_auto,f_auto,w_200/v1784105571/logo_uvemq9.png" alt="Alif Global Solutions" className="h-9 w-9 object-contain" />
           </Link>
           <nav className="hidden md:flex items-center gap-lg">
             {NAV_LINKS.map((link) => {
