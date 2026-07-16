@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Reveal } from "../components/Reveal";
+import { ContactForm } from "./ContactForm";
 
 const description =
   "Get in touch with Alif Global Solutions for your next website, app, or AI project. Send an inquiry or reach us directly by email or phone.";
@@ -60,50 +61,7 @@ export default function ContactPage() {
             <h2 className="font-headline-lg text-headline-lg mb-md">
               Professional Inquiry
             </h2>
-            <form className="grid md:grid-cols-2 gap-md">
-              <div className="space-y-base">
-                <label className="font-label-md text-label-md text-on-surface-variant">
-                  FULL NAME
-                </label>
-                <input
-                  className="w-full bg-transparent border-b border-outline-variant focus:border-primary focus:ring-0 transition-colors py-sm font-body-md outline-none"
-                  placeholder="John Doe"
-                  type="text"
-                />
-              </div>
-              <div className="space-y-base">
-                <label className="font-label-md text-label-md text-on-surface-variant">
-                  WORK EMAIL
-                </label>
-                <input
-                  className="w-full bg-transparent border-b border-outline-variant focus:border-primary focus:ring-0 transition-colors py-sm font-body-md outline-none"
-                  placeholder="john@enterprise.com"
-                  type="email"
-                />
-              </div>
-            
-              <div className="space-y-base md:col-span-2">
-                <label className="font-label-md text-label-md text-on-surface-variant">
-                  MESSAGE
-                </label>
-                <textarea
-                  className="w-full bg-transparent border-b border-outline-variant focus:border-primary focus:ring-0 transition-colors py-sm font-body-md resize-none outline-none"
-                  placeholder="Briefly describe your requirements..."
-                  rows={4}
-                />
-              </div>
-              <div className="md:col-span-2 pt-sm">
-                <button
-                  className="shine bg-primary text-on-primary px-xl py-sm font-label-md text-label-md rounded-lg hover:scale-[1.02] transition-transform flex items-center gap-xs"
-                  type="submit"
-                >
-                  Submit Inquiry
-                  <span className="material-symbols-outlined text-sm">
-                    arrow_forward
-                  </span>
-                </button>
-              </div>
-            </form>
+            <ContactForm />
           </Reveal>
 
           <Reveal
