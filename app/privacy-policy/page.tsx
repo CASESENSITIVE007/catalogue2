@@ -72,10 +72,10 @@ export default function PrivacyPolicyPage() {
             You can ask us to access, correct, or delete any personal
             information we hold about you at any time by emailing us at{" "}
             <a
-              href="mailto:support@alifglobalsolutions.com"
+              href="mailto:contact@alifglobalsolutions.com"
               className="text-primary hover:underline"
             >
-              support@alifglobalsolutions.com
+              contact@alifglobalsolutions.com
             </a>
             .
           </p>
@@ -95,10 +95,10 @@ export default function PrivacyPolicyPage() {
             If you have any questions about this Privacy Policy, contact us
             at{" "}
             <a
-              href="mailto:support@alifglobalsolutions.com"
+              href="mailto:contact@alifglobalsolutions.com"
               className="text-primary hover:underline"
             >
-              support@alifglobalsolutions.com
+              contact@alifglobalsolutions.com
             </a>
             .
           </p>

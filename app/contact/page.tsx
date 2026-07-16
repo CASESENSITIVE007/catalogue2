@@ -83,12 +83,12 @@ export default function ContactPage() {
             <div className="space-y-sm pt-sm border-t border-outline-variant/20">
               <a
                 className="flex items-center gap-sm font-label-md text-label-md text-on-surface hover:text-primary transition-colors"
-                href="mailto:support@alifglobalsolutions.com"
+                href="mailto:contact@alifglobalsolutions.com"
               >
                 <span className="material-symbols-outlined text-primary text-[20px]">
                   mail
                 </span>
-                support@alifglobalsolutions.com
+                contact@alifglobalsolutions.com
               </a>
               <a
                 className="flex items-center gap-sm font-label-md text-label-md text-on-surface hover:text-primary transition-colors"

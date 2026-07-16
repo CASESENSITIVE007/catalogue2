@@ -3,7 +3,7 @@ export const siteConfig = {
   url: "https://alifglobalsolutions.com",
   description:
     "Alif Global Solutions builds websites, apps, and AI-powered tools — from AI solutions and integration to automation, delivered with speed and clarity.",
-  email: "support@alifglobalsolutions.com",
+  email: "contact@alifglobalsolutions.com",
   ogImage: "/heroimage.png",
   founders: [
     {

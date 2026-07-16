@@ -98,10 +98,10 @@ export default function TermsOfServicePage() {
             If you have any questions about these Terms of Service, contact
             us at{" "}
             <a
-              href="mailto:support@alifglobalsolutions.com"
+              href="mailto:contact@alifglobalsolutions.com"
               className="text-primary hover:underline"
             >
-              support@alifglobalsolutions.com
+              contact@alifglobalsolutions.com
             </a>
             .
           </p>
